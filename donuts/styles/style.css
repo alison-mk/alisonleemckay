@@ -1,0 +1,30 @@
+/* line 1, ../scss/style.scss */
+body {
+  background-color: #efefef;
+  -webkit-text-stroke: 0.25px;
+}
+
+/* line 5, ../scss/style.scss */
+.container {
+  min-height: 300px;
+}
+
+/* line 8, ../scss/style.scss */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #639979;
+  padding: 25px 0 0;
+  font-size: 1.7em;
+}
+
+/* line 18, ../scss/style.scss */
+#counter {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5em;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  color: #639979;
+}

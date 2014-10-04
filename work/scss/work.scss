@@ -1,0 +1,203 @@
+/*----GENERAL SETTINGS----*/
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color:#37313b;
+	color:#36303a;
+}
+a {
+	text-decoration:none;
+	transition: all 1s ease;
+	color:#569071;
+}
+a:hover {
+	text-shadow: 1px 1px 5px #569071;
+	color:#569071
+}
+p {
+	line-height: 22px;
+	font-size: .9em;
+}
+h1 {
+	font-family: 'Arvo', serif;
+	font-size:3em;
+	text-transform:uppercase;
+	color:#fff;
+	font-weight: 400;
+	letter-spacing:12px;
+}
+@media all and (max-width: 680px) {
+	h1 {
+		letter-spacing:10px;
+	}
+}
+@media all and (max-width: 530px) {
+	h1 {
+		letter-spacing:4px;
+		font-size: 2.5em;
+	}
+}
+@media all and (max-width: 460px) {
+	h1 {
+		letter-spacing: 3px;
+	}
+}
+h2 {
+	font-family: 'Arvo', serif;
+	font-size:1.5em;
+	text-transform:uppercase;
+	font-weight: 400;
+	letter-spacing:12px;
+	color:#36303a;
+	margin:25px 0 10px 0;
+}
+h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size:1.3em;
+	color:#36303a;
+	margin:15px 0 5px 0;
+}
+h4 {
+	font-family: 'Arvo', serif;
+	font-size:1em;
+	font-weight: 400;
+	letter-spacing:1px;
+	color:#569071;
+	margin:15px 0 5px 0;
+}
+h5 {
+	font-family: 'Raleway', sans-serif;
+	font-size:0.9em;
+	color:#fff;
+}
+h6 {
+	font-family: 'Raleway', sans-serif;
+	font-size:0.8em;
+	color:#fff;
+}
+.center {
+	text-align:center;
+}
+.container {
+	max-width:1070px;
+	margin:0 auto;
+}
+/*----NAVIGATION----*/
+h1.title {
+	text-align: center;
+	margin: 150px auto 30px;
+}
+h1.title a {
+	color:#fff;
+	font-weight:500;
+}
+h1.title a:hover {
+	font-weight:500;
+}
+.main-nav {
+	ul {
+		margin:0 auto;
+		width:490px;
+		padding:0;
+	}
+	ul li {
+		display:inline-block;
+		font-family: 'Raleway', sans-serif;
+		text-transform:lowercase;
+		font-size: 1.5em;
+		font-weight: 300;
+	}
+	ul li.first {
+		padding: 0 95px 0 35px;
+	}
+	ul li.middle {
+		padding:0;
+	}
+	ul li.last {
+		padding:0 0 0 95px;
+	}
+	@media all and (max-width: 700px) {
+		ul {
+			width:400px;
+		}
+		ul li.first {
+			padding: 0 55px 0 25px;
+		}
+		ul li.middle {
+			padding:0;
+		}
+		ul li.last {
+			padding:0 0 0 55px;
+		}
+	}
+	@media all and (max-width: 480px) {
+		ul {
+			width:380px;
+		}
+		ul li.first {
+			padding: 0 35px 0 25px;
+		}
+		ul li.middle {
+			padding:0;
+		}
+		ul li.last {
+			padding:0 0 0 35px;
+		}
+	}
+	@media all and (max-width: 380px) {
+		ul {
+			width:auto;
+			text-align:center;
+		}
+		ul li {
+			display:block;
+		}
+		ul li.first {
+			padding: 0;
+		}
+		ul li.last {
+			padding:0;
+		}
+	}
+}
+/*----WORK STYLES----*/
+.work {
+	.projects {
+		margin:50px 0;
+	}
+	article {
+		height:300px;
+		margin:0 0 30px 0;
+		.project-description {
+			position:relative;
+			bottom:220px;
+		}
+		.project-description h3, 
+		.project-description p {
+			color:#fff;
+			text-align:center;
+			text-shadow: 1px 1px 10px #37313b;
+		}
+		.project-title {
+			margin:10px 0;
+		}
+		img {
+			filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    		filter: gray; /* IE6-9 */
+    		-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    		transition: all 1s ease;
+    		box-shadow: 1px 1px 5px #3c5b56;
+		}
+		img:hover {
+			filter: none;
+		    -webkit-filter: grayscale(0);
+		}
+	}
+	.medium-6 img {
+		width:500px;
+		height:300px;
+	}
+	.medium-8 img {
+		width:700px;
+		height:300px;
+	}
+}

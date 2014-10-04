@@ -1,0 +1,262 @@
+/*----GENERAL SETTINGS----*/
+/* line 2, ../scss/work.scss */
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #37313b;
+  color: #36303a;
+}
+
+/* line 7, ../scss/work.scss */
+a {
+  text-decoration: none;
+  transition: all 1s ease;
+  color: #569071;
+}
+
+/* line 12, ../scss/work.scss */
+a:hover {
+  text-shadow: 1px 1px 5px #569071;
+  color: #569071;
+}
+
+/* line 16, ../scss/work.scss */
+p {
+  line-height: 22px;
+  font-size: .9em;
+}
+
+/* line 20, ../scss/work.scss */
+h1 {
+  font-family: 'Arvo', serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 12px;
+}
+
+@media all and (max-width: 680px) {
+  /* line 29, ../scss/work.scss */
+  h1 {
+    letter-spacing: 10px;
+  }
+}
+@media all and (max-width: 530px) {
+  /* line 34, ../scss/work.scss */
+  h1 {
+    letter-spacing: 4px;
+    font-size: 2.5em;
+  }
+}
+@media all and (max-width: 460px) {
+  /* line 40, ../scss/work.scss */
+  h1 {
+    letter-spacing: 3px;
+  }
+}
+/* line 44, ../scss/work.scss */
+h2 {
+  font-family: 'Arvo', serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 12px;
+  color: #36303a;
+  margin: 25px 0 10px 0;
+}
+
+/* line 53, ../scss/work.scss */
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+  color: #36303a;
+  margin: 15px 0 5px 0;
+}
+
+/* line 59, ../scss/work.scss */
+h4 {
+  font-family: 'Arvo', serif;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #569071;
+  margin: 15px 0 5px 0;
+}
+
+/* line 67, ../scss/work.scss */
+h5 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+/* line 72, ../scss/work.scss */
+h6 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8em;
+  color: #fff;
+}
+
+/* line 77, ../scss/work.scss */
+.center {
+  text-align: center;
+}
+
+/* line 80, ../scss/work.scss */
+.container {
+  max-width: 1070px;
+  margin: 0 auto;
+}
+
+/*----NAVIGATION----*/
+/* line 85, ../scss/work.scss */
+h1.title {
+  text-align: center;
+  margin: 150px auto 30px;
+}
+
+/* line 89, ../scss/work.scss */
+h1.title a {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* line 93, ../scss/work.scss */
+h1.title a:hover {
+  font-weight: 500;
+}
+
+/* line 97, ../scss/work.scss */
+.main-nav ul {
+  margin: 0 auto;
+  width: 490px;
+  padding: 0;
+}
+/* line 102, ../scss/work.scss */
+.main-nav ul li {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  text-transform: lowercase;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+/* line 109, ../scss/work.scss */
+.main-nav ul li.first {
+  padding: 0 95px 0 35px;
+}
+/* line 112, ../scss/work.scss */
+.main-nav ul li.middle {
+  padding: 0;
+}
+/* line 115, ../scss/work.scss */
+.main-nav ul li.last {
+  padding: 0 0 0 95px;
+}
+@media all and (max-width: 700px) {
+  /* line 119, ../scss/work.scss */
+  .main-nav ul {
+    width: 400px;
+  }
+  /* line 122, ../scss/work.scss */
+  .main-nav ul li.first {
+    padding: 0 55px 0 25px;
+  }
+  /* line 125, ../scss/work.scss */
+  .main-nav ul li.middle {
+    padding: 0;
+  }
+  /* line 128, ../scss/work.scss */
+  .main-nav ul li.last {
+    padding: 0 0 0 55px;
+  }
+}
+@media all and (max-width: 480px) {
+  /* line 133, ../scss/work.scss */
+  .main-nav ul {
+    width: 380px;
+  }
+  /* line 136, ../scss/work.scss */
+  .main-nav ul li.first {
+    padding: 0 35px 0 25px;
+  }
+  /* line 139, ../scss/work.scss */
+  .main-nav ul li.middle {
+    padding: 0;
+  }
+  /* line 142, ../scss/work.scss */
+  .main-nav ul li.last {
+    padding: 0 0 0 35px;
+  }
+}
+@media all and (max-width: 380px) {
+  /* line 147, ../scss/work.scss */
+  .main-nav ul {
+    width: auto;
+    text-align: center;
+  }
+  /* line 151, ../scss/work.scss */
+  .main-nav ul li {
+    display: block;
+  }
+  /* line 154, ../scss/work.scss */
+  .main-nav ul li.first {
+    padding: 0;
+  }
+  /* line 157, ../scss/work.scss */
+  .main-nav ul li.last {
+    padding: 0;
+  }
+}
+
+/*----WORK STYLES----*/
+/* line 164, ../scss/work.scss */
+.work .projects {
+  margin: 50px 0;
+}
+/* line 167, ../scss/work.scss */
+.work article {
+  height: 300px;
+  margin: 0 0 30px 0;
+}
+/* line 170, ../scss/work.scss */
+.work article .project-description {
+  position: relative;
+  bottom: 220px;
+}
+/* line 175, ../scss/work.scss */
+.work article .project-description h3,
+.work article .project-description p {
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 10px #37313b;
+}
+/* line 180, ../scss/work.scss */
+.work article .project-title {
+  margin: 10px 0;
+}
+/* line 183, ../scss/work.scss */
+.work article img {
+  filter: url(filters.svg#grayscale);
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+  transition: all 1s ease;
+  box-shadow: 1px 1px 5px #3c5b56;
+}
+/* line 190, ../scss/work.scss */
+.work article img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+/* line 195, ../scss/work.scss */
+.work .medium-6 img {
+  width: 500px;
+  height: 300px;
+}
+/* line 199, ../scss/work.scss */
+.work .medium-8 img {
+  width: 700px;
+  height: 300px;
+}
