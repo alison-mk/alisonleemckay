@@ -1,7 +1,6 @@
 body {
 	// background-color: #efefef;
 	background-color:#e9d987;
-	// background:url(/graphics/yellow-bg.png);
 	-webkit-text-stroke: 0.25px;
 }
 .container {
@@ -25,23 +24,4 @@ h1 {
 	margin:0 auto;
 	font-family:'Montserrat', sans-serif;
 	color: #639979;
-}
-.plate-wrapper {
-	width:266px;
-	height:266px;
-	background:url(/graphics/pink-bg.png) repeat #fff;
-	border-radius:50%;
-	box-shadow:1px 1px 10px #000;
-	margin:0 auto;
-
-}
-.plate {
-	width:250px;
-	height:250px;
-	background:#fff;
-	border-radius:50%;
-	// border:4px solid #e9d987;
-	margin:0 auto;
-	position:relative;
-	top:8px;
 }
