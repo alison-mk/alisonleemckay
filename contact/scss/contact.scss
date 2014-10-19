@@ -1,0 +1,168 @@
+/*----GENERAL SETTINGS----*/
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color:#ddc985;
+	color:#36303a;
+}
+a {
+	text-decoration:none;
+	transition: all 1s ease;
+	color:#569071;
+}
+a:hover {
+	text-shadow: 1px 1px 5px #569071;
+}
+p {
+	line-height: 22px;
+	font-size: .9em;
+}
+h1 {
+	font-family: 'Arvo', serif;
+	font-size:3em;
+	text-transform:uppercase;
+	color:#fff;
+	font-weight: 400;
+	letter-spacing:12px;
+}
+@media all and (max-width: 680px) {
+	h1 {
+		letter-spacing:10px;
+	}
+}
+@media all and (max-width: 530px) {
+	h1 {
+		letter-spacing:4px;
+		font-size: 2.5em;
+	}
+}
+@media all and (max-width: 460px) {
+	h1 {
+		letter-spacing: 3px;
+	}
+}
+h2 {
+	font-family: 'Arvo', serif;
+	font-size:1.5em;
+	text-transform:uppercase;
+	font-weight: 400;
+	letter-spacing:12px;
+	color:#36303a;
+	margin:25px 0 10px 0;
+}
+h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size:1.3em;
+	color:#36303a;
+	margin:15px 0 5px 0;
+}
+h4 {
+	font-family: 'Arvo', serif;
+	font-size:1em;
+	font-weight: 400;
+	letter-spacing:1px;
+	color:#569071;
+	margin:15px 0 5px 0;
+}
+h5 {
+	font-family: 'Raleway', sans-serif;
+	font-size:0.9em;
+	color:#fff;
+}
+h6 {
+	font-family: 'Raleway', sans-serif;
+	font-size:0.8em;
+	color:#fff;
+}
+.center {
+	text-align:center;
+}
+.container {
+	max-width:1070px;
+	margin:0 auto;
+}
+/*----NAVIGATION----*/
+.main-nav {
+	ul {
+		margin:0 auto;
+		width:490px;
+		padding:0;
+	}
+	ul li {
+		display:inline-block;
+		font-family: 'Raleway', sans-serif;
+		text-transform:lowercase;
+		font-size: 1.5em;
+		font-weight: 300;
+	}
+	ul li.first {
+		padding: 0 95px 0 35px;
+	}
+	ul li.middle {
+		padding:0;
+	}
+	ul li.last {
+		padding:0 0 0 95px;
+	}
+	@media all and (max-width: 700px) {
+		ul {
+			width:400px;
+		}
+		ul li.first {
+			padding: 0 55px 0 25px;
+		}
+		ul li.middle {
+			padding:0;
+		}
+		ul li.last {
+			padding:0 0 0 55px;
+		}
+	}
+	@media all and (max-width: 480px) {
+		ul {
+			width:380px;
+		}
+		ul li.first {
+			padding: 0 35px 0 25px;
+		}
+		ul li.middle {
+			padding:0;
+		}
+		ul li.last {
+			padding:0 0 0 35px;
+		}
+	}
+	@media all and (max-width: 380px) {
+		ul {
+			width:auto;
+			text-align:center;
+		}
+		ul li {
+			display:block;
+		}
+		ul li.first {
+			padding: 0;
+		}
+		ul li.last {
+			padding:0;
+		}
+	}
+}
+/*----SOCIAL MEDIA----*/
+.contact {
+	ul {
+		margin: 0 auto;
+		width: 228px;
+		padding: 0;
+	}
+	ul li {
+		display:inline-block;
+		margin:0 5px 0 5px;
+	}
+	img {
+		transition: all 1s ease;
+	}
+	img:hover {
+		-webkit-filter: brightness(120%);
+		-moz-filter: brightness(120%);
+	}
+}
