@@ -4,6 +4,7 @@
     margin:10% auto 0;
     /*background: url(/graphics/donut-icon.png) no-repeat;*/
     position: relative;
+    top:15%;
 }
 @media all and (max-width: 650px) {
     .donut {

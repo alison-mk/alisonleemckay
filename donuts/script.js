@@ -1,25 +1,25 @@
 // RANDOM IMAGE
 
-function Randomize() {
-    var images = ['donut1', 'donut2'];
-    var imageNum = Math.floor(Math.random() * images.length);
-    var randomDonut = images[imageNum]; 
-    setImageSrc(randomDonut);
-    //setImageSrc(images[imageNum]);
-}
+// function Randomize() {
+//     var images = ['donut1', 'donut2'];
+//     var imageNum = Math.floor(Math.random() * images.length);
+//     var randomDonut = images[imageNum]; 
+//     setImageSrc(randomDonut);
+//     //setImageSrc(images[imageNum]);
+// }
 
 // window.onload = Randomize;
 
 // SWITCH OUT ALL DONUT PATHS
 
-var setImageSrc = function(donutName) {
-	for (i = 1; i < 9; i++) {
-		newSrc = '/graphics/' +donutName+ '/' + i + '.png';
-		imgId = 'phase' + i; //'phase1'
-		document.getElementById(imgId).src = newSrc;
-		//$(imgCssId).attr('src', newSrc);
-	}
-}
+// var setImageSrc = function(donutName) {
+// 	for (i = 1; i < 9; i++) {
+// 		newSrc = '/graphics/' +donutName+ '/' + i + '.png';
+// 		imgId = 'phase' + i; //'phase1'
+// 		document.getElementById(imgId).src = newSrc;
+// 		//$(imgCssId).attr('src', newSrc);
+// 	}
+// }
 
 // COUNTER
 
