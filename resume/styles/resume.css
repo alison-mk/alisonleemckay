@@ -1,310 +1,227 @@
 /*----GENERAL SETTINGS----*/
-/* line 2, ../scss.scss/resume.scss */
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #ddc985;
-  color: #36303a;
+  background-color:#ddc985;
+  color:#36303a;
 }
-
-/* line 7, ../scss.scss/resume.scss */
 a {
-  text-decoration: none;
+  text-decoration:none;
   transition: all 1s ease;
-  color: #569071;
+  color:#569071;
 }
-
-/* line 12, ../scss.scss/resume.scss */
 a:hover {
   text-shadow: 1px 1px 5px #569071;
 }
-
-/* line 15, ../scss.scss/resume.scss */
 p {
   line-height: 22px;
   font-size: .9em;
 }
-
-/* line 19, ../scss.scss/resume.scss */
 h1 {
   font-family: 'Arvo', serif;
-  font-size: 3em;
-  text-transform: uppercase;
-  color: #fff;
+  font-size:3em;
+  text-transform:uppercase;
+  color:#fff;
   font-weight: 400;
-  letter-spacing: 12px;
+  letter-spacing:12px;
 }
-
 @media all and (max-width: 680px) {
-  /* line 28, ../scss.scss/resume.scss */
   h1 {
-    letter-spacing: 10px;
+    letter-spacing:10px;
   }
 }
 @media all and (max-width: 530px) {
-  /* line 33, ../scss.scss/resume.scss */
   h1 {
-    letter-spacing: 4px;
+    letter-spacing:4px;
     font-size: 2.5em;
   }
 }
 @media all and (max-width: 460px) {
-  /* line 39, ../scss.scss/resume.scss */
   h1 {
     letter-spacing: 3px;
   }
 }
-/* line 43, ../scss.scss/resume.scss */
 h2 {
   font-family: 'Arvo', serif;
-  font-size: 1.5em;
-  text-transform: uppercase;
+  font-size:1.5em;
+  text-transform:uppercase;
   font-weight: 400;
-  letter-spacing: 12px;
-  color: #36303a;
-  margin: 25px 0 10px 0;
+  letter-spacing:12px;
+  color:#36303a;
+  margin:25px 0 10px 0;
 }
-
-/* line 52, ../scss.scss/resume.scss */
 h3 {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.3em;
-  color: #36303a;
-  margin: 15px 0 5px 0;
+  font-size:1.3em;
+  color:#36303a;
+  margin:15px 0 5px 0;
 }
-
-/* line 58, ../scss.scss/resume.scss */
 h4 {
   font-family: 'Arvo', serif;
-  font-size: 1em;
+  font-size:1em;
   font-weight: 400;
-  letter-spacing: 1px;
-  color: #569071;
-  margin: 15px 0 5px 0;
+  letter-spacing:1px;
+  color:#569071;
+  margin:15px 0 5px 0;
 }
-
-/* line 66, ../scss.scss/resume.scss */
 h5 {
   font-family: 'Raleway', sans-serif;
-  font-size: 0.9em;
-  color: #fff;
+  font-size:0.9em;
+  color:#fff;
 }
-
-/* line 71, ../scss.scss/resume.scss */
 h6 {
   font-family: 'Raleway', sans-serif;
-  font-size: 0.8em;
-  color: #fff;
+  font-size:0.8em;
+  color:#fff;
 }
-
-/* line 76, ../scss.scss/resume.scss */
 .center {
-  text-align: center;
+  text-align:center;
 }
-
-/* line 79, ../scss.scss/resume.scss */
 .container {
-  max-width: 1070px;
-  margin: 0 auto;
+  max-width:1070px;
+  margin:0 auto;
 }
-
 /*----NAVIGATION----*/
-/* line 84, ../scss.scss/resume.scss */
 h1.title {
   text-align: center;
   margin: 150px auto 30px;
 }
-
-/* line 88, ../scss.scss/resume.scss */
 h1.title a {
-  color: #fff;
-  font-weight: 500;
+  color:#fff;
+  font-weight:500;
 }
-
-/* line 92, ../scss.scss/resume.scss */
 h1.title a:hover {
-  font-weight: 500;
+  font-weight:500;
 }
-
-/* line 96, ../scss.scss/resume.scss */
 .main-nav ul {
-  margin: 0 auto;
-  width: 600px;
-  padding: 50px 0 0;
+  margin:0 auto;
+  width:600px;
+  padding:50px 0 0;
 }
-/* line 101, ../scss.scss/resume.scss */
 .main-nav ul li {
-  display: inline-block;
+  display:inline-block;
   font-family: 'Raleway', sans-serif;
-  text-transform: lowercase;
+  text-transform:lowercase;
   font-size: 1.5em;
   font-weight: 300;
 }
-/* line 108, ../scss.scss/resume.scss */
 .main-nav ul li.first {
   padding: 0 45px 0 0;
   font-family: 'Arvo', serif;
-  text-transform: uppercase;
+  text-transform:uppercase;
 }
-/* line 112, ../scss.scss/resume.scss */
 .main-nav ul li.first a {
-  color: #fff;
+  color:#fff;
 }
-/* line 116, ../scss.scss/resume.scss */
 .main-nav ul li.second {
-  padding: 0 45px 0 0;
+  padding:0 45px 0 0;
 }
-/* line 119, ../scss.scss/resume.scss */
 .main-nav ul li.last {
-  padding: 0 0 0 45px;
+  padding:0 0 0 45px;
 }
 @media all and (max-width: 600px) {
-  /* line 123, ../scss.scss/resume.scss */
   .main-nav ul {
-    width: 260px;
+    width:260px;
   }
-  /* line 126, ../scss.scss/resume.scss */
-  .main-nav ul li.first {
-    display: block;
-    padding: 0;
-    width: 200px;
-    margin: 0 auto;
-  }
-  /* line 132, ../scss.scss/resume.scss */
-  .main-nav ul li.second {
-    padding: 0 15px 0 0;
-  }
-  /* line 135, ../scss.scss/resume.scss */
-  .main-nav ul li.last {
-    padding: 0 0 0 15px;
-  }
-}
-@media all and (max-width: 380px) {
-  /* line 140, ../scss.scss/resume.scss */
-  .main-nav ul {
-    width: auto;
-    text-align: center;
-  }
-  /* line 144, ../scss.scss/resume.scss */
   .main-nav ul li {
-    display: block;
+    display:block;
+    text-align:center;
   }
-  /* line 149, ../scss.scss/resume.scss */
-  .main-nav ul li.first,
-  .main-nav ul li.second,
-  .main-nav ul li.last {
-    padding: 0;
+  .main-nav ul li.first {
+    display:block;
+    padding: 0 0 10px 0;
+    width:200px;
+    margin:0 auto;
   }
-  /* line 152, ../scss.scss/resume.scss */
+  .main-nav ul li.second {
+    padding:0;
+  }
   .main-nav ul li.last {
-    padding: 0;
+    padding:0;
   }
 }
-
 /*----RESUME----*/
-/* line 158, ../scss.scss/resume.scss */
-.resume {
+.resume { 
   background-color: #d1a77b;
 }
-/* line 160, ../scss.scss/resume.scss */
-.resume .resume-wrapper {
+.resume-wrapper {
   background-color: #ddc985;
   width: 800px;
   margin: 50px auto;
   padding: 20px;
-  box-shadow: 1px 1px 10px #36303a;
+  box-shadow:1px 1px 10px #36303a;
 }
 @media all and (max-width: 872px) {
-  /* line 168, ../scss.scss/resume.scss */
-  .resume .resume-wrapper {
-    width: auto;
-    padding: 10px;
+  .resume-wrapper {
+    width:auto;
+    padding:10px
   }
 }
-/* line 173, ../scss.scss/resume.scss */
-.resume .title-wrapper {
-  border-bottom: 1px solid #d1a77b;
-  padding: 10px;
+.title-wrapper {
+  border-bottom:1px solid #d1a77b;
+  padding:10px;
 }
-/* line 179, ../scss.scss/resume.scss */
-.resume .title-wrapper h3 {
-  color: #569071;
+.title-wrapper  h3 {
+    color:#569071;
 }
-/* line 182, ../scss.scss/resume.scss */
-.resume .title-wrapper p {
-  text-align: center;
+.title-wrapper  p {
+    text-align:center;
 }
-/* line 186, ../scss.scss/resume.scss */
-.resume .resume-main {
-  border-bottom: 1px solid #d1a77b;
-  padding: 10px;
+.resume-main {
+  border-bottom:1px solid #d1a77b;
+  padding:10px;
 }
-/* line 190, ../scss.scss/resume.scss */
-.resume .resume-other {
-  border-bottom: 1px solid #d1a77b;
-  padding: 10px;
+.resume-other {
+  border-bottom:1px solid #d1a77b;
+  padding:10px;
 }
-/* line 194, ../scss.scss/resume.scss */
-.resume h4 {
-  margin-bottom: 0;
+h4 {
+  margin-bottom:0;
 }
-/* line 197, ../scss.scss/resume.scss */
-.resume p.date {
-  margin: 0;
+p.date {
+  margin:0;
 }
-/* line 200, ../scss.scss/resume.scss */
-.resume p.desktop {
-  background: url(/graphics/icon_desktop.png) no-repeat center left;
+p.desktop {
+  background:url(/graphics/icon_desktop.png) no-repeat center left;
 }
-/* line 203, ../scss.scss/resume.scss */
-.resume p.laptop {
-  background: url(/graphics/icon_laptop.png) no-repeat center left;
+p.laptop {
+  background:url(/graphics/icon_laptop.png) no-repeat center left;
 }
-/* line 206, ../scss.scss/resume.scss */
-.resume p.document {
-  background: url(/graphics/icon_documents_alt.png) no-repeat center left;
+p.document {
+  background:url(/graphics/icon_documents_alt.png) no-repeat center left;
 }
-/* line 209, ../scss.scss/resume.scss */
-.resume p.globe {
-  background: url(/graphics/icon_globe.png) no-repeat center left;
+p.globe {
+  background:url(/graphics/icon_globe.png) no-repeat center left;
 }
-/* line 212, ../scss.scss/resume.scss */
-.resume p.icon {
+p.icon {
   padding: 0 0 0 50px;
   min-height: 30px;
 }
-/* line 216, ../scss.scss/resume.scss */
-.resume strong {
+strong {
   font-family: 'Arvo', serif;
 }
 
 /*----SOCIAL MEDIA----*/
-/* line 221, ../scss.scss/resume.scss */
 .contact {
-  padding: 0 0 50px 0;
+  padding:0 0 50px 0; 
 }
-/* line 223, ../scss.scss/resume.scss */
 .contact ul {
   margin: 0 auto;
   width: 182px;
   padding: 0;
 }
-/* line 228, ../scss.scss/resume.scss */
 .contact ul li {
-  display: inline-block;
-  margin: 0 5px 0 5px;
+  display:inline-block;
+  margin:0 5px 0 5px;
   color: #569071;
 }
-/* line 233, ../scss.scss/resume.scss */
 .contact img {
   transition: all 1s ease;
 }
-/* line 236, ../scss.scss/resume.scss */
 .contact img:hover {
   -webkit-filter: brightness(120%);
   -moz-filter: brightness(120%);
 }
-/* line 240, ../scss.scss/resume.scss */
 .contact .email {
-  width: 274px;
-  margin: 25px auto;
+  width:167px;
+  margin:25px auto;
 }

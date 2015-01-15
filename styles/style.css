@@ -118,4 +118,4 @@ h4.about-title { font-family: 'Raleway', sans-serif; color: #fff; text-align: ce
 /* line 221, ../scss/style.scss */
 .contact img:hover { -webkit-filter: brightness(120%); -moz-filter: brightness(120%); }
 /* line 225, ../scss/style.scss */
-.contact .email { width: 274px; margin: 25px auto; }
+.contact .email { width: 167px; margin: 25px auto; }
