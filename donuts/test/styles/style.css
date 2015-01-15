@@ -1,0 +1,54 @@
+body {
+  background-color:#e9d987;
+  -webkit-text-stroke: 0.25px;
+}
+.container {
+  min-height:300px;
+}
+h1 {
+  font-family:'Montserrat', sans-serif;
+  text-align:center;
+  color: #639979;
+  padding:25px 0 0;
+  font-size:1.7em;  
+}
+#counter {
+  display:block;
+  text-align:center;
+  margin:0 auto;
+  font-size:1.5em;
+  margin:0 auto;
+  font-family:'Montserrat', sans-serif;
+  color: #639979;
+}   
+.donut {
+    width: 150px;
+    height: 150px;
+    margin:10% auto 0;
+    position: relative;
+    top:15%;
+}
+@media all and (max-width: 650px) {
+    .donut {
+      margin-top:7%;
+    }
+    .container {
+      margin:0 5%;
+    }
+}
+.donut img {
+    width: 150px;
+    height: 150px; 
+    position:absolute;
+    left:0;
+}
+
+.sprite { background: url('/graphics/donut-sprite.png') no-repeat top left; width: 150px; height: 148px;  } 
+.sprite.sprite-1 { background-position: 0px 0px;  } 
+.sprite.sprite-2 { background-position: 0px -158px;  } 
+.sprite.sprite-3 { background-position: 0px -316px;  } 
+.sprite.sprite-4 { background-position: 0px -474px;  } 
+.sprite.sprite-5 { background-position: 0px -632px;  } 
+.sprite.sprite-6 { background-position: 0px -790px;  } 
+.sprite.sprite-7 { background-position: 0px -948px;  } 
+.sprite.sprite-8 { background-position: 0px -1106px;  } 
