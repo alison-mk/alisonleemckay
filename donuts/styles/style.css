@@ -1,25 +1,26 @@
 body {
-  background-color:#e9d987;
+  /*background-color:#e9d987;*/
+  background-color:#fffffe;
   -webkit-text-stroke: 0.25px;
 }
 .container {
   min-height:300px;
 }
 h1 {
-  font-family:'Montserrat', sans-serif;
+  font-family:'Trade Winds', sans-serif;
   text-align:center;
-  color: #639979;
+  color: #bbb;
   padding:25px 0 0;
   font-size:1.7em;  
 }
 #counter {
   display:block;
-  text-align:center;
+  max-width: 405px;
   margin:0 auto;
   font-size:1.5em;
-  margin:0 auto;
-  font-family:'Montserrat', sans-serif;
-  color: #639979;
+  font-family:'Ubuntu Mono', sans-serif;
+  color: #bbb;
+  white-space: nowrap;
 }   
 .donut {
     width: 150px;
@@ -43,7 +44,16 @@ h1 {
     left:0;
 }
 
-.sprite { background: url('/graphics/donut-sprite.png') no-repeat top left; width: 150px; height: 148px;  } 
+.sprite { 
+  background: url('/graphics/donut-sprite.png') no-repeat top left; 
+  width: 150px; 
+  height: 148px;
+  -webkit-filter: brightness(112%);
+  -moz-filter: brightness(112%);
+  -o-filter: brightness(112%);
+  filter: brightness(112%);
+} 
+
 .sprite.sprite-1 { background-position: 0px 0px;  } 
 .sprite.sprite-2 { background-position: 0px -158px;  } 
 .sprite.sprite-3 { background-position: 0px -316px;  } 

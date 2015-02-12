@@ -1,76 +1,65 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+
 /*----GENERAL SETTINGS----*/
 body {
-	font-family: 'Raleway', sans-serif;
-	background-color:#ddc985;
-	color:#36303a;
+	font-family: 'Arvo', serif;
+	background-color:#ccc;
+	color:#3C5B84;
 }
 a {
 	text-decoration:none;
 	transition: all 1s ease;
-	color:#569071;
+	color:#DBB97E;
 }
 a:hover {
-	text-shadow: 1px 1px 5px #569071;
+	text-shadow: 0px 0px 2px #DBB97E;
 }
-p {
+p, ul li, ol li  {
 	line-height: 22px;
 	font-size: .9em;
 }
 h1 {
-	font-family: 'Arvo', serif;
-	font-size:3em;
+	font-family: 'Playfair Display', serif;
+	font-size:40px;
 	text-transform:uppercase;
 	color:#fff;
 	font-weight: 400;
-	letter-spacing:12px;
-}
-@media all and (max-width: 680px) {
-	h1 {
-		letter-spacing:10px;
-	}
-}
-@media all and (max-width: 530px) {
-	h1 {
-		letter-spacing:4px;
-		font-size: 2.5em;
-	}
-}
-@media all and (max-width: 460px) {
-	h1 {
-		letter-spacing: 3px;
-	}
+	letter-spacing:5px;
 }
 h2 {
-	font-family: 'Arvo', serif;
+	font-family: 'Playfair Display', serif;
 	font-size:1.5em;
 	text-transform:uppercase;
-	font-weight: 400;
-	letter-spacing:12px;
-	color:#36303a;
+	font-weight: 900;
+	color:#999999;
 	margin:25px 0 10px 0;
+	border-bottom:3px solid #999999;
 }
 h3 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Arvo', serif;
 	font-size:1.3em;
-	color:#36303a;
-	margin:15px 0 5px 0;
+	font-weight:400;
+	color:#7D8C5A;
+	margin:25px 0 0 0;
 }
 h4 {
 	font-family: 'Arvo', serif;
 	font-size:1em;
-	font-weight: 400;
-	letter-spacing:1px;
-	color:#569071;
-	margin:15px 0 5px 0;
+	font-weight:400;
+	color:#7D8C5A;
+	margin:0px 0 10px 0;
 }
 h5 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Playfair Display', serif;
 	font-size:0.9em;
-	color:#fff;
+	font-weight:900;
+	color:#999999;
 }
 h6 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Arvo', serif;
 	font-size:0.8em;
+	font-weight:400;
 	color:#fff;
 }
 .center {
@@ -83,96 +72,46 @@ h6 {
 /*----NAVIGATION----*/
 .main-nav {
 	ul {
-		margin:0 auto;
-		width:490px;
 		padding:0;
+		text-align:center;
 	}
 	ul li {
 		display:inline-block;
-		font-family: 'Raleway', sans-serif;
+		font-family: 'Arvo', serif;
 		text-transform:lowercase;
 		font-size: 1.5em;
 		font-weight: 300;
-	}
-	ul li.first {
-		padding: 0 95px 0 35px;
-	}
-	ul li.middle {
-		padding:0;
-	}
-	ul li.last {
-		padding:0 0 0 95px;
-	}
-	@media all and (max-width: 700px) {
-		ul {
-			width:400px;
-		}
-		ul li.first {
-			padding: 0 55px 0 25px;
-		}
-		ul li.middle {
-			padding:0;
-		}
-		ul li.last {
-			padding:0 0 0 55px;
-		}
-	}
-	@media all and (max-width: 480px) {
-		ul {
-			width:380px;
-		}
-		ul li.first {
-			padding: 0 35px 0 25px;
-		}
-		ul li.middle {
-			padding:0;
-		}
-		ul li.last {
-			padding:0 0 0 35px;
-		}
-	}
-	@media all and (max-width: 380px) {
-		ul {
-			width:auto;
-			text-align:center;
-		}
-		ul li {
-			display:block;
-		}
-		ul li.first {
-			padding: 0;
-		}
-		ul li.last {
-			padding:0;
-		}
+		padding:0 15px;
 	}
 }
 /*----HOME PAGE----*/
 h1.title {
 	text-align: center;
-	margin: 150px auto 30px;
+	margin: 100px auto 30px;
 }
 h1.title a {
 	color:#fff;
-	font-weight:500;
-}
-h1.title a:hover {
-	font-weight:500;
-}
-
-h2.construction {
-	font-family: 'Raleway', sans-serif;
-	text-align: center;
-	color:#d1a77b;
-	margin:0 0 25px 0;
-	letter-spacing:normal;
-	text-transform:none;
+	font-weight:900;
+	&:hover {
+		text-shadow:none;
+	}
 }
 h4.about-title {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Arvo', serif;
 	color:#fff;
 	text-align: center;
-	// padding: 30px 250px;
+	font-weight:400;
+}
+h3 a {
+	@extend h3;
+	font-size:1em;
+	&:hover {
+		text-shadow: 0px 0px 2px #7D8C5A;
+	}
+}
+p.date {
+	margin:0;
+	font-size:.8em;
 }
 .about {
 	padding: 30px 250px;
