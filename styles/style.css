@@ -1,5 +1,63 @@
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+@keyframes hover-over {
+  0% {
+    padding: 10px;
+    left: 0px;
+    top: 0px;
+    opacity: 0.7; }
+  50% {
+    padding: 16px;
+    left: -6px;
+    top: -6px;
+    opacity: 1; }
+  100% {
+    padding: 13px;
+    left: -3px;
+    top: -3px;
+    opacity: 1; } }
+@-webkit-keyframes hover-over {
+  0% {
+    padding: 10px 0;
+    top: 0px;
+    opacity: 0.7; }
+  50% {
+    padding: 20px 0;
+    top: -6px;
+    opacity: 1; }
+  100% {
+    padding: 13px 0;
+    top: -3px;
+    opacity: 1; } }
+@keyframes hover-out {
+  0% {
+    padding: 13px;
+    left: -3px;
+    top: -3px;
+    opacity: 1; }
+  50% {
+    padding: 16px;
+    left: -6px;
+    top: -6px;
+    opacity: 1; }
+  100% {
+    padding: 10px;
+    left: 0px;
+    top: 0px;
+    opacity: 0.7; } }
+@-webkit-keyframes hover-out {
+  0% {
+    padding: 13px 0;
+    top: -3px;
+    opacity: 1; }
+  50% {
+    padding: 20px 0;
+    top: -6px;
+    opacity: 1; }
+  100% {
+    padding: 10px 0;
+    top: 0px;
+    opacity: 0.7; } }
 /*----GENERAL SETTINGS----*/
 body {
   font-family: 'Arvo', serif;
@@ -9,10 +67,10 @@ body {
 a {
   text-decoration: none;
   transition: all 1s ease;
-  color: #DBB97E; }
+  color: #D88D80; }
 
 a:hover {
-  text-shadow: 0px 0px 2px #DBB97E; }
+  text-shadow: 0px 0px 2px #D88D80; }
 
 p, ul li, ol li {
   line-height: 22px;
@@ -20,7 +78,7 @@ p, ul li, ol li {
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 40px;
+  font-size: 50px;
   text-transform: uppercase;
   color: #fff;
   font-weight: 400;
@@ -31,9 +89,9 @@ h2 {
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: 900;
-  color: #999999;
+  color: #999;
   margin: 25px 0 10px 0;
-  border-bottom: 3px solid #999999; }
+  border-bottom: 3px solid #999; }
 
 h3, h3 a {
   font-family: 'Arvo', serif;
@@ -53,7 +111,7 @@ h5 {
   font-family: 'Playfair Display', serif;
   font-size: 0.9em;
   font-weight: 900;
-  color: #999999; }
+  color: #999; }
 
 h6 {
   font-family: 'Arvo', serif;
@@ -68,34 +126,98 @@ h6 {
   max-width: 1070px;
   margin: 0 auto; }
 
-/*----NAVIGATION----*/
-.main-nav ul {
-  padding: 0;
-  text-align: center; }
-.main-nav ul li {
-  display: inline-block;
-  font-family: 'Arvo', serif;
-  text-transform: lowercase;
-  font-size: 1.5em;
-  font-weight: 300;
-  padding: 0 15px; }
+/*----STICKY HEADER----*/
+header {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s; }
+  header h1 {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  header h1.title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 0 30px; }
+  header h1.title a {
+    color: #fff;
+    font-weight: 900;
+    border: 3px solid #fff;
+    padding: 0 10px 3px 15px; }
+    header h1.title a:hover {
+      text-shadow: none; }
+  header ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  header ul li {
+    display: inline-block;
+    font-family: 'Arvo', serif;
+    text-transform: lowercase;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 0 15px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
 
-/*----HOME PAGE----*/
-h1.title {
-  text-align: center;
-  margin: 100px auto 30px; }
+header.smaller {
+  height: 75px;
+  background-color: rgba(204, 204, 204, 0.8); }
+  header.smaller .menu-wrapper {
+    width: 620px;
+    position: relative;
+    margin: 0 auto; }
+  header.smaller h1 {
+    font-size: 1.8em;
+    text-align: left;
+    float: left;
+    padding: 15px 0; }
+  header.smaller .main-nav {
+    float: left; }
+  header.smaller ul {
+    position: relative;
+    margin: 0;
+    padding: 25px 0 25px 15px; }
+    header.smaller ul li {
+      font-size: 1.2em;
+      float: left; }
 
-h1.title a {
-  color: #fff;
-  font-weight: 900; }
-  h1.title a:hover {
-    text-shadow: none; }
+.about {
+  padding: 265px 250px 30px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
+.small-header.about {
+  padding-top: 200px; }
+
+/*----HOME PAGE STYLES----*/
 h4.about-title {
   font-family: 'Arvo', serif;
   color: #fff;
   text-align: center;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-bottom: 50px; }
 
 h3 a {
   font-size: 1em; }
@@ -106,26 +228,12 @@ p.date {
   margin: 0;
   font-size: .8em; }
 
-.about {
-  padding: 30px 250px; }
+.education {
+  position: relative; }
 
-@media all and (max-width: 1080px) {
-  .about {
-    padding: 30px 200px; } }
-@media all and (max-width: 880px) {
-  .about {
-    padding: 30px 150px; } }
-@media all and (max-width: 680px) {
-  .about {
-    padding: 30px 100px; } }
-@media all and (max-width: 480px) {
-  .about {
-    padding: 30px 50px; } }
-@media all and (max-width: 300px) {
-  .about {
-    padding: 30px auto; } }
-/*----SOCIAL MEDIA----*/
+/*----FOOTER----*/
 .contact {
+  position: relative;
   padding: 0 0 50px 0; }
   .contact ul {
     margin: 0 auto;
@@ -136,12 +244,127 @@ p.date {
     margin: 0 5px 0 5px;
     color: #569071; }
   .contact img {
-    transition: all 1s ease; }
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
   .contact img:hover {
     -webkit-filter: brightness(120%);
     -moz-filter: brightness(120%); }
   .contact .email {
     width: 167px;
     margin: 25px auto; }
+
+.button-wrapper {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto; }
+  .button-wrapper .diamond {
+    border: 3px solid #fff;
+    transform: rotate(45deg);
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.4); }
+  .button-wrapper a {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    position: relative;
+    left: 7px;
+    bottom: 45px;
+    z-index: 99;
+    width: 40px; }
+  .button-wrapper .button-wrapper {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 60%;
+    right: 0; }
+  .button-wrapper .scroll-top {
+    animation-name: hover-out;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: hover-out;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    position: relative;
+    bottom: 0;
+    right: 0; }
+  .button-wrapper .scroll-top:hover {
+    animation-name: hover-over;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: hover-over;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards; }
+
+@media all and (max-width: 1080px) {
+  .about {
+    padding-left: 200px;
+    padding-right: 200px; } }
+@media all and (max-width: 880px) {
+  .about {
+    padding-left: 15%;
+    padding-right: 15%; } }
+@media all and (max-width: 650px) {
+  header.smaller .menu-wrapper {
+    width: 100%;
+    max-width: 542px; }
+  header.smaller h1 {
+    font-size: 1.5em; }
+  header.smaller ul li {
+    font-size: 1em; } }
+@media all and (max-width: 600px) {
+  body {
+    font-size: 14px; }
+
+  h1 {
+    font-size: 38px; }
+
+  h1.title {
+    padding-top: 20%; }
+
+  header.smaller .menu-wrapper {
+    max-width: 500px; }
+  header.smaller h1 {
+    font-size: 1.2em; }
+  header.smaller ul li {
+    font-size: .9em; } }
+@media all and (max-width: 550px) {
+  header.smaller {
+    background-color: rgba(153, 153, 153, 0.9); }
+    header.smaller h1 {
+      float: none;
+      text-align: center; }
+    header.smaller .main-nav {
+      float: none; }
+    header.smaller ul {
+      padding: 0; }
+      header.smaller ul li {
+        float: none; }
+        header.smaller ul li a {
+          color: #fff; }
+
+  .about {
+    padding-top: 250px; } }
+@media all and (max-width: 450px) {
+  h1 {
+    font-size: 28px; }
+
+  header ul li {
+    font-size: 1em; }
+
+  .about {
+    padding-top: 230px; } }
+@media all and (max-width: 350px) {
+  h1 {
+    font-size: 18px; }
+
+  .about {
+    padding-top: 200px; } }
 
 /*# sourceMappingURL=style.css.map */
