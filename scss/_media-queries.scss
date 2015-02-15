@@ -22,6 +22,7 @@
 	    ul {
 	    	li {
 	    		font-size:1em;
+	    		height:1em;
 	    	}
 	    }
 	}
@@ -46,6 +47,7 @@
 	    ul {
 	    	li {
 	    		font-size:.9em;
+	    		height:.9em;
 	    	}
 	    }
 	}
@@ -56,6 +58,7 @@
 @media all and (max-width: 550px) {
 	header.smaller {
 		background-color:rgba(153, 153, 153, .9);
+		padding: 0 0 10px; 
 		.menu-wrapper {
 			//max-width: 250px;
 		}
@@ -87,6 +90,7 @@
 	}
 	header ul li {
 		font-size:1em;
+		height:1em;
 	}
 	.about {
 		padding-top:230px;

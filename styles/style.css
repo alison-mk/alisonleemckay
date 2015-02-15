@@ -195,7 +195,8 @@ header.smaller {
   header.smaller ul {
     position: relative;
     margin: 0;
-    padding: 25px 0 25px 15px; }
+    padding: 25px 0 25px 15px;
+    height: 22px; }
     header.smaller ul li {
       font-size: 1.2em;
       float: left; }
@@ -317,7 +318,8 @@ p.date {
   header.smaller h1 {
     font-size: 1.5em; }
   header.smaller ul li {
-    font-size: 1em; } }
+    font-size: 1em;
+    height: 1em; } }
 @media all and (max-width: 600px) {
   body {
     font-size: 14px; }
@@ -333,10 +335,12 @@ p.date {
   header.smaller h1 {
     font-size: 1.2em; }
   header.smaller ul li {
-    font-size: .9em; } }
+    font-size: .9em;
+    height: .9em; } }
 @media all and (max-width: 550px) {
   header.smaller {
-    background-color: rgba(153, 153, 153, 0.9); }
+    background-color: rgba(153, 153, 153, 0.9);
+    padding: 0 0 10px; }
     header.smaller h1 {
       float: none;
       text-align: center; }
@@ -356,7 +360,8 @@ p.date {
     font-size: 28px; }
 
   header ul li {
-    font-size: 1em; }
+    font-size: 1em;
+    height: 1em; }
 
   .about {
     padding-top: 230px; } }
