@@ -1,24 +1,23 @@
-			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+			<footer class="footer contact" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 				<div id="inner-footer" class="wrap cf">
 
-					<nav role="navigation">
-						<?php wp_nav_menu(array(
-    					'container' => 'div',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
-    					'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
-    					'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
-    					'menu_class' => 'nav footer-nav cf',            // adding custom nav class
-    					'theme_location' => 'footer-links',             // where it's located in the theme
-    					'before' => '',                                 // before the menu
-    					'after' => '',                                  // after the menu
-    					'link_before' => '',                            // before each link
-    					'link_after' => '',                             // after each link
-    					'depth' => 0,                                   // limit the depth of the nav
-    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
-						)); ?>
-					</nav>
-
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+					<ul>
+						<li class="facebook"><a href="http://www.facebook.com/mckay.ali" target="_blank"><img src="/graphics/facebook.png"></a></li>
+						<li class="linkedin"><a href="http://www.linkedin.com/pub/alison-mckay/35/240/6b7/" target="_blank"><img src="/graphics/linkedin.png"></a></li>
+						<li class="instagram"><a href="http://instagram.com/amckayay" target="_blank"><img src="/graphics/instagram.png"></a></li>
+						<!-- <li class="github"><a href=""><img src="/graphics/github.png"></a></li> -->
+						<li class="google"><a href="http://plus.google.com/115922726853084998223/about" target="_blank"><img src="/graphics/google.png"></a></li>
+					</ul>
+					<ul class="email">
+						<li><a href="mailto:mckay.ali@gmail.com" target="_blank">mckay.ali@gmail.com</a></li>
+					</ul>
+					<div class="button-wrapper">
+						<div class="scroll-top">
+							<div class="diamond"></div>
+							<a href="#top" class="anchor">back to top</a>
+						</div>
+					</div>
 
 				</div>
 
