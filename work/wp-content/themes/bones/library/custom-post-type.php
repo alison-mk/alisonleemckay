@@ -23,7 +23,7 @@ function bones_flush_rewrite_rules() {
 }
 
 // let's create the function for the custom type
-function custom_post_example() { 
+function project_post_type () { 
 	// creating (registering) the custom type 
 	register_post_type( 'projects', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */
 		// let's now add all the options for this post type
@@ -60,14 +60,14 @@ function custom_post_example() {
 	); /* end of register post type */
 	
 	/* this adds your post categories to your custom post type */
-	register_taxonomy_for_object_type( 'category', 'custom_type' );
+	register_taxonomy_for_object_type( 'category', 'projects' );
 	/* this adds your post tags to your custom post type */
-	register_taxonomy_for_object_type( 'post_tag', 'custom_type' );
+	register_taxonomy_for_object_type( 'post_tag', 'projects' );
 	
 }
 
 	// adding the function to the Wordpress init
-	add_action( 'init', 'custom_post_example');
+	add_action( 'init', 'project_post_type');
 	
 	/*
 	for more information on taxonomies, go here:
@@ -93,7 +93,7 @@ function custom_post_example() {
 			'show_admin_column' => true, 
 			'show_ui' => true,
 			'query_var' => true,
-			'rewrite' => array( 'slug' => 'custom-slug' ),
+			'rewrite' => array( 'slug' => 'project-slug' ),
 		)
 	);
 	
