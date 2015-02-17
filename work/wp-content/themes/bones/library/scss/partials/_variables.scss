@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Alison McKay, Front End Developer 
+Author: Alison McKay
 
 Stylesheet: Variables
 
@@ -11,11 +11,14 @@ No one likes a mess.
 
 ******************************************************************/
 
-/*********************
-COLORS
-Need help w/ choosing your colors? Try this site out:
-http://0to255.com/
-*********************/
+$orange:#F2BA7F;
+$green:#7D8C5A;
+$navy:#3C5B84;
+$gray:#999;
+$white-op:rgba(255,255,255,.4);
+$grey-op:rgba(204,204,204,.8);
+$green-op:rgba(125,140,90,.7);
+$pink:#D88D80;
 
 $alert-yellow:      #ebe16f;
 $alert-red:         #fbe3e4;
@@ -26,26 +29,19 @@ $black:             #323944;
 $white:             #fff;
 
 $light-gray:        #f8f9fa;
-$gray:              #eaedf2;
-$text-color:        #5c6b80;
+//$gray:              #eaedf2;
+$text-color:        $navy;
 $meta-gray:         #9fa6b4;
 
 $tan:               #eceee5;
 
-$green:             #7dd667;
+//$green:             #7dd667;
 
 $bones-pink:        #f01d4f;
 $blue:              #2980b9;
 
-$link-color:        $bones-pink;
+$link-color:        $pink;
 $link-hover:        darken($link-color, 9%);
 
 $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;
-
-
-/*
-Here's a great tutorial on how to
-use color variables properly:
-http://sachagreif.com/sass-color-variables/
-*/
