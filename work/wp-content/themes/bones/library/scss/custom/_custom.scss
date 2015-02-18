@@ -1,0 +1,145 @@
+/*----STICKY HEADER----*/
+// Header, general styles
+header {
+    width: 100%;
+    //height: 300px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+    h1 {
+	    -webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+	    -ms-transition: all 0.3s;
+	    -o-transition: all 0.3s;
+	    transition: all 0.3s;
+    }
+	h1.title {
+		text-align: center;
+		margin: 0 auto;
+		padding:100px 0 30px;
+	}
+	h1.title a {
+		color:#fff;
+		font-weight:900;
+		border:3px solid #fff;
+		padding:0 10px 3px 15px;
+		&:hover {
+			text-shadow:none;
+		}
+	}
+	ul {
+		padding:0;
+		margin:0;
+		text-align:center;
+	    -webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+	    -ms-transition: all 0.3s;
+	    -o-transition: all 0.3s;
+	    transition: all 0.3s;
+	}
+	ul li {
+		display:inline-block;
+		font-family: 'Arvo', serif;
+		text-transform:lowercase;
+		font-size: 1.5em;
+		font-weight: 300;
+		padding:0 15px;
+	    -webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+	    -ms-transition: all 0.3s;
+	    -o-transition: all 0.3s;
+	    transition: all 0.3s;
+	}
+}
+// Header when sticky
+header.smaller {
+    height: 75px;
+    background-color:$grey-op;
+    .menu-wrapper {
+		width: 620px;
+		position: relative;
+		margin:0 auto;
+    }
+    h1 {
+    	font-size:1.8em;
+    	text-align:left;
+    	float:left;
+    	padding:15px 0;
+    }
+    .main-nav {
+    	float:left;
+    }
+    ul {
+    	position:relative;
+    	margin:0;
+    	padding:25px 0 25px 15px;
+    	height:22px;
+    	li {
+    		font-size:1.2em;
+    		float: left;
+    	}
+    }
+}
+// Content below header
+.about {
+	padding: 265px 250px 30px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+// Content below header when sticky
+.small-header.about {
+	padding-top:200px;
+}
+
+.project-overview {
+	ul {
+		li {
+			a {
+				width: 200px;
+				height: 200px;
+				display: block;
+				background-size: cover;				
+			}
+		}
+	}
+}
+
+/*----FOOTER----*/
+.contact {
+	position:relative;
+	padding:0 0 50px 0; 
+	ul {
+		margin: 0 auto;
+		width: 182px;
+		padding: 0;
+	}
+	ul li {
+		display:inline-block;
+		margin:0 5px 0 5px;
+		color: #569071;
+	}
+	img {
+		-webkit-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		transition: all .5s ease;
+	}
+	img:hover {
+		-webkit-filter: brightness(120%);
+		-moz-filter: brightness(120%);
+	}
+	.email {
+		width:167px;
+		margin:25px auto;
+	}
+}
