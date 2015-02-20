@@ -27,11 +27,7 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article">
 
-								<header class="article-header">
-
-									<h1 class="single-title custom-post-type-title"><?php the_title(); ?></h1>
-
-								</header>
+								<h2 class="single-title custom-post-type-title"><?php the_title(); ?></h2>
 
 								<section class="entry-content cf">
 									<?php

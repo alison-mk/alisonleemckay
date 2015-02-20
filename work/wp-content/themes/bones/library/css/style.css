@@ -605,200 +605,231 @@ These are the widths for the mobile grid.
 There are four types, but you can add or customize
 them however you see fit.
 */
-@media (max-width: 767px) {
+@media (max-width: 449px) {
   .m-all {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 100%;
     padding-right: 0; }
 
   .m-1of2 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 50%; }
 
   .m-1of3 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 33.33%; }
 
   .m-2of3 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 66.66%; }
 
   .m-1of4 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 25%; }
 
   .m-3of4 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
+    width: 75%; } }
+@media (min-width: 450px) and (max-width: 599px) {
+  .mt-all {
+    float: left;
+    padding-right: 15px;
+    width: 100%;
+    padding-right: 0; }
+
+  .mt-1of2 {
+    float: left;
+    padding-right: 15px;
+    width: 50%; }
+
+  .mt-1of3 {
+    float: left;
+    padding-right: 15px;
+    width: 33.33%; }
+
+  .m-2of3 {
+    float: left;
+    padding-right: 15px;
+    width: 66.66%; }
+
+  .mt-1of4 {
+    float: left;
+    padding-right: 15px;
+    width: 25%; }
+
+  .mt-3of4 {
+    float: left;
+    padding-right: 15px;
     width: 75%; } }
 /* Portrait tablet to landscape */
-@media (min-width: 768px) and (max-width: 1029px) {
+@media (min-width: 600px) and (max-width: 1029px) {
   .t-all {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 100%;
     padding-right: 0; }
 
   .t-1of2 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 50%; }
 
   .t-1of3 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 33.33%; }
 
   .t-2of3 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 66.66%; }
 
   .t-1of4 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 25%; }
 
   .t-3of4 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 75%; }
 
   .t-1of5 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 20%; }
 
   .t-2of5 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 40%; }
 
   .t-3of5 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 60%; }
 
   .t-4of5 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 80%; } }
 /* Landscape to small desktop */
 @media (min-width: 1030px) {
   .d-all {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 100%;
     padding-right: 0; }
 
   .d-1of2 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 50%; }
 
   .d-1of3 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 33.33%; }
 
   .d-2of3 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 66.66%; }
 
   .d-1of4 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 25%; }
 
   .d-3of4 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 75%; }
 
   .d-1of5 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 20%; }
 
   .d-2of5 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 40%; }
 
   .d-3of5 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 60%; }
 
   .d-4of5 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 80%; }
 
   .d-1of6 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 16.6666666667%; }
 
   .d-1of7 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 14.2857142857%; }
 
   .d-2of7 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 28.5714286%; }
 
   .d-3of7 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 42.8571429%; }
 
   .d-4of7 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 57.1428572%; }
 
   .d-5of7 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 71.4285715%; }
 
   .d-6of7 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 85.7142857%; }
 
   .d-1of8 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 12.5%; }
 
   .d-1of9 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 11.1111111111%; }
 
   .d-1of10 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 10%; }
 
   .d-1of11 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 9.09090909091%; }
 
   .d-1of12 {
     float: left;
-    padding-right: 0.75em;
+    padding-right: 15px;
     width: 8.33%; } }
 /*********************
 IMPORTING MODULES
@@ -1427,7 +1458,6 @@ POSTS & CONTENT STYLES
 
 /* entry content */
 .entry-content {
-  padding: 1.5em 1.5em 0;
   /*
   image alignment on a screen this size may be
   a bit difficult. It's set to start aligning
@@ -2169,22 +2199,52 @@ header.smaller {
       font-size: 1.2em;
       float: left; }
 
-.about {
-  padding: 265px 250px 30px;
+#inner-content {
+  padding-top: 265px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
-.small-header.about {
+.small-header#inner-content {
   padding-top: 200px; }
 
-.project-overview ul li a {
-  width: 200px;
-  height: 200px;
-  display: block;
-  background-size: cover; }
+.project-overview h2.page-title {
+  margin-right: 15px; }
+.project-overview ul li {
+  padding-bottom: 15px; }
+  .project-overview ul li a {
+    height: 186px;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    border: 3px solid #999;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .project-overview ul li a h3 {
+      color: #fff;
+      font-family: "Playfair Display", Times, serif;
+      background-color: #999;
+      margin: 0;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: -100%;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+    .project-overview ul li a:hover {
+      border: 6px solid #999; }
+      .project-overview ul li a:hover h3 {
+        left: 0; }
 
 /*----FOOTER----*/
 .contact {
@@ -2210,36 +2270,26 @@ header.smaller {
     width: 167px;
     margin: 25px auto; }
 
-@media all and (max-width: 1080px) {
-  .about {
-    padding-left: 200px;
-    padding-right: 200px; } }
-@media all and (max-width: 880px) {
-  .about {
-    padding-left: 15%;
-    padding-right: 15%; } }
 @media all and (max-width: 650px) {
   header.smaller .menu-wrapper {
     width: 100%;
     max-width: 542px; }
-  header.smaller h1 {
+  header.smaller h1.title a {
     font-size: 1.5em; }
   header.smaller ul li {
     font-size: 1em;
     height: 1em; } }
-@media all and (max-width: 600px) {
+@media all and (max-width: 599px) {
   body {
     font-size: 14px; }
 
-  h1 {
-    font-size: 38px; }
-
-  h1.title {
+  h1.title a {
+    font-size: 38px;
     padding-top: 20%; }
 
   header.smaller .menu-wrapper {
     max-width: 500px; }
-  header.smaller h1 {
+  header.smaller h1.title a {
     font-size: 1.2em; }
   header.smaller ul li {
     font-size: .9em;
@@ -2248,7 +2298,7 @@ header.smaller {
   header.smaller {
     background-color: rgba(153, 153, 153, 0.9);
     padding: 0 0 10px; }
-    header.smaller h1 {
+    header.smaller h1.title a {
       float: none;
       text-align: center; }
     header.smaller .main-nav {
@@ -2260,23 +2310,27 @@ header.smaller {
         header.smaller ul li a {
           color: #fff; }
 
-  .about {
+  #inner-content {
     padding-top: 250px; } }
 @media all and (max-width: 450px) {
-  h1 {
+  h1.title a {
     font-size: 28px; }
 
   header ul li {
     font-size: 1em;
     height: 1em; }
 
-  .about {
-    padding-top: 230px; } }
+  #inner-content {
+    padding-top: 230px; }
+
+  .project-overview a {
+    max-width: 186px;
+    margin: 0 auto; } }
 @media all and (max-width: 350px) {
-  h1 {
+  h1.title a {
     font-size: 18px; }
 
-  .about {
+  #inner-content {
     padding-top: 200px; } }
 
 /*# sourceMappingURL=style.css.map */

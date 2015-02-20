@@ -25,11 +25,7 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-								<header class="article-header">
-
-									<h1 class="page-title"><?php the_title(); ?></h1>
-
-								</header>
+								<h2 class="page-title"><?php the_title(); ?></h2>
 
 								<section class="entry-content cf" itemprop="articleBody">
 									<?php
@@ -43,11 +39,9 @@
 											global $post;
 											$post = $project;
 										?>
-										<li class="m-all t-1of3 d-1of5">
+										<li class="m-all mt-1of2 t-1of3 d-1of5">
 											<a href="<?php the_permalink(); ?>"  class="thumbnail" style="background-image:url(<?php the_field('thumbnail_image'); ?>);">
-												<div class="overlay">
-													<h3><?php the_title(); ?></h3>
-												</div>
+												<h3><?php the_title(); ?></h3>
 											</a>
 										</li>
 										<?php } ?>							
