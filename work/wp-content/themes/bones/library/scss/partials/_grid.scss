@@ -27,7 +27,7 @@ over your project's layout.
 // using a mixin since we can't use placeholder selectors
 @mixin grid-col {
   float: left;
-  padding-right: 0.75em;
+  padding-right: 15px;
 
 }
 
@@ -44,7 +44,7 @@ These are the widths for the mobile grid.
 There are four types, but you can add or customize
 them however you see fit.
 */
-@media (max-width: 767px) {
+@media (max-width: 449px) {
 
   .m-all {
     @include grid-col;
@@ -79,9 +79,43 @@ them however you see fit.
 
 } // end mobile styles
 
+@media (min-width: 450px) and (max-width: 599px) {
+
+  .mt-all {
+    @include grid-col;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .mt-1of2 {
+    @include grid-col;
+    width: 50%;
+  }
+
+  .mt-1of3 {
+    @include grid-col;
+    width: 33.33%;
+  }
+
+  .m-2of3 {
+    @include grid-col;
+    width: 66.66%;
+  }
+
+  .mt-1of4 {
+    @include grid-col;
+    width: 25%;
+  }
+
+  .mt-3of4 {
+    @include grid-col;
+    width: 75%;
+  }
+
+} // end mobile styles
 
 /* Portrait tablet to landscape */
-@media (min-width: 768px) and (max-width: 1029px) {
+@media (min-width: 600px) and (max-width: 1029px) {
 
   .t-all {
     @include grid-col;
