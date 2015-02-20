@@ -13,27 +13,6 @@ header {
     -ms-transition: height 0.3s;
     -o-transition: height 0.3s;
     transition: height 0.3s;
-    h1 {
-	    -webkit-transition: all 0.3s;
-	    -moz-transition: all 0.3s;
-	    -ms-transition: all 0.3s;
-	    -o-transition: all 0.3s;
-	    transition: all 0.3s;
-    }
-	h1.title {
-		text-align: center;
-		margin: 0 auto;
-		padding:100px 0 30px;
-	}
-	h1.title a {
-		color:#fff;
-		font-weight:900;
-		border:3px solid #fff;
-		padding:0 10px 3px 15px;
-		&:hover {
-			text-shadow:none;
-		}
-	}
 	ul {
 		padding:0;
 		margin:0;
@@ -48,8 +27,8 @@ header {
 		display:inline-block;
 		font-family: 'Arvo', serif;
 		text-transform:lowercase;
-		font-size: 1.5em;
-		font-weight: 300;
+		font-size: 24px;
+		font-weight: 400;
 		padding:0 15px;
 	    -webkit-transition: all 0.3s;
 	    -moz-transition: all 0.3s;
@@ -104,6 +83,9 @@ header.smaller {
 .project-overview {
 	h2.page-title {
 		margin-right:15px;
+	}
+	a:hover {
+		text-shadow:none;
 	}
 	ul {
 		li {

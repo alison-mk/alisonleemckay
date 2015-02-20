@@ -1241,7 +1241,6 @@ body {
   line-height: 1.5;
   color: #3C5B84;
   background-color: #ccc;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 /********************
@@ -1328,7 +1327,8 @@ h1, .h1 {
   line-height: 1.333em;
   text-transform: uppercase;
   color: #fff;
-  font-weight: 400; }
+  font-weight: 400;
+  letter-spacing: 5px; }
 
 h2, .h2 {
   font-size: 1.75em;
@@ -1365,12 +1365,24 @@ h6, .h6 {
 /*********************
 HEADER STYLES
 *********************/
-.header h1.title a {
-  color: #fff;
+header h1 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 100px 0 30px;
   font-size: 50px;
-  font-weight: 900;
-  border: 3px solid #fff;
-  padding: 0 10px 3px 15px; }
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  header h1 a {
+    color: #fff;
+    font-weight: 900;
+    border: 3px solid #fff;
+    padding: 0 10px 3px 15px; }
+    header h1 a:hover, header h1 a:link, header h1 a:visited, header h1 a:focus {
+      text-shadow: none;
+      color: #fff; }
 
 #logo {
   margin: 0.75em 0; }
@@ -2137,23 +2149,6 @@ header {
   -ms-transition: height 0.3s;
   -o-transition: height 0.3s;
   transition: height 0.3s; }
-  header h1 {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
-  header h1.title {
-    text-align: center;
-    margin: 0 auto;
-    padding: 100px 0 30px; }
-  header h1.title a {
-    color: #fff;
-    font-weight: 900;
-    border: 3px solid #fff;
-    padding: 0 10px 3px 15px; }
-    header h1.title a:hover {
-      text-shadow: none; }
   header ul {
     padding: 0;
     margin: 0;
@@ -2167,8 +2162,8 @@ header {
     display: inline-block;
     font-family: 'Arvo', serif;
     text-transform: lowercase;
-    font-size: 1.5em;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 400;
     padding: 0 15px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -2212,6 +2207,8 @@ header.smaller {
 
 .project-overview h2.page-title {
   margin-right: 15px; }
+.project-overview a:hover {
+  text-shadow: none; }
 .project-overview ul li {
   padding-bottom: 15px; }
   .project-overview ul li a {
@@ -2271,36 +2268,41 @@ header.smaller {
     margin: 25px auto; }
 
 @media all and (max-width: 650px) {
+  header ul li {
+    font-size: 21px; }
+
   header.smaller .menu-wrapper {
     width: 100%;
     max-width: 542px; }
-  header.smaller h1.title a {
+  header.smaller h1 {
     font-size: 1.5em; }
   header.smaller ul li {
-    font-size: 1em;
-    height: 1em; } }
+    font-size: 16px;
+    font-size: 16px; } }
 @media all and (max-width: 599px) {
   body {
     font-size: 14px; }
 
-  h1.title a {
-    font-size: 38px;
-    padding-top: 20%; }
+  header h1 {
+    font-size: 38px; }
 
   header.smaller .menu-wrapper {
     max-width: 500px; }
-  header.smaller h1.title a {
-    font-size: 1.2em; }
+  header.smaller h1 {
+    font-size: 1.2em;
+    margin-top: 7px; }
   header.smaller ul li {
-    font-size: .9em;
-    height: .9em; } }
+    font-size: 14px;
+    height: 14px; } }
 @media all and (max-width: 550px) {
   header.smaller {
     background-color: rgba(153, 153, 153, 0.9);
+    height: 85px;
     padding: 0 0 10px; }
-    header.smaller h1.title a {
+    header.smaller h1 {
       float: none;
-      text-align: center; }
+      text-align: center;
+      margin-top: 0; }
     header.smaller .main-nav {
       float: none; }
     header.smaller ul {
@@ -2313,21 +2315,21 @@ header.smaller {
   #inner-content {
     padding-top: 250px; } }
 @media all and (max-width: 450px) {
-  h1.title a {
+  header h1 {
     font-size: 28px; }
 
   header ul li {
-    font-size: 1em;
-    height: 1em; }
+    font-size: 14px;
+    height: 14px; }
 
   #inner-content {
     padding-top: 230px; }
 
-  .project-overview a {
+  .project-overview h2.page-title, .project-overview a {
     max-width: 186px;
     margin: 0 auto; } }
 @media all and (max-width: 350px) {
-  h1.title a {
+  header h1 {
     font-size: 18px; }
 
   #inner-content {

@@ -1,16 +1,19 @@
 @media all and (max-width: 650px) {
+	header ul li {
+		font-size: 21px;
+	}
 	header.smaller {
 		.menu-wrapper {
 			width: 100%;
 			max-width:542px;
 		}
-	    h1.title a {
+	    h1 {
 	    	font-size:1.5em;
 	    }
 	    ul {
 	    	li {
-	    		font-size:1em;
-	    		height:1em;
+	    		font-size: 16px;
+	    		font-size: 16px;
 	    	}
 	    }
 	}
@@ -19,21 +22,21 @@
 	body {
 		font-size:14px;
 	}
-	h1.title a {
+	header h1 {
 		font-size:38px;
-		padding-top:20%;
 	}
 	header.smaller {
 		.menu-wrapper {
 			max-width:500px;
 		}
-	    h1.title a {
+	    h1 {
 	    	font-size:1.2em;
+	    	margin-top: 7px;
 	    }
 	    ul {
 	    	li {
-	    		font-size:.9em;
-	    		height:.9em;
+	    		font-size: 14px;
+	    		height:14px;
 	    	}
 	    }
 	}
@@ -41,13 +44,12 @@
 @media all and (max-width: 550px) {
 	header.smaller {
 		background-color:rgba(153, 153, 153, .9);
+		height:85px;
 		padding: 0 0 10px; 
-		.menu-wrapper {
-			//max-width: 250px;
-		}
-	    h1.title a {
+	    h1 {
 	    	float:none;
 	    	text-align: center;
+	    	margin-top:0;
 	    }
 	    .main-nav {
 	    	float:none;
@@ -68,25 +70,25 @@
 	}
 }
 @media all and (max-width: 450px) {
-	h1.title a {
+	header h1 {
 		font-size:28px;
 	}
 	header ul li {
-		font-size:1em;
-		height:1em;
+		font-size:14px;
+		height:14px;
 	}
 	#inner-content {
 		padding-top:230px;
 	}
 	.project-overview {
-		a {
+		h2.page-title, a {
 			max-width:186px;
 			margin:0 auto;
 		}
 	}
 }
 @media all and (max-width: 350px) {
-	h1.title a {
+	header h1 {
 		font-size:18px;
 	}
 	#inner-content {

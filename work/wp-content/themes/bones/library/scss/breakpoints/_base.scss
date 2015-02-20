@@ -21,7 +21,7 @@ body {
 	line-height: 1.5;
 	color: $text-color;
 	background-color: #ccc;
-  	-webkit-font-smoothing: antialiased;
+  	//-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
 }
 
@@ -125,7 +125,7 @@ h1, .h1 {
 	text-transform:uppercase;
 	color:#fff;
 	font-weight: 400;
-
+	letter-spacing:5px;
 }
 
 h2, .h2 {
@@ -169,14 +169,27 @@ h6, .h6 {
 HEADER STYLES
 *********************/
 
-.header {
-	h1.title {
+header {
+	h1 {
+		text-align: center;
+		margin: 0 auto;
+		padding: 100px 0 30px;	
+		font-size:50px;	
+	    
+	    -webkit-transition: all 0.3s ease;
+	    -moz-transition: all 0.3s ease;
+	    -ms-transition: all 0.3s ease;
+	    -o-transition: all 0.3s ease;
+	    transition: all 0.3s ease;
 		a {
-			color:$white;
-			font-size:50px;
-			font-weight:900;
-			border:3px solid #fff;
-			padding:0 10px 3px 15px;
+			color: #fff;
+			font-weight: 900;
+			border: 3px solid #fff;
+			padding: 0 10px 3px 15px;
+			&:hover, &:link, &:visited, &:focus {
+				text-shadow:none;
+				color:#fff;
+			}
 		}
 	}
 }
