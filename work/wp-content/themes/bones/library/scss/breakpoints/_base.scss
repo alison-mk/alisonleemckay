@@ -79,6 +79,11 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 
+a {
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+}
 a, a:visited {
 	color: $link-color;
 	text-decoration:none;
@@ -102,7 +107,6 @@ a, a:visited {
 		so it basically works like the :hover selector
 		for mobile devices.
 		*/
-		color: $link-color;
 	}
 }
 

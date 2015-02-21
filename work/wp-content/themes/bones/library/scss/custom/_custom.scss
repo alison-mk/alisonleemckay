@@ -80,6 +80,7 @@ header.smaller {
 	padding-top:200px;
 }
 
+// Project overview page styles
 .project-overview {
 	h2.page-title {
 		margin-right:15px;
@@ -133,6 +134,36 @@ header.smaller {
 	}
 }
 
+// Project detail page styles
+.project-detail {
+	max-width:670px;
+	margin:0 auto;
+	h2 {
+		margin-bottom:25px;
+	}
+	h5 a {
+		border:3px solid $green;
+		color:$green;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		font-size:16px;
+		padding:8px 10px;
+		float:left;
+		&:hover, &:active, &:focus {
+			text-shadow:none;
+			background-color:$green;
+			color:#fff;
+		}
+	}
+	h5:first-child a {
+		margin-right:15px;
+	}
+	.footer-cta {
+		max-width:318px;
+		margin:0 auto;
+	}
+}
+
 /*----FOOTER----*/
 .contact {
 	position:relative;
@@ -158,7 +189,7 @@ header.smaller {
 		-moz-filter: brightness(120%);
 	}
 	.email {
-		width:167px;
+		width:186px;
 		margin:25px auto;
 	}
 }

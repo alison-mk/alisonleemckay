@@ -1292,6 +1292,11 @@ LAYOUT & GRID STYLES
 /*********************
 LINK STYLES
 *********************/
+a {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease; }
+
 a, a:visited {
   color: #D88D80;
   text-decoration: none;
@@ -1309,8 +1314,7 @@ a, a:visited {
     this highlights links on iPhones/iPads.
     so it basically works like the :hover selector
     for mobile devices.
-    */
-    color: #D88D80; }
+    */ }
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
@@ -2243,6 +2247,29 @@ header.smaller {
       .project-overview ul li a:hover h3 {
         left: 0; }
 
+.project-detail {
+  max-width: 670px;
+  margin: 0 auto; }
+  .project-detail h2 {
+    margin-bottom: 25px; }
+  .project-detail h5 a {
+    border: 3px solid #7D8C5A;
+    color: #7D8C5A;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding: 8px 10px;
+    float: left; }
+    .project-detail h5 a:hover, .project-detail h5 a:active, .project-detail h5 a:focus {
+      text-shadow: none;
+      background-color: #7D8C5A;
+      color: #fff; }
+  .project-detail h5:first-child a {
+    margin-right: 15px; }
+  .project-detail .footer-cta {
+    max-width: 318px;
+    margin: 0 auto; }
+
 /*----FOOTER----*/
 .contact {
   position: relative;
@@ -2264,7 +2291,7 @@ header.smaller {
     -webkit-filter: brightness(120%);
     -moz-filter: brightness(120%); }
   .contact .email {
-    width: 167px;
+    width: 186px;
     margin: 25px auto; }
 
 @media all and (max-width: 650px) {

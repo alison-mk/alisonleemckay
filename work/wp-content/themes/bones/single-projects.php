@@ -34,6 +34,10 @@
 										// the content (pretty self explanatory huh)
 										the_content();
 									?>
+									<div class="footer-cta">
+										<h5><a>Visit site</a></h5>
+										<h5><a href="/">See more work</a></h5>
+									</div>
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">

@@ -18,7 +18,9 @@ body {
 }
 a {
 	text-decoration:none;
-	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
 	color:$pink;
 }
 a:hover {
@@ -91,13 +93,11 @@ header {
     z-index: 9;
     -webkit-transition: height 0.3s;
     -moz-transition: height 0.3s;
-    -ms-transition: height 0.3s;
     -o-transition: height 0.3s;
     transition: height 0.3s;
     h1 {
 	    -webkit-transition: all 0.3s ease;
 	    -moz-transition: all 0.3s ease;
-	    -ms-transition: all 0.3s ease;
 	    -o-transition: all 0.3s ease;
 	    transition: all 0.3s ease;
     }
@@ -113,6 +113,10 @@ header {
 		padding:0 10px 3px 15px;
 		&:hover {
 			text-shadow:none;
+			color:#fff;
+		}
+		&:visited:link, &:hover, &:link, &:active, &:focus {
+			color:#fff;
 		}
 	}
 	ul {
@@ -121,7 +125,6 @@ header {
 		text-align:center;
 	    -webkit-transition: all 0.3s;
 	    -moz-transition: all 0.3s;
-	    -ms-transition: all 0.3s;
 	    -o-transition: all 0.3s;
 	    transition: all 0.3s;
 	}
@@ -134,7 +137,6 @@ header {
 		padding:0 15px;
 	    -webkit-transition: all 0.3s;
 	    -moz-transition: all 0.3s;
-	    -ms-transition: all 0.3s;
 	    -o-transition: all 0.3s;
 	    transition: all 0.3s;
 	}
@@ -173,7 +175,6 @@ header.smaller {
 	padding: 265px 250px 30px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
@@ -230,7 +231,7 @@ p.date {
 		-moz-filter: brightness(120%);
 	}
 	.email {
-		width:167px;
+		width:186px;
 		margin:25px auto;
 	}
 }
