@@ -75,7 +75,7 @@ function project_post_type () {
 	*/
 	
 	// now let's add custom categories (these act like categories)
-	register_taxonomy( 'project_cat', 
+	register_taxonomy( 'custom_cat', 
 		array('projects'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
 		array('hierarchical' => true,     /* if this is true, it acts like categories */
 			'labels' => array(
@@ -98,7 +98,7 @@ function project_post_type () {
 	);
 	
 	// now let's add custom tags (these act like categories)
-	register_taxonomy( 'project_tag', 
+	register_taxonomy( 'custom_tag', 
 		array('projects'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
 		array('hierarchical' => false,    /* if this is false, it acts like tags */
 			'labels' => array(
