@@ -66,7 +66,9 @@ body {
 
 a {
   text-decoration: none;
-  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
   color: #D88D80; }
 
 a:hover {
@@ -136,15 +138,13 @@ header {
   z-index: 9;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
-  -ms-transition: height 0.3s;
   -o-transition: height 0.3s;
   transition: height 0.3s; }
   header h1 {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
   header h1.title {
     text-align: center;
     margin: 0 auto;
@@ -155,14 +155,16 @@ header {
     border: 3px solid #fff;
     padding: 0 10px 3px 15px; }
     header h1.title a:hover {
-      text-shadow: none; }
+      text-shadow: none;
+      color: #fff; }
+    header h1.title a:visited:link, header h1.title a:hover, header h1.title a:link, header h1.title a:active, header h1.title a:focus {
+      color: #fff; }
   header ul {
     padding: 0;
     margin: 0;
     text-align: center;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
   header ul li {
@@ -170,11 +172,10 @@ header {
     font-family: 'Arvo', serif;
     text-transform: lowercase;
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: 400;
     padding: 0 15px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
 
@@ -205,7 +206,6 @@ header.smaller {
   padding: 265px 250px 30px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
@@ -253,55 +253,9 @@ p.date {
     -webkit-filter: brightness(120%);
     -moz-filter: brightness(120%); }
   .contact .email {
-    width: 167px;
-    margin: 25px auto; }
-
-.button-wrapper {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto; }
-  .button-wrapper .diamond {
-    border: 3px solid #fff;
-    transform: rotate(45deg);
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.4); }
-  .button-wrapper a {
-    font-size: 14px;
-    text-align: center;
-    display: block;
-    position: relative;
-    left: 7px;
-    bottom: 45px;
-    z-index: 99;
-    width: 40px; }
-  .button-wrapper .button-wrapper {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    top: 60%;
-    right: 0; }
-  .button-wrapper .scroll-top {
-    animation-name: hover-out;
-    animation-duration: .5s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    -webkit-animation-name: hover-out;
-    -webkit-animation-duration: .5s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-fill-mode: forwards;
-    position: relative;
-    bottom: 0;
-    right: 0; }
-  .button-wrapper .scroll-top:hover {
-    animation-name: hover-over;
-    animation-duration: .5s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    -webkit-animation-name: hover-over;
-    -webkit-animation-duration: .5s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-fill-mode: forwards; }
+    width: 186px;
+    margin: 25px auto;
+    text-align: center; }
 
 @media all and (max-width: 1080px) {
   .about {
@@ -333,14 +287,16 @@ p.date {
   header.smaller .menu-wrapper {
     max-width: 500px; }
   header.smaller h1 {
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    margin-top: 7px; }
   header.smaller ul li {
     font-size: .9em;
     height: .9em; } }
 @media all and (max-width: 550px) {
   header.smaller {
     background-color: rgba(153, 153, 153, 0.9);
-    padding: 0 0 10px; }
+    padding: 0 0 10px;
+    height: 85px; }
     header.smaller h1 {
       float: none;
       text-align: center; }

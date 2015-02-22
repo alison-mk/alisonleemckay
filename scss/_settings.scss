@@ -233,59 +233,6 @@ p.date {
 	.email {
 		width:186px;
 		margin:25px auto;
-	}
-}
-
-// Back to top button
-.button-wrapper {
-	width:50px;
-	height:50px;
-	margin:0 auto;
-	.diamond {
-		border:3px solid #fff;
-		transform:rotate(45deg);
-		width:50px;
-		height:50px;
-		background:$white-op;
-	}
-	a {
-		font-size: 14px;
-		text-align: center;
-		display: block;
-		position: relative;
-		left: 7px;
-		bottom: 45px;
-		z-index: 99;
-		width: 40px;			
-	}
-	.button-wrapper {
-		position: absolute;
-		height: 50px;
-		width: 50px;
-		top:60%;
-		right:0;
-	}
-	.scroll-top {
-	    animation-name: hover-out;
-	    animation-duration: .5s;
-	    animation-timing-function: linear;
-	    animation-fill-mode: forwards;
-	    -webkit-animation-name: hover-out;
-	    -webkit-animation-duration: .5s;
-	    -webkit-animation-timing-function: linear;
-	    -webkit-animation-fill-mode: forwards;
-	    position: relative;
-	    bottom: 0;
-	    right: 0;
-	}
-	.scroll-top:hover {
-	    animation-name: hover-over;
-	    animation-duration: .5s;
-	    animation-timing-function: linear;
-	    animation-fill-mode: forwards;
-	    -webkit-animation-name: hover-over;
-	    -webkit-animation-duration: .5s;
-	    -webkit-animation-timing-function: linear;
-	    -webkit-animation-fill-mode: forwards;
+		text-align:center;
 	}
 }
