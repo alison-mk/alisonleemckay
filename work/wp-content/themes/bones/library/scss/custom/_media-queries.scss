@@ -94,6 +94,17 @@
 	#inner-content {
 		padding-top:200px;
 	}
+	.footer-cta {
+		h5 {
+			text-align:center;
+			&:first-child a {
+				margin:0;
+			}
+			a {
+				float:none;
+			}
+		}
+	}
 }
 
 

@@ -35,7 +35,7 @@
 										the_content();
 									?>
 									<div class="footer-cta">
-										<h5><a>Visit site</a></h5>
+										<h5><a href="<?php the_field('site_link'); ?>" target="_blank">Visit site</a></h5>
 										<h5><a href="/">See more work</a></h5>
 									</div>
 								</section> <!-- end article section -->
