@@ -2,12 +2,10 @@
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
 
 $orange:#F2BA7F;
-$green:#7D8C5A;
-$navy:#3C5B84;
-$gray:#999;
+$navy:#334D70;
+$gray:#888;
 $white-op:rgba(255,255,255,.4);
 $grey-op:rgba(204,204,204,.8);
-$green-op:rgba(125,140,90,.7);
 $pink:#D88D80;
 
 /*----GENERAL SETTINGS----*/
@@ -51,14 +49,14 @@ h3 {
 	font-family: 'Arvo', serif;
 	font-size:1.3em;
 	font-weight:400;
-	color:$green;
+	color:$navy;
 	margin:25px 0 0 0;
 }
 h4 {
 	font-family: 'Arvo', serif;
 	font-size:1em;
 	font-weight:400;
-	color:$green;
+	color:$navy;
 	margin:0px 0 10px 0;
 }
 h5 {
@@ -190,12 +188,13 @@ h4.about-title {
 	text-align: center;
 	font-weight:400;
 	margin-bottom:50px;
+	font-size:20px;
 }
 h3 a {
 	@extend h3;
 	font-size:1em;
 	&:hover {
-		text-shadow: 0px 0px 2px $green;
+		text-shadow: 0px 0px 2px $navy;
 	}
 }
 p.date {
