@@ -27,7 +27,7 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article">
 
-								<h2 class="single-title custom-post-type-title"><?php the_title(); ?></h2>
+								<h2><?php the_title(); ?></h2>
 
 								<section class="entry-content cf">
 									<?php
@@ -38,12 +38,7 @@
 										<h5><a href="<?php the_field('site_link'); ?>" target="_blank">Visit site</a></h5>
 										<h5><a href="/">See more work</a></h5>
 									</div>
-								</section> <!-- end article section -->
-
-								<footer class="article-footer">
-									<p class="tags"><?php echo get_the_term_list( get_the_ID(), 'custom_tag', '<span class="tags-title">' . __( 'Custom Tags:', 'bonestheme' ) . '</span> ', ', ' ) ?></p>
-
-								</footer>
+								</section>
 
 							</article>
 
