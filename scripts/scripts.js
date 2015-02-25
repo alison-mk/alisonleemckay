@@ -1,16 +1,7 @@
-$(document).ready(function(){
-  $('.anchor').click(function(){
-    $('html, body').animate({
-      scrollTop: $( $(this).attr('href') ).offset().top
-      }, 1500);
-      return false;
-  });
-});  
-
 function init() {
     window.addEventListener('scroll', function(e){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 60,
+            shrinkOn = 40,
             header = document.querySelector("header");
         if (distanceY > shrinkOn) {
             $('header').addClass('smaller');

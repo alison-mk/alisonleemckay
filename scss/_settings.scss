@@ -1,237 +1,245 @@
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url('http://fonts.googleapis.com/css?family=Playfair+Display: 400,700,900');
+@import url('http://fonts.googleapis.com/css?family=Arvo: 400,700');
 
-$orange:#F2BA7F;
-$navy:#334D70;
-$gray:#888;
-$white-op:rgba(255,255,255,.4);
-$grey-op:rgba(204,204,204,.8);
-$pink:#D88D80;
+$green: #7D8C5A;
+$navy: #334D70;
+$gray: #888;
+$grey-op: rgba(204,204,204,.8);
+$pink: #D88D80;
 
 /*----GENERAL SETTINGS----*/
 body {
+	background-color: #ccc;
+	color: $navy;
 	font-family: 'Arvo', serif;
-	background-color:#ccc;
-	color:$navy;
 }
 a {
-	text-decoration:none;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	color:$pink;
+	-webkit-transition: text-shadow 0.6s ease;
+	   -moz-transition: text-shadow 0.6s ease;
+		 -o-transition: text-shadow 0.6s ease;
+			transition: text-shadow 0.6s ease;
+	text-decoration: none;
+	color: $pink;
 }
 a:hover {
 	text-shadow: 0px 0px 2px $pink;
 }
-p, ul li, ol li  {
+p, 
+ul li, 
+ol li  {
 	line-height: 22px;
 	font-size: .9em;
 }
 h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 50px;
+	letter-spacing: 5px;
 	font-family: 'Playfair Display', serif;
-	font-size:50px;
-	text-transform:uppercase;
-	color:#fff;
 	font-weight: 400;
-	letter-spacing:5px;
 }
 h2 {
+	margin: 25px 0 10px 0;
+	border-bottom: 3px solid $gray;
+	color: $gray;
+	text-transform: uppercase;
+	font-size: 1.5em;
 	font-family: 'Playfair Display', serif;
-	font-size:1.5em;
-	text-transform:uppercase;
 	font-weight: 900;
-	color:$gray;
-	margin:25px 0 10px 0;
-	border-bottom:3px solid $gray;
+
 }
 h3 {
+	margin: 25px 0 0 0;
+	color: $green;
+	font-size: 1.3em;
 	font-family: 'Arvo', serif;
-	font-size:1.3em;
-	font-weight:400;
-	color:$navy;
-	margin:25px 0 0 0;
+	font-weight: 400;
 }
 h4 {
+	margin: 0px 0 10px 0;
+	color: $green;
+	font-size: 1em;
 	font-family: 'Arvo', serif;
-	font-size:1em;
-	font-weight:400;
-	color:$navy;
-	margin:0px 0 10px 0;
+	font-weight: 400;
 }
 h5 {
+	color: $gray;
+	font-size: 0.9em;
 	font-family: 'Playfair Display', serif;
-	font-size:0.9em;
-	font-weight:900;
-	color:$gray;
+	font-weight: 900;
 }
 h6 {
+	color: #fff;
+	font-size: 0.8em;
 	font-family: 'Arvo', serif;
-	font-size:0.8em;
-	font-weight:400;
-	color:#fff;
+	font-weight: 400;
 }
 .center {
-	text-align:center;
+	text-align: center;
 }
 .container {
-	max-width:1070px;
-	margin:0 auto;
+	margin: 0 auto;
+	max-width: 1070px;
 }
 
 /*----STICKY HEADER----*/
 // Header, general styles
 header {
-    width: 100%;
-    //height: 300px;
-    overflow: hidden;
-    position: fixed;
+	position: fixed;
     top: 0;
     left: 0;
     z-index: 9;
-    -webkit-transition: height 0.3s;
-    -moz-transition: height 0.3s;
-    -o-transition: height 0.3s;
-    transition: height 0.3s;
+    width: 100%;
+	-webkit-transition: all 0.6s ease;
+	   -moz-transition: all 0.6s ease;
+		 -o-transition: all 0.6s ease;
+			transition: all 0.6s ease;
     h1 {
-	    -webkit-transition: all 0.3s ease;
-	    -moz-transition: all 0.3s ease;
-	    -o-transition: all 0.3s ease;
-	    transition: all 0.3s ease;
-    }
-	h1.title {
-		text-align: center;
 		margin: 0 auto;
-		padding:100px 0 30px;
-	}
+		position: relative;
+		top: 100px;		
+		text-align: center;		
+		-webkit-transition: left 0.4s ease, top 0.8s ease, font-size 0.6s ease;
+		   -moz-transition: left 0.4s ease, top 0.8s ease, font-size 0.6s ease;
+			 -o-transition: left 0.4s ease, top 0.8s ease, font-size 0.6s ease;
+				transition: left 0.4s ease, top 0.8s ease, font-size 0.6s ease;
+	    
+    }
 	h1.title a {
-		color:#fff;
-		font-weight:900;
-		border:3px solid #fff;
-		padding:0 10px 3px 15px;
+		border: 3px solid #fff;
+		padding: 0 10px 3px 15px;
+		color: #fff;
+		font-weight: 900;
 		&:hover {
-			text-shadow:none;
-			color:#fff;
+			color: #fff;
+			text-shadow: none;
 		}
-		&:visited:link, &:hover, &:link, &:active, &:focus {
-			color:#fff;
+		&:visited:link, 
+		&:hover, 
+		&:link, 
+		&:active, 
+		&:focus {
+			color: #fff;
 		}
 	}
 	ul {
-		padding:0;
-		margin:0;
-		text-align:center;
-	    -webkit-transition: all 0.3s;
-	    -moz-transition: all 0.3s;
-	    -o-transition: all 0.3s;
-	    transition: all 0.3s;
+		margin: 0;
+		padding: 0;
+		position: relative;	
+		top:130px;	
+		text-align: center;
+		-webkit-transition: right 0.4s ease, top 0.8s ease;
+		   -moz-transition: right 0.4s ease, top 0.8s ease;
+			 -o-transition: right 0.4s ease, top 0.8s ease;
+				transition: right 0.4s ease, top 0.8s ease;
 	}
 	ul li {
-		display:inline-block;
-		font-family: 'Arvo', serif;
-		text-transform:lowercase;
+		display: inline-block;
+		padding: 0 15px;
+		text-transform: lowercase;
 		font-size: 1.5em;
-		font-weight: 400;
-		padding:0 15px;
-	    -webkit-transition: all 0.3s;
-	    -moz-transition: all 0.3s;
-	    -o-transition: all 0.3s;
-	    transition: all 0.3s;
+		font-family: 'Arvo', serif;		
+		font-weight: 400;		
+		-webkit-transition: all 0.4s ease;
+		   -moz-transition: all 0.4s ease;
+			 -o-transition: all 0.4s ease;
+				transition: all 0.4s ease;
 	}
 }
 // Header when sticky
-header.smaller {
+.smaller {
     height: 75px;
-    background-color:$grey-op;
+    background-color: $grey-op;
     .menu-wrapper {
+    	margin: 0 auto;
 		width: 620px;
 		position: relative;
-		margin:0 auto;
     }
     h1 {
-    	font-size:1.8em;
-    	text-align:left;
-    	float:left;
-    	padding:15px 0;
-    }
-    .main-nav {
-    	float:left;
+    	//float: left;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	padding: 15px 0;
+    	font-size: 1.8em;
+    	text-align: left;
     }
     ul {
-    	position:relative;
-    	margin:0;
-    	padding:25px 0 25px 15px;
-    	height:22px;
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	float: right;
+    	padding: 25px 0 25px 15px;
     	li {
-    		font-size:1.2em;
-    		float: left;
+    		font-size: 1.2em;    		
     	}
     }
 }
 // Content below header
 .about {
 	padding: 265px 250px 30px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+	-webkit-transition: all 0.6s ease;
+	   -moz-transition: all 0.6s ease;
+		 -o-transition: all 0.6s ease;
+			transition: all 0.6s ease;
 }
 // Content below header when sticky
 .small-header.about {
-	padding-top:200px;
+	padding-top: 200px;
 }
 
 /*----HOME PAGE STYLES----*/
 h4.about-title {
-	font-family: 'Arvo', serif;
-	color:#fff;
+	margin-bottom: 50px;
+	color: #fff;
 	text-align: center;
-	font-weight:400;
-	margin-bottom:50px;
-	font-size:20px;
+	font-size: 20px;
+	font-family: 'Arvo', serif;
+	font-weight: 400;
 }
 h3 a {
 	@extend h3;
-	font-size:1em;
+	font-size: 1em;
 	&:hover {
-		text-shadow: 0px 0px 2px $navy;
+		text-shadow: 0px 0px 2px $green;
 	}
 }
 p.date {
-	margin:0;
-	font-size:.8em;
+	margin: 0;
+	font-size: .8em;
 }
 .education {
-	position:relative;
+	position: relative;
 }
 
 /*----FOOTER----*/
 .contact {
-	position:relative;
-	padding:0 0 50px 0; 
+	position: relative;
+	padding: 0 0 50px 0; 
 	ul {
 		margin: 0 auto;
 		width: 182px;
 		padding: 0;
 	}
 	ul li {
-		display:inline-block;
-		margin:0 5px 0 5px;
+		display: inline-block;
+		margin: 0 5px 0 5px;
 		color: #569071;
 	}
 	img {
-		-webkit-transition: all .5s ease;
-		-moz-transition: all .5s ease;
-		-o-transition: all .5s ease;
-		transition: all .5s ease;
+		-webkit-transition: all 0.5s ease;
+		   -moz-transition: all 0.5s ease;
+			 -o-transition: all 0.5s ease;
+				transition: all 0.5s ease;
 	}
 	img:hover {
 		-webkit-filter: brightness(120%);
 		-moz-filter: brightness(120%);
+		filter: brightness(120%);
 	}
 	.email {
-		width:186px;
-		margin:25px auto;
-		text-align:center;
+		margin: 25px auto;
+		width: 186px;
+		text-align: center;
 	}
 }
