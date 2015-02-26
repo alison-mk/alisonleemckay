@@ -1,24 +1,12 @@
 /*! Made with Bones: http://themble.com/bones :) */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Alison McKay's Portfolio
+Author: Alison McKay
 
 Stylesheet: Main Stylesheet
-
-Here's where the magic happens. Here, you'll see we are calling in
-the separate media queries. The base mobile goes outside any query
-and is called at the beginning, after that we call the rest
-of the styles inside media queries.
-
-Helpful articles on Sass file organization:
-http://thesassway.com/advanced/modular-css-naming-conventions
-
 ******************************************************************/
 /*********************
 IMPORTING PARTIALS
-These files are needed at the beginning so that we establish all
-our mixins, functions, and variables that we'll be using across
-the whole project.
 *********************/
 /* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
 /* ==========================================================================
@@ -488,45 +476,12 @@ Site Name:
 Author:
 
 Stylesheet: Sass Functions
-
-You can do a lot of really cool things in Sass. Functions help you
-make repeated actions a lot easier. They are really similar to mixins,
-but can be used for so much more.
-
-Anyway, keep them all in here so it's easier to find when you're
-looking for one.
-
-For more info on functions, go here:
-http://sass-lang.com/documentation/Sass/Script/Functions.html
-
 ******************************************************************/
 /*********************
 COLOR FUNCTIONS
-These are helpful when you're working
-with shadows and such things. It's essentially
-a quicker way to write RGBA.
-
-Example:
-box-shadow: 0 0 4px black(0.3);
-compiles to:
-box-shadow: 0 0 4px rgba(0,0,0,0.3);
 *********************/
 /*********************
 RESPONSIVE HELPER FUNCTION
-If you're creating a responsive site, then
-you've probably already read
-Responsive Web Design: http://www.abookapart.com/products/responsive-web-design
-
-Here's a nice little helper function for calculating
-target / context
-as mentioned in that book.
-
-Example:
-width: cp(650px, 1000px);
-or
-width: calc-percent(650px, 1000px);
-both compile to:
-width: 65%;
 *********************/
 /******************************************************************
 Site Name:
@@ -571,28 +526,10 @@ BOX SIZING
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Alison McKay's Portfolio
+Author: Alison McKay
 
 Stylesheet: Grid Stylesheet
-
-I've seperated the grid so you can swap it out easily. It's
-called at the top the style.scss stylesheet.
-
-There are a ton of grid solutions out there. You should definitely
-experiment with your own. Here are some recommendations:
-
-http://gridsetapp.com - Love this site. Responsive Grids made easy.
-http://susy.oddbird.net/ - Grids using Compass. Very elegant.
-http://gridpak.com/ - Create your own responsive grid.
-https://github.com/dope/lemonade - Neat lightweight grid.
-
-
-The grid below is a custom built thingy I modeled a bit after
-Gridset. It's VERY basic and probably shouldn't be used on
-your client projects. The idea is you learn how to roll your
-own grids. It's better in the long run and allows you full control
-over your project's layout.
 
 ******************************************************************/
 .last-col {
@@ -601,9 +538,6 @@ over your project's layout.
 
 /*
 Mobile Grid Styles
-These are the widths for the mobile grid.
-There are four types, but you can add or customize
-them however you see fit.
 */
 @media (max-width: 449px) {
   .m-all {
@@ -833,65 +767,15 @@ them however you see fit.
     width: 8.33%; } }
 /*********************
 IMPORTING MODULES
-Modules are reusable blocks or elements we use throughout the project.
-We can break them up as much as we want or just keep them all in one.
-I mean, you can do whatever you want. The world is your oyster. Unless
-you hate oysters, then the world is your peanut butter & jelly sandwich.
 *********************/
 /******************************************************************
 Site Name:
 Author:
 
-Stylesheet: Alert Styles
-
-If you want to use these alerts in your design, you can. If not,
-you can just remove this stylesheet.
-
-******************************************************************/
-.alert-help, .alert-info, .alert-error, .alert-success {
-  margin: 10px;
-  padding: 5px 18px;
-  border: 1px solid; }
-
-.alert-help {
-  border-color: #e8dc59;
-  background: #ebe16f; }
-
-.alert-info {
-  border-color: #bfe4f4;
-  background: #d5edf8; }
-
-.alert-error {
-  border-color: #f8cdce;
-  background: #fbe3e4; }
-
-.alert-success {
-  border-color: #deeaae;
-  background: #e6efc2; }
-
-/******************************************************************
-Site Name:
-Author:
-
 Stylesheet: Button Styles
-
-Buttons are a pretty important part of your site's style, so it's
-important to have a consistent baseline for them. Use this stylesheet
-to create all kinds of buttons.
-
-Helpful Links:
-http://galp.in/blog/2011/08/02/the-ui-guide-part-1-buttons/
-
 ******************************************************************/
 /*********************
 BUTTON DEFAULTS
-We're gonna use a placeholder selector here
-so we can use common styles. We then use this
-to load up the defaults in all our buttons.
-
-Here's a quick video to show how it works:
-http://www.youtube.com/watch?v=hwdVpKiJzac
-
 *********************/
 .blue-btn, .comment-reply-link, #submit {
   display: inline-block;
@@ -932,17 +816,6 @@ Site Name:
 Author:
 
 Stylesheet: Form Styles
-
-We put all the form and button styles in here to setup a consistent
-look. If we need to customize them, we can do this in the main
-stylesheets and just override them. Easy Peasy.
-
-You're gonna see a few data-uri thingies down there. If you're not
-sure what they are, check this link out:
-http://css-tricks.com/data-uris/
-If you want to create your own, use this helpful link:
-http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/
-
 ******************************************************************/
 /*********************
 INPUTS
@@ -1216,21 +1089,12 @@ select {
 
 /*********************
 BASE (MOBILE) SIZE
-This are the mobile styles. It's what people see on their phones. If
-you set a great foundation, you won't need to add too many styles in
-the other stylesheets. Remember, keep it light: Speed is Important.
 *********************/
 /******************************************************************
-Site Name:
-Author:
+Site Name: Alison McKay's Portfolio
+Author: Alison McKay
 
 Stylesheet: Base Mobile Stylesheet
-
-Be light and don't over style since everything here will be
-loaded by mobile devices. You want to keep it as minimal as
-possible. This is called at the top of the main stylsheet
-and will be used across all viewports.
-
 ******************************************************************/
 /*********************
 GENERAL STYLES
@@ -1243,45 +1107,6 @@ body {
   background-color: #ccc;
   -moz-osx-font-smoothing: grayscale; }
 
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
-/* for sites that are read right to left (i.e. hebrew) */
-/* home page */
-/* blog template page */
-/* archive page */
-/* date archive page */
-/* replace the number to the corresponding page number */
-/* search page */
-/* search result page */
-/* no results search page */
-/* individual paged search (i.e. body.search-paged-3) */
-/* 404 page */
-/* single post page */
-/* individual post page by id (i.e. body.postid-73) */
-/* individual paged single (i.e. body.single-paged-3) */
-/* attatchment page */
-/* individual attatchment page (i.e. body.attachmentid-763) */
-/* style mime type pages */
-/* author page */
-/* user nicename (i.e. body.author-samueladams) */
-/* paged author archives (i.e. body.author-paged-4) for page 4 */
-/* category page */
-/* individual category page (i.e. body.category-6) */
-/* replace the number to the corresponding page number */
-/* tag page */
-/* individual tag page (i.e. body.tag-news) */
-/* replace the number to the corresponding page number */
-/* custom page template page */
-/* individual page template (i.e. body.page-template-contact-php */
-/* replace the number to the corresponding page number */
-/* parent page template */
-/* child page template */
-/* replace the number to the corresponding page number */
-/* if user is logged in */
-/* paged items like search results or archives */
-/* individual paged (i.e. body.paged-3) */
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -1376,7 +1201,6 @@ header h1 {
   font-size: 50px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   header h1 a {
@@ -1406,31 +1230,12 @@ and more scalable.
 .nav {
   border-bottom: 0;
   margin: 0;
-  /* end .menu li */
-  /* highlight current page */
-  /* end current highlighters */ }
-  .nav li {
-    /*
-    so you really have to rethink your dropdowns for mobile.
-    you don't want to have it expand too much because the
-    screen is so small. How you manage your menu should
-    depend on the project. Here's some great info on it:
-    http://www.alistapart.com/articles/organizing-mobile/
-    */ }
-    .nav li a {
-      display: block;
-      color: #D88D80;
-      text-decoration: none;
-      padding: 0.75em;
-      /*
-      remember this is for mobile ONLY, so there's no need
-      to even declare hover styles here, you can do it in
-      the style.scss file where it's relevant. We want to
-      keep this file as small as possible!
-      */ }
-    .nav li ul.sub-menu li a,
-    .nav li ul.children li a {
-      padding-left: 30px; }
+  /* end .menu li */ }
+  .nav li a {
+    display: block;
+    color: #D88D80;
+    text-decoration: none;
+    padding: 0.75em; }
 
 /* end .nav */
 /*********************
@@ -1457,15 +1262,6 @@ POSTS & CONTENT STYLES
 .entry-title {
   margin: 0; }
 
-/* want to style individual post classes? Booya! */
-/* post by id (i.e. post-3) */
-/* general post style */
-/* general article on a page style */
-/* general style on an attatchment */
-/* sticky post style */
-/* hentry class */
-/* style by category (i.e. category-videos) */
-/* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
   color: #9fa6b4;
@@ -1473,69 +1269,62 @@ POSTS & CONTENT STYLES
   margin: 0; }
 
 /* entry content */
-.entry-content {
-  /*
-  image alignment on a screen this size may be
-  a bit difficult. It's set to start aligning
-  and floating images at the next breakpoint,
-  but it's up to you. Feel free to change it up.
-  */ }
-  .entry-content p {
-    margin: 0 0 1.5em; }
-  .entry-content table {
-    width: 100%;
-    border: 1px solid #888;
-    margin-bottom: 1.5em; }
-    .entry-content table caption {
-      margin: 0 0 7px;
-      font-size: 0.75em;
-      color: #9fa6b4;
-      text-transform: uppercase;
-      letter-spacing: 1px; }
-  .entry-content tr {
-    border-bottom: 1px solid #888; }
-    .entry-content tr:nth-child(even) {
-      background-color: #f8f9fa; }
-  .entry-content td {
-    padding: 7px;
-    border-right: 1px solid #888; }
-    .entry-content td:last-child {
-      border-right: 0; }
-  .entry-content th {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #888;
-    border-right: 1px solid #888; }
-    .entry-content th:last-child {
-      border-right: 0; }
-  .entry-content blockquote {
-    margin: 0 0 1.5em 0.75em;
-    padding: 0 0 0 0.75em;
-    border-left: 3px solid #2980b9;
-    font-style: italic;
-    color: #9fa6b4; }
-  .entry-content dd {
-    margin-left: 0;
-    font-size: 0.9em;
-    color: #787878;
-    margin-bottom: 1.5em; }
-  .entry-content img {
-    margin: 0 0 1.5em 0;
-    max-width: 100%;
-    height: auto; }
-  .entry-content .size-auto,
-  .entry-content .size-full,
-  .entry-content .size-large,
-  .entry-content .size-medium,
-  .entry-content .size-thumbnail {
-    max-width: 100%;
-    height: auto; }
-  .entry-content pre {
-    background: #323944;
-    color: #f8f9fa;
-    font-size: 0.9em;
-    padding: 1.5em;
-    margin: 0 0 1.5em;
-    border-radius: 3px; }
+.entry-content p {
+  margin: 0 0 1.5em; }
+.entry-content table {
+  width: 100%;
+  border: 1px solid #888;
+  margin-bottom: 1.5em; }
+  .entry-content table caption {
+    margin: 0 0 7px;
+    font-size: 0.75em;
+    color: #9fa6b4;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+.entry-content tr {
+  border-bottom: 1px solid #888; }
+  .entry-content tr:nth-child(even) {
+    background-color: #f8f9fa; }
+.entry-content td {
+  padding: 7px;
+  border-right: 1px solid #888; }
+  .entry-content td:last-child {
+    border-right: 0; }
+.entry-content th {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #888;
+  border-right: 1px solid #888; }
+  .entry-content th:last-child {
+    border-right: 0; }
+.entry-content blockquote {
+  margin: 0 0 1.5em 0.75em;
+  padding: 0 0 0 0.75em;
+  border-left: 3px solid #2980b9;
+  font-style: italic;
+  color: #9fa6b4; }
+.entry-content dd {
+  margin-left: 0;
+  font-size: 0.9em;
+  color: #787878;
+  margin-bottom: 1.5em; }
+.entry-content img {
+  margin: 0 0 1.5em 0;
+  max-width: 100%;
+  height: auto; }
+.entry-content .size-auto,
+.entry-content .size-full,
+.entry-content .size-large,
+.entry-content .size-medium,
+.entry-content .size-thumbnail {
+  max-width: 100%;
+  height: auto; }
+.entry-content pre {
+  background: #323944;
+  color: #f8f9fa;
+  font-size: 0.9em;
+  padding: 1.5em;
+  margin: 0 0 1.5em;
+  border-radius: 3px; }
 
 /* end .entry-content */
 .wp-caption {
@@ -1553,9 +1342,6 @@ POSTS & CONTENT STYLES
     text-align: center; }
 
 /* end .wp-caption */
-/* image gallery styles */
-/* end .gallery */
-/* gallery caption styles */
 .tags {
   margin: 0; }
 
@@ -1618,8 +1404,7 @@ COMMENT STYLES
 #comments-title {
   padding: 0.75em;
   margin: 0;
-  border-top: 1px solid #f8f9fa;
-  /* number of comments span */ }
+  border-top: 1px solid #f8f9fa; }
 
 .commentlist {
   margin: 0;
@@ -1659,9 +1444,7 @@ COMMENT STYLES
   .comment:last-child {
     margin-bottom: 0; }
   .comment .children {
-    margin: 0;
-    /* variations */
-    /* change number for different depth */ }
+    margin: 0; }
   .comment[class*=depth-] {
     margin-top: 1.1em; }
   .comment.depth-1 {
@@ -1676,7 +1459,6 @@ COMMENT STYLES
   .comment.even {
     background: #f8f9fa; }
 
-/* comment meta */
 /* comment content */
 .comment_content p {
   margin: 0.7335em 0 1.5em;
@@ -1744,9 +1526,6 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-.widget ul li {
-  /* deep nesting */ }
-
 .no-widgets {
   background-color: #fff;
   padding: 1.5em;
@@ -1762,72 +1541,22 @@ FOOTER STYLES
   clear: both;
   color: #334D70; }
 
-/*
-if you checked out the link above:
-http://www.alistapart.com/articles/organizing-mobile/
-you'll want to style the footer nav
-a bit more in-depth. Remember to keep
-it simple because you'll have to
-override these styles for the desktop
-view.
-*/
-/* end .footer-links */
 /*********************
 LARGER MOBILE DEVICES
-This is for devices like the Galaxy Note or something that's
-larger than an iPhone but smaller than a tablet. Let's call them
-tweeners.
 *********************/
 @media only screen and (min-width: 481px) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: Alison McKay's Portfolio
+  Author: Alison McKay
   
   Stylesheet: 481px and Up Stylesheet
-  
-  This stylesheet is loaded for larger devices. It's set to
-  481px because at 480px it would load on a landscaped iPhone.
-  This isn't ideal because then you would be loading all those
-  extra styles on that same mobile connection.
-  
-  A word of warning. This size COULD be a larger mobile device,
-  so you still want to keep it pretty light and simply expand
-  upon your base.scss styles.
-  
   ******************************************************************/
-  /*
-  IMPORTANT NOTE ABOUT SASS 3.3 & UP
-  You can't use @extend within media queries
-  anymore, so just be aware that if you drop
-  them in here, they won't work.
-  */
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  /* .menu is clearfixed inside mixins.scss */
-  .menu {
-    /* end .menu ul */ }
-    .menu ul {
-      /* end .menu ul li */
-      /* highlight current page */
-      /* end current highlighters */ }
-      .menu ul li {
-        /*
-        plan your menus and drop-downs wisely.
-        */ }
-        .menu ul li a {
-          /*
-          you can use hover styles here even though this size
-          has the possibility of being a mobile device.
-          */ }
-
-  /* end .menu */
   /*********************
   POSTS & CONTENT STYLES
   *********************/
   /* entry content */
   .entry-content {
-    /* at this larger size, we can start to align images */ }
+    /* start to align images */ }
     .entry-content .alignleft, .entry-content img.alignleft {
       margin-right: 1.5em;
       display: inline;
@@ -1842,38 +1571,17 @@ tweeners.
       display: block;
       clear: both; }
 
-  /* end .entry-content */
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /*
-  check your menus here. do they look good?
-  do they need tweaking?
-  */
-  /* end .footer-links */ }
+  /* end .entry-content */ }
 /*********************
 TABLET & SMALLER LAPTOPS
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device. Here's where
-you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 768px) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: Alison McKay's Portfolio
+  Author: Alison McKay
   
   Stylesheet: Tablet & Small Desktop Stylesheet
-  
-  Here's where you can start getting into the good stuff.
-  This size will work on iPads, other tablets, and desktops.
-  So you can start working with more styles, background images,
-  and other resources. You'll also notice the grid starts to
-  come into play. Have fun!
-  
   ******************************************************************/
-  /*********************
-  GENERAL STYLES
-  *********************/
   /*********************
   LAYOUT & GRID STYLES
   *********************/
@@ -1881,68 +1589,21 @@ you can add resource intensive styles.
     width: 760px; }
 
   /*********************
-  HEADER STYLES
-  *********************/
-  /*********************
   NAVIGATION STYLES
   *********************/
   .nav {
-    border: 0;
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */ }
+    border: 0; }
     .nav ul {
       background: #323944;
       margin-top: 0; }
     .nav li {
       float: left;
-      position: relative;
-      /*
-      plan your menus and drop-downs wisely.
-      */
-      /* showing sub-menus */ }
+      position: relative; }
       .nav li a {
-        border-bottom: 0;
-        /*
-        you can use hover styles here even though this size
-        has the possibility of being a mobile device.
-        */ }
+        border-bottom: 0; }
         .nav li a:hover, .nav li a:focus {
           color: #fff;
           text-decoration: underline; }
-      .nav li ul.sub-menu,
-      .nav li ul.children {
-        margin-top: 0;
-        border: 1px solid #ccc;
-        border-top: 0;
-        position: absolute;
-        visibility: hidden;
-        z-index: 8999;
-        /* highlight sub-menu current page */ }
-        .nav li ul.sub-menu li,
-        .nav li ul.children li {
-          /*
-          if you need to go deeper, go nuts
-          just remember deeper menus suck
-          for usability. k, bai.
-          */ }
-          .nav li ul.sub-menu li a,
-          .nav li ul.children li a {
-            padding-left: 10px;
-            border-right: 0;
-            display: block;
-            width: 180px;
-            border-bottom: 1px solid #ccc; }
-          .nav li ul.sub-menu li:last-child a,
-          .nav li ul.children li:last-child a {
-            border-bottom: 0; }
-          .nav li ul.sub-menu li ul,
-          .nav li ul.children li ul {
-            top: 0;
-            left: 100%; }
-      .nav li:hover > ul {
-        top: auto;
-        visibility: visible; }
 
   /* end .nav */
   /*********************
@@ -1963,51 +1624,16 @@ you can add resource intensive styles.
       /* deep nesting */ }
       .widget ul li ul {
         margin-top: 0.75em;
-        padding-left: 1em; }
-
-  /* links widget */
-  /* meta widget */
-  /* pages widget */
-  /* recent-posts widget */
-  /* archives widget */
-  /* tag-cloud widget */
-  /* calendar widget */
-  /* category widget */
-  /* recent-comments widget */
-  /* search widget */
-  /* text widget */
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /*
-  you'll probably need to do quite a bit
-  of overriding here if you styled them for
-  mobile. Make sure to double check these!
-  */
-  .footer-links ul li {
-    /*
-    be careful with the depth of your menus.
-    it's very rare to have multi-depth menus in
-    the footer.
-    */ }
-
-  /* end .footer-links */ }
+        padding-left: 1em; } }
 /*********************
 DESKTOP
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device. Here's where
-you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 1030px) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: Alison McKay's Portfolio
+  Author: Alison McKay
   
   Stylesheet: Desktop Stylsheet
-  
-  This is the desktop size. It's larger than an iPad so it will only
-  be seen on the Desktop.
-  
   ******************************************************************/
   .wrap {
     width: 1040px; } }
@@ -2017,67 +1643,13 @@ This is for the larger monitors and possibly full screen viewers.
 *********************/
 @media only screen and (min-width: 1240px) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name: Alison McKay's Portfolio
+  Author: Alison McKay
   
   Stylesheet: Super Large Monitor Stylesheet
-  
-  You can add some advanced styles here if you like. This kicks in
-  on larger screens.
-  
   ******************************************************************/ }
 /*********************
-RETINA (2x RESOLUTION DEVICES)
-This applies to the retina iPhone (4s) and iPad (2,3) along with
-other displays with a 2x resolution. You can also create a media
-query for retina AND a certain size if you want. Go Nuts.
-*********************/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /******************************************************************
-  Site Name: 
-  Author: 
-  
-  Stylesheet: Retina Screens & Devices Stylesheet
-  
-  When handling retina screens you need to make adjustments, especially
-  if you're not using font icons. Here you can add them in one neat
-  place.
-  
-  ******************************************************************/
-  /* 
-  
-  EXAMPLE 
-  Let's say you have an image and you need to make sure it looks ok
-  on retina screens. Let's say we have an icon which dimension are
-  24px x 24px. In your regular stylesheets, it would look something
-  like this:
-  
-  .icon {
-  	width: 24px;
-  	height: 24px;
-  	background: url(img/test.png) no-repeat;
-  }
-  
-  For retina screens, we have to make some adjustments, so that image
-  doesn't look blurry. So, taking into account the image above and the
-  dimensions, this is what we would put in our retina stylesheet:
-  
-  .icon {
-  	background: url(img/test@2x.png) no-repeat;
-  	background-size: 24px 24px;
-  }
-  
-  So, you would create the same icon, but at double the resolution, meaning 
-  it would be 48px x 48px. You'd name it the same, but with a @2x at the end
-  (this is pretty standard practice). Set the background image so it matches
-  the original dimensions and you are good to go. 
-  
-  */ }
-/*********************
 PRINT STYLESHEET
-Feel free to customize this. Remember to add things that won't make
-sense to print at the bottom. Things like nav, ads, and forms should
-be set to display none.
 *********************/
 @media print {
   /******************************************************************
@@ -2085,11 +1657,6 @@ be set to display none.
   Author:
   
   Stylesheet: Print Stylesheet
-  
-  This is the print stylesheet. There's probably not a lot
-  of reasons to edit this stylesheet. If you want to
-  though, go for it.
-  
   ******************************************************************/
   * {
     background: transparent !important;
@@ -2140,53 +1707,54 @@ be set to display none.
   .respond-form,
   nav {
     display: none; } }
+/*********************
+CUSTOM STYLESHEETS
+All media types, loading after all Bones styles.
+*********************/
 /*----STICKY HEADER----*/
 header {
-  width: 100%;
-  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9;
+  width: 100%;
+  overflow: hidden;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
-  -ms-transition: height 0.3s;
   -o-transition: height 0.3s;
   transition: height 0.3s; }
   header ul {
-    padding: 0;
     margin: 0;
+    padding: 0;
     text-align: center;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
   header ul li {
     display: inline-block;
+    padding: 0 15px;
+    font-size: 24px;
     font-family: 'Arvo', serif;
     text-transform: lowercase;
-    font-size: 24px;
     font-weight: 400;
-    padding: 0 15px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
 
 header.smaller {
-  height: 75px;
-  background-color: rgba(204, 204, 204, 0.8); }
+  background-color: rgba(204, 204, 204, 0.8);
+  height: 75px; }
   header.smaller .menu-wrapper {
-    width: 620px;
+    margin: 0 auto;
     position: relative;
-    margin: 0 auto; }
+    width: 620px; }
   header.smaller h1 {
-    font-size: 1.8em;
-    text-align: left;
     float: left;
-    padding: 15px 0; }
+    padding: 15px 0;
+    font-size: 1.8em;
+    text-align: left; }
   header.smaller .main-nav {
     float: left; }
   header.smaller ul {
@@ -2195,14 +1763,13 @@ header.smaller {
     padding: 25px 0 25px 15px;
     height: 22px; }
     header.smaller ul li {
-      font-size: 1.2em;
-      float: left; }
+      float: left;
+      font-size: 1.2em; }
 
 #inner-content {
   padding-top: 265px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
@@ -2216,30 +1783,28 @@ header.smaller {
 .project-overview ul li {
   padding-bottom: 15px; }
   .project-overview ul li a {
-    height: 186px;
     display: block;
+    position: relative;
+    overflow: hidden;
+    height: 186px;
     background-size: cover;
     background-position: center center;
     border: 3px solid #888;
-    position: relative;
-    overflow: hidden;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease; }
     .project-overview ul li a h3 {
-      color: #fff;
-      font-family: "Playfair Display", Times, serif;
-      background-color: #888;
-      margin: 0;
-      width: 100%;
       position: absolute;
       bottom: 0;
       left: -100%;
+      margin: 0;
+      width: 100%;
+      background-color: #888;
+      color: #fff;
+      font-family: "Playfair Display", Times, serif;
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
       -o-transition: all 0.5s ease;
       transition: all 0.5s ease; }
     .project-overview ul li a:hover {
@@ -2248,35 +1813,35 @@ header.smaller {
         left: 0; }
 
 .project-detail {
-  max-width: 670px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 670px; }
   .project-detail h2 {
     margin-bottom: 25px; }
   .project-detail h5 a {
+    display: inline-block;
     float: left;
-    color: #888;
-    background: transparent;
-    padding: 8px 10px;
     border: 3px solid #888;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #888;
+    padding: 8px 10px;
+    color: #888;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 16px;
-    display: inline-block;
     text-align: center;
-    box-shadow: inset 0 0 0 0 #888;
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
     -o-transition: all ease 0.5s;
     transition: all ease 0.5s; }
     .project-detail h5 a:hover, .project-detail h5 a:active, .project-detail h5 a:focus {
+      box-shadow: inset 250px 0 0 0 #888;
       text-shadow: none;
-      color: #fff;
-      box-shadow: inset 250px 0 0 0 #888; }
+      color: #fff; }
   .project-detail h5:first-child a {
     margin-right: 15px; }
   .project-detail .footer-cta {
-    max-width: 318px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 318px; }
 
 /*----FOOTER----*/
 .contact {
@@ -2296,11 +1861,12 @@ header.smaller {
     -o-transition: all .5s ease;
     transition: all .5s ease; }
   .contact img:hover {
-    -webkit-filter: brightness(120%);
-    -moz-filter: brightness(120%); }
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.12" /><feFuncG type="linear" slope="1.12" /><feFuncB type="linear" slope="1.12" /></feComponentTransfer></filter></svg>#filter');
+    -webkit-filter: brightness(112%);
+    filter: brightness(112%); }
   .contact .email {
-    width: 186px;
-    margin: 25px auto; }
+    margin: 25px auto;
+    width: 186px; }
 
 @media all and (max-width: 650px) {
   header ul li {
