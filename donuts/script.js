@@ -1,33 +1,7 @@
-// RANDOM IMAGE
-
-// function Randomize() {
-//     var images = ['donut1', 'donut2'];
-//     var imageNum = Math.floor(Math.random() * images.length);
-//     var randomDonut = images[imageNum]; 
-//     setImageSrc(randomDonut);
-//     //setImageSrc(images[imageNum]);
-// }
-
-// window.onload = Randomize;
-
-// SWITCH OUT ALL DONUT PATHS
-
-// var setImageSrc = function(donutName) {
-// 	for (i = 1; i < 9; i++) {
-// 		newSrc = '/graphics/' +donutName+ '/' + i + '.png';
-// 		imgId = 'phase' + i; //'phase1'
-// 		document.getElementById(imgId).src = newSrc;
-// 		//$(imgCssId).attr('src', newSrc);
-// 	}
-// }
-
-// COUNTER
-
-/**********************************************************************************************
-* CountUp script by Praveen Lobo (http://PraveenLobo.com/techblog/javascript-countup-timer/)
-* This notice MUST stay intact(in both JS file and SCRIPT tag) for legal use.
-* http://praveenlobo.com/blog/disclaimer/
-**********************************************************************************************/
+/*
+* CountUp script by Praveen Lobo 
+* (http://PraveenLobo.com/techblog/javascript-countup-timer/)
+*/
 function CountUp(initDate, id){
     this.beginDate = new Date(initDate);
     this.countainer = document.getElementById(id);
@@ -90,5 +64,3 @@ CountUp.prototype.updateCounter=function(){
     var self = this;
     setTimeout(function(){self.updateCounter();}, 1000);
 }
- 
-// window.onload=function(){ new CountUp('August 14, 2014 10:20:23', 'counter'); }
