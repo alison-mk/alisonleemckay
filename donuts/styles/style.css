@@ -38,9 +38,8 @@ h1 {
   background: url("/graphics/donut-sprite.png") no-repeat top left;
   width: 150px;
   height: 148px;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.12" /><feFuncG type="linear" slope="1.12" /><feFuncB type="linear" slope="1.12" /></feComponentTransfer></filter></svg>#filter');
   -webkit-filter: brightness(112%);
-  -moz-filter: brightness(112%);
-  -o-filter: brightness(112%);
   filter: brightness(112%); }
 
 .sprite.sprite-1 {
@@ -79,7 +78,6 @@ small.credit {
 small.credit a {
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
   color: #888;
@@ -90,6 +88,8 @@ small.credit a:hover {
 
 .donut {
   -webkit-transition: -webkit-transform 1s ease-in-out;
+  -moz-transition: transform 1s ease-in-out;
+  -o-transition: transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);

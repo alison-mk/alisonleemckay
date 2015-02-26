@@ -1,6 +1,8 @@
 // DONUT ROTATE ON HOVER
 .donut {
   -webkit-transition: -webkit-transform 1s ease-in-out;
+     -moz-transition:         transform 1s ease-in-out; 
+       -o-transition:         transform 1s ease-in-out; 
           transition:         transform 1s ease-in-out; 
   -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
@@ -13,7 +15,7 @@
 }
 
 
-// DONUT IMAGE FADE
+// DONUT IMAGE FADE. 19s long, fading on continuous loop through all bites/phases
 .donut .sprite {
   -webkit-animation-name: donut-fade;
           animation-name: donut-fade;
@@ -27,74 +29,36 @@
           animation-delay: 0s; 
   position: absolute;
 }
+
 @-webkit-keyframes donut-fade {
-  0% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  92% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+  0%    { opacity: 1; }
+  17%   { opacity: 1; }
+  25%   { opacity: 0; }
+  92%   { opacity: 0; }
+  100%  { opacity: 0; }
 }
 @-moz-keyframes donut-fade {
-  0% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  92% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+  0%    { opacity: 1; }
+  17%   { opacity: 1; }
+  25%   { opacity: 0; }
+  92%   { opacity: 0; }
+  100%  { opacity: 0; }
 }
 @-o-keyframes donut-fade {
-  0% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  92% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+  0%    { opacity: 1; }
+  17%   { opacity: 1; }
+  25%   { opacity: 0; }
+  92%   { opacity: 0; }
+  100%  { opacity: 0; }
 }
 @keyframes donut-fade {
-  0% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  92% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+  0%    { opacity: 1; }
+  17%   { opacity: 1; }
+  25%   { opacity: 0; }
+  92%   { opacity: 0; }
+  100%  { opacity: 0; }
 }
+
 .donut .sprite-8 {
   -webkit-animation-delay: 14s;
           animation-delay: 14s;
