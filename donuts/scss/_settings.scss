@@ -1,0 +1,83 @@
+// TEXT, PAGE BASICS
+body {
+  background-color: #fffffe;
+  -webkit-text-stroke: 0.25px;
+}
+.container {
+  min-height: 300px;
+}
+h1 {
+  padding: 25px 0 0;
+  color: #bbb;
+  text-align: center;
+  font-size: 1.7em;  
+  font-family: 'Trade Winds', sans-serif;
+}
+#counter {
+  display: block;
+  margin: 0 auto;
+  max-width: 405px;
+  color: #bbb;
+  font-size: 1.5em;
+  font-family: 'Ubuntu Mono', sans-serif;
+  white-space: nowrap;
+}
+
+// DONUT    
+.donut {
+    position: relative;
+    top: 15%;
+    margin: 10% auto 0;
+    width: 150px;
+    height: 150px;
+}
+@media all and (max-width: 650px) {
+    .donut {
+      margin-top: 7%;
+    }
+    .container {
+      margin: 0 5%;
+    }
+}
+
+.sprite { 
+  background: url('/graphics/donut-sprite.png') no-repeat top left; 
+  width: 150px; 
+  height: 148px;
+  -webkit-filter: brightness(112%);
+  -moz-filter: brightness(112%);
+  -o-filter: brightness(112%);
+  filter: brightness(112%);
+} 
+
+.sprite.sprite-1 { background-position: 0px 0px;  } 
+.sprite.sprite-2 { background-position: 0px -158px;  } 
+.sprite.sprite-3 { background-position: 0px -316px;  } 
+.sprite.sprite-4 { background-position: 0px -474px;  } 
+.sprite.sprite-5 { background-position: 0px -632px;  } 
+.sprite.sprite-6 { background-position: 0px -790px;  } 
+.sprite.sprite-7 { background-position: 0px -948px;  } 
+.sprite.sprite-8 { background-position: 0px -1106px;  } 
+
+// CREDIT IN BOTTOM RIGHT CORNER
+small.credit {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #bbb;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+small.credit a {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  color: #888;
+  text-decoration: none;
+}
+small.credit a:hover {
+  text-shadow: 0px 0px 2px #888;
+}

@@ -1,27 +1,2 @@
-body {
-	// background-color: #efefef;
-	background-color:#e9d987;
-	-webkit-text-stroke: 0.25px;
-}
-.container {
-	min-height:300px;
-}
-h1 {
-	font-family:'Montserrat', sans-serif;
-	text-align:center;
-	// margin-top:200px;
-	// color:#f06977;
-	color: #639979;
-	// text-shadow: 1px 1px 10px #6f4b44;
-	padding:25px 0 0;
-	font-size:1.7em;	
-}
-#counter {
-	display:block;
-	text-align:center;
-	margin:0 auto;
-	font-size:1.5em;
-	margin:0 auto;
-	font-family:'Montserrat', sans-serif;
-	color: #639979;
-}   
+@import "settings";
+@import "css3";
