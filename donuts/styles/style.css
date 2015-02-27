@@ -20,6 +20,10 @@ h1 {
   font-size: 1.5em;
   font-family: 'Ubuntu Mono', sans-serif;
   white-space: nowrap; }
+  @media all and (max-width: 450px) {
+    #counter {
+      white-space: normal;
+      text-align: center; } }
 
 .donut {
   position: relative;
