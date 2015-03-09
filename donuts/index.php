@@ -34,7 +34,7 @@
 
 		//Donut counter
 		function start() {
-			new CountUp('February 20, 2015 10:03:41', 'counter');
+			new CountUp('March 03, 2015 12:28:07', 'counter');
 		}
 		window.onload = start;
 		
