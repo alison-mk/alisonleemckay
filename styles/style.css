@@ -211,7 +211,7 @@ header {
       font-size: 1.2em; }
 
 .about {
-  padding: 265px 250px 30px;
+  padding: 265px 250px 50px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -259,11 +259,11 @@ p.date {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
   .contact img:hover {
-    -webkit-filter: brightness(120%);
-    -moz-filter: brightness(120%);
-    filter: brightness(120%); }
+    -webkit-filter: brightness(90%);
+    -moz-filter: brightness(90%);
+    filter: brightness(90%); }
   .contact .email {
-    margin: 25px auto;
+    margin: 15px auto;
     width: 186px;
     text-align: center; }
 
@@ -282,8 +282,7 @@ p.date {
   header.smaller h1 {
     font-size: 1.5em; }
   header.smaller ul li {
-    font-size: 1em;
-    height: 1em; } }
+    font-size: 1em; } }
 @media all and (max-width: 600px) {
   body {
     font-size: 14px; }
@@ -291,17 +290,13 @@ p.date {
   h1 {
     font-size: 38px; }
 
-  h1.title {
-    padding-top: 20%; }
-
   header.smaller .menu-wrapper {
     max-width: 500px; }
   header.smaller h1 {
     font-size: 1.2em;
     margin-top: 7px; }
   header.smaller ul li {
-    font-size: .9em;
-    height: .9em; } }
+    font-size: .9em; } }
 @media all and (max-width: 550px) {
   header.smaller {
     background-color: rgba(153, 153, 153, 0.9);
@@ -310,9 +305,12 @@ p.date {
     header.smaller h1 {
       float: none;
       text-align: center; }
+    header.smaller a:hover {
+      text-shadow: 0px 0px 2px #999; }
     header.smaller .main-nav {
       float: none; }
     header.smaller ul {
+      float: none;
       padding: 0; }
       header.smaller ul li {
         float: none; }
@@ -326,8 +324,7 @@ p.date {
     font-size: 28px; }
 
   header ul li {
-    font-size: 1em;
-    height: 1em; }
+    font-size: 1em; }
 
   .about {
     padding-top: 230px; } }

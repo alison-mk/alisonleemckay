@@ -14,10 +14,6 @@ body {
 	font-family: 'Arvo', serif;
 }
 a {
-	// -webkit-transition: text-shadow 0.6s ease;
-	//    -moz-transition: text-shadow 0.6s ease;
-	// 	 -o-transition: text-shadow 0.6s ease;
-	// 		transition: text-shadow 0.6s ease;
 	-webkit-transition: all 1s ease;
 	   -moz-transition: all 1s ease;
 		 -o-transition: all 1s ease;
@@ -184,7 +180,7 @@ header {
 }
 // Content below header
 .about {
-	padding: 265px 250px 30px;
+	padding: 265px 250px 50px;
 	-webkit-transition: all 0.3s ease;
 	   -moz-transition: all 0.3s ease;
 		 -o-transition: all 0.3s ease;
@@ -240,12 +236,12 @@ p.date {
 				transition: all 0.5s ease;
 	}
 	img:hover {
-		-webkit-filter: brightness(120%);
-		-moz-filter: brightness(120%);
-		filter: brightness(120%);
+		-webkit-filter: brightness(90%);
+		   -moz-filter: brightness(90%);
+				filter: brightness(90%);
 	}
 	.email {
-		margin: 25px auto;
+		margin: 15px auto;
 		width: 186px;
 		text-align: center;
 	}

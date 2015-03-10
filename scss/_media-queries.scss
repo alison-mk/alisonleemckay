@@ -1,109 +1,122 @@
 @media all and (max-width: 1080px) {
 	.about {
-		padding-left:200px;
-		padding-right:200px;
+		padding-left: 200px;
+		padding-right: 200px;
 	}
 }
+
 @media all and (max-width: 880px) {
 	.about {
-		padding-left:15%;
-		padding-right:15%;	
+		padding-left: 15%;
+		padding-right: 15%;	
 	}
 }
+
 @media all and (max-width: 650px) {
 	header.smaller {
 		.menu-wrapper {
 			width: 100%;
-			max-width:542px;
+			max-width: 542px;
 		}
+
 	    h1 {
-	    	font-size:1.5em;
+	    	font-size: 1.5em;
 	    }
+
 	    ul {
 	    	li {
-	    		font-size:1em;
-	    		height:1em;
+	    		font-size: 1em;
 	    	}
 	    }
 	}
 }
+
 @media all and (max-width: 600px) {
 	body {
-		font-size:14px;
+		font-size: 14px;
 	}
+
 	h1 {
-		font-size:38px;
+		font-size: 38px;
 	}
-	h1.title {
-		padding-top:20%;
-	}
+
 	header.smaller {
 		.menu-wrapper {
-			max-width:500px;
+			max-width: 500px;
 		}
+
 	    h1 {
-	    	font-size:1.2em;
+	    	font-size: 1.2em;
 	    	margin-top: 7px;
 	    }
+
 	    ul {
 	    	li {
-	    		font-size:.9em;
-	    		height:.9em;
+	    		font-size: .9em;
 	    	}
 	    }
-	}
-	.about {
-		//padding-top:200px;
 	}
 }
 @media all and (max-width: 550px) {
 	header.smaller {
-		background-color:rgba(153, 153, 153, .9);
+		background-color: rgba(153,153,153,.9);
 		padding: 0 0 10px; 
-		height:85px;
-		.menu-wrapper {
-			//max-width: 250px;
-		}
+		height: 85px;
+
 	    h1 {
-	    	float:none;
+	    	float: none;
 	    	text-align: center;
 	    }
-	    .main-nav {
-	    	float:none;
+
+	    a:hover {
+	    	text-shadow: 0px 0px 2px #999;
 	    }
+
+	    .main-nav {
+	    	float: none;
+	    }
+
 	    ul { 
-	    	padding:0;
+	    	float: none;
+	    	padding: 0;
+
 	    	li {
-	    		float:none;
+	    		float: none;
+
 	    		a {
-	    			color:#fff;
+	    			color: #fff;
 	    		}
 	    	}
 
 	    }
 	}
+
 	.about {
-		padding-top:250px;
+		padding-top: 250px;
 	}
 }
+
 @media all and (max-width: 450px) {
 	h1 {
-		font-size:28px;
+		font-size: 28px;
 	}
+
 	header ul li {
-		font-size:1em;
-		height:1em;
+		font-size: 1em;
 	}
+
 	.about {
-		padding-top:230px;
+		padding-top: 230px;
 	}
 }
+
 @media all and (max-width: 350px) {
 	h1 {
-		font-size:18px;
+		font-size: 18px;
 	}
+
 	.about {
-		padding-top:200px;
+		padding-top: 200px;
 	}
 }
 
