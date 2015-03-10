@@ -65,10 +65,10 @@ body {
   font-family: 'Arvo', serif; }
 
 a {
-  -webkit-transition: text-shadow 0.6s ease;
-  -moz-transition: text-shadow 0.6s ease;
-  -o-transition: text-shadow 0.6s ease;
-  transition: text-shadow 0.6s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
   text-decoration: none;
   color: #D88D80; }
 
@@ -138,19 +138,19 @@ header {
   left: 0;
   z-index: 9;
   width: 100%;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  transition: all 0.6s ease; }
+  -webkit-transition: height 0.3s ease;
+  -moz-transition: height 0.3s ease;
+  -o-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+  overflow: hidden; }
   header h1 {
     margin: 0 auto;
-    position: relative;
-    top: 100px;
+    padding: 100px 0 30px;
     text-align: center;
-    -webkit-transition: left 0.4s ease, top 0.8s ease, font-size 0.6s ease;
-    -moz-transition: left 0.4s ease, top 0.8s ease, font-size 0.6s ease;
-    -o-transition: left 0.4s ease, top 0.8s ease, font-size 0.6s ease;
-    transition: left 0.4s ease, top 0.8s ease, font-size 0.6s ease; }
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
   header h1.title a {
     border: 3px solid #fff;
     padding: 0 10px 3px 15px;
@@ -164,13 +164,11 @@ header {
   header ul {
     margin: 0;
     padding: 0;
-    position: relative;
-    top: 130px;
     text-align: center;
-    -webkit-transition: right 0.4s ease, top 0.8s ease;
-    -moz-transition: right 0.4s ease, top 0.8s ease;
-    -o-transition: right 0.4s ease, top 0.8s ease;
-    transition: right 0.4s ease, top 0.8s ease; }
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
   header ul li {
     display: inline-block;
     padding: 0 15px;
@@ -178,10 +176,17 @@ header {
     font-size: 1.5em;
     font-family: 'Arvo', serif;
     font-weight: 400;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease; }
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+.transitioning {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .smaller {
   height: 75px;
@@ -191,27 +196,26 @@ header {
     width: 620px;
     position: relative; }
   .smaller h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
+    float: left;
     padding: 15px 0;
     font-size: 1.8em;
     text-align: left; }
   .smaller ul {
-    position: absolute;
-    top: 0;
-    right: 0;
-    float: right;
+    float: left;
+    position: relative;
+    margin: 0;
+    height: 22px;
     padding: 25px 0 25px 15px; }
     .smaller ul li {
+      float: left;
       font-size: 1.2em; }
 
 .about {
   padding: 265px 250px 30px;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  transition: all 0.6s ease; }
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .small-header.about {
   padding-top: 200px; }
