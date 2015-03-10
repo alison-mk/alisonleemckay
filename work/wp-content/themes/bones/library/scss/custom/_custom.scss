@@ -170,7 +170,7 @@ header.smaller {
 /*----FOOTER----*/
 .contact {
 	position:relative;
-	padding:0 0 50px 0; 
+	padding:40px 0 50px 0; 
 	ul {
 		margin: 0 auto;
 		width: 182px;
@@ -188,12 +188,13 @@ header.smaller {
 				transition: all .5s ease;
 	}
 	img:hover {
-		filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.12" /><feFuncG type="linear" slope="1.12" /><feFuncB type="linear" slope="1.12" /></feComponentTransfer></filter></svg>#filter');
-		-webkit-filter: brightness(112%);
-		        filter: brightness(112%);
+		filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.90" /><feFuncG type="linear" slope="0.90" /><feFuncB type="linear" slope="0.90" /></feComponentTransfer></filter></svg>#filter');
+		-webkit-filter: brightness(90%);
+		        filter: brightness(90%);
 	}
 	.email {
-		margin:25px auto;
-		width:186px;		
+		margin:15px auto;
+		width:186px;	
+		text-align: center;	
 	}
 }
