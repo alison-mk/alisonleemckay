@@ -8,6 +8,7 @@
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link href="/styles/style.css" rel="stylesheet">
 		<title>Time Since Donut</title>
+		<?php require_once('twitter-call.php'); ?>
 	</head>
 	<body>
 		<div class="container">
@@ -34,7 +35,7 @@
 
 		//Donut counter
 		function start() {
-			new CountUp('March 03, 2015 12:28:07', 'counter');
+			new CountUp('<?php echo date_format($newTimeZone, 'F d, Y H:i:s') ?>', 'counter');
 		}
 		window.onload = start;
 		

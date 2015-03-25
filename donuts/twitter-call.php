@@ -27,13 +27,18 @@ $count = 0;
 foreach($string as $item) {
 	if($count < 1){
 		$time = $item[0][created_at];
-		echo "Old time: ".$time."<br />";
+		echo "Old time: ".$time."<br />";	
 
-		$newTime = new DateTime($time);
-		echo "New time: ".$newTime->format('F d, Y H:i:s')."<br />";
-		
-		//$newTime->format('F d, Y H:i:s') = $donutTime;
-		//echo "Donut time: ".$donutTime."<br />";
+		$newTimeObject = new DateTime($time);
+		echo "New time object: ".$newTimeObject->format('F d, Y H:i:s'). "\n";
+
+		$newTimeFormat = $newTimeObject->format('F d, Y H:i:s');
+		echo "New time format: ".$newTimeFormat. "\n";		
+
+		// New time with correct time zone
+		$newTimeZone = date_create($newTimeFormat, timezone_open('Europe/London'));
+		date_timezone_set($newTimeZone, timezone_open('America/Los_Angeles'));
+		echo date_format($newTimeZone, 'F d, Y H:i:s') . "\n";
 		
 		$count++;
 	}
