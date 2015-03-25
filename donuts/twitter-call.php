@@ -26,19 +26,18 @@ if($string["errors"][0]["message"] != "") {echo "<h3>Sorry, there was a problem.
 $count = 0;
 foreach($string as $item) {
 	if($count < 1){
-		$time = $item[0][created_at];
-		echo "Old time: ".$time."<br />";	
+		// Get time of most recent tweet with donut hashtag
+		$time = $item[0][created_at];	
 
+		// Set up Twitter time for reformatting for CountUp script
 		$newTimeObject = new DateTime($time);
-		echo "New time object: ".$newTimeObject->format('F d, Y H:i:s'). "\n";
 
+		// Format time for CountUp script
 		$newTimeFormat = $newTimeObject->format('F d, Y H:i:s');
-		echo "New time format: ".$newTimeFormat. "\n";		
 
-		// New time with correct time zone
+		// Set new time to correct time zone
 		$newTimeZone = date_create($newTimeFormat, timezone_open('Europe/London'));
 		date_timezone_set($newTimeZone, timezone_open('America/Los_Angeles'));
-		echo date_format($newTimeZone, 'F d, Y H:i:s') . "\n";
 		
 		$count++;
 	}
