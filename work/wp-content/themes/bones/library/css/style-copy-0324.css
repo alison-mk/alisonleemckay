@@ -1172,13 +1172,13 @@ h3, .h3 {
   font-size: 1.125em;
   font-family: "Arvo", Cambria, Times New Roman, Times, serif;
   font-weight: 400;
-  color: #7D8C5A; }
+  color: #334D70; }
 
 h4, .h4 {
   font-size: 1.1em;
   font-family: "Arvo", Cambria, Times New Roman, Times, serif;
   font-weight: 400;
-  color: #7D8C5A; }
+  color: #334D70; }
 
 h5, .h5 {
   font-size: 0.846em;
@@ -1250,11 +1250,16 @@ POSTS & CONTENT STYLES
       margin: 0; }
 
 /* end .hentry */
+.single-title,
+.page-title,
+.entry-title {
+  margin: 0; }
+
 /* post meta */
 .byline {
-  color: #7D8C5A;
+  color: #9fa6b4;
   font-style: italic;
-  font-size: small; }
+  margin: 0; }
 
 /* entry content */
 .entry-content p {
@@ -1522,15 +1527,6 @@ SIDEBARS & ASIDES
   border-radius: 2px;
   margin-bottom: 1.5em; }
 
-.widgettitle {
-  color: #888;
-  font-family: "Playfair Display", Times, serif;
-  text-transform: uppercase;
-  font-weight: 900; }
-
-.sidebar.last-col {
-  float: left; }
-
 /*********************
 FOOTER STYLES
 *********************/
@@ -1568,9 +1564,7 @@ LARGER MOBILE DEVICES
       display: block;
       clear: both; }
 
-  /* end .entry-content */
-  .sidebar {
-    margin-top: 2.2em; } }
+  /* end .entry-content */ }
 /*********************
 TABLET & SMALLER LAPTOPS
 *********************/
@@ -1608,11 +1602,15 @@ TABLET & SMALLER LAPTOPS
   /*********************
   SIDEBARS & ASIDES
   *********************/
+  .sidebar {
+    margin-top: 2.2em; }
+
   .widgettitle {
+    border-bottom: 2px solid #444;
     margin-bottom: 0.75em; }
 
   .widget {
-    padding: 0 30px;
+    padding: 0 10px;
     margin: 2.2em 0; }
     .widget ul li {
       margin-bottom: 0.75em;

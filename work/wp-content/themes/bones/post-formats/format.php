@@ -14,7 +14,7 @@
                 */
               ?>
 
-              <article id="post-<?php the_ID(); ?>" <?php post_class('cf m-all t-2of3 d-5of7'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+              <article id="post-<?php the_ID(); ?>" <?php post_class('cf m-all t-all d-5of7'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
 
                 <div class="article-header entry-header">
 

@@ -99,14 +99,14 @@ h3, .h3 {
 	font-size: 1.125em;
 	font-family: $serif;
 	font-weight:400;
-	color:$navy;
+	color:$green;
 }
 
 h4, .h4 {
 	font-size: 1.1em;
 	font-family: $serif;
 	font-weight:400;
-	color:$navy;
+	color:$green;
 }
 
 h5, .h5 {
@@ -209,14 +209,15 @@ POSTS & CONTENT STYLES
 .single-title,
 .page-title,
 .entry-title {
-	margin: 0;
+	//margin: 0;
 }
 
 /* post meta */
 .byline {
-	color: $meta-gray;
+	color: $green;
+	//margin: 0;
 	font-style: italic;
-	margin: 0;
+	font-size: small;
 }
 
 /* entry content */
@@ -611,6 +612,17 @@ SIDEBARS & ASIDES
 	border: 1px solid $border-color;
 	border-radius: 2px;
 	margin-bottom: 1.5em;
+}
+
+.widgettitle {
+	color: $gray;
+	font-family: $header-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.sidebar.last-col {
+	float: left;
 }
 
 /*********************
