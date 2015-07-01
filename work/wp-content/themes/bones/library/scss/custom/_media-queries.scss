@@ -2,109 +2,135 @@
 	header ul li {
 		font-size: 21px;
 	}
-	header.smaller {
+
+	.baby-header {
+
 		.menu-wrapper {
 			width: 100%;
 			max-width:542px;
 		}
-	    h1 {
-	    	font-size:1.5em;
-	    }
-	    ul {
-	    	li {
-	    		font-size: 16px;
-	    		font-size: 16px;
-	    	}
-	    }
+
+    h1 {
+    	font-size:1.5em;
+    }
+
+    ul {
+
+    	li {
+    		font-size: 16px;
+    		font-size: 16px;
+    	}
+    }
 	}
 }
+
 @media all and (max-width: 599px) {
 	body {
 		font-size:14px;
 	}
+
 	header h1 {
 		font-size:38px;
 	}
-	header.smaller {
+
+	.baby-header {
+
 		.menu-wrapper {
 			max-width:500px;
 		}
-	    h1 {
-	    	font-size:1.2em;
-	    	margin-top: 7px;
-	    }
-	    ul {
-	    	li {
-	    		font-size: 14px;
-	    		height:14px;
-	    	}
-	    }
+
+    h1 {
+    	font-size:1.2em;
+    	margin-top: 7px;
+    }
+
+    ul {
+
+    	li {
+    		font-size: 14px;
+    		height:14px;
+    	}
+    }
 	}
 }
+
 @media all and (max-width: 550px) {
-	header.smaller {
+	.baby-header {
 		background-color:rgba(153, 153, 153, .9);
 		height:85px;
-		padding: 0 0 10px; 
-	    h1 {
-	    	float:none;
-	    	text-align: center;
-	    	margin-top:0;
-	    }
-	    .main-nav {
-	    	float:none;
-	    }
-	    ul { 
-	    	padding:0;
-	    	li {
-	    		float:none;
-	    		a {
-	    			color:#fff;
-	    		}
-	    	}
+		padding: 0 0 10px;
 
-	    }
+    h1 {
+    	float:none;
+    	text-align: center;
+    	margin-top:0;
+    }
+
+    .main-nav {
+    	float:none;
+    }
+
+    ul {
+    	padding:0;
+
+    	li {
+    		float:none;
+
+    		a {
+    			color:#fff;
+    		}
+    	}
+	  }
 	}
+
 	#inner-content {
 		padding-top:250px;
 	}
 }
+
 @media all and (max-width: 450px) {
 	header h1 {
 		font-size:28px;
 	}
+
 	header ul li {
 		font-size:14px;
 		height:14px;
 	}
+
 	#inner-content {
 		padding-top:230px;
 	}
+
 	.project-overview {
+
 		h2.page-title, a {
 			max-width:186px;
 			margin:0 auto;
 		}
 	}
 }
+
 @media all and (max-width: 350px) {
 	header h1 {
 		font-size:18px;
 	}
+
 	#inner-content {
 		padding-top:200px;
 	}
+
 	.footer-cta {
 		h5 {
 			text-align:center;
+
 			&:first-child a {
 				margin:0;
 			}
+
 			a {
 				float:none;
 			}
 		}
 	}
 }
-
-

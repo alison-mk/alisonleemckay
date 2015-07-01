@@ -42,14 +42,27 @@
 		<div id="container">
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-				<div class="menu-wrapper">
-					<h1 class="title"><a href="http://alisonleemckay.com">Alison McKay</a></h1>
-					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" class="main-nav">
-						<ul>
-							<li><a href="http://work.alisonleemckay.com">see my work</a></li>
-							<li><a href="mailto:mckay.ali@gmail.com" target="_blank">contact me</a></li>
-						</ul>
-					</nav>	
+				<div class="menu main-header">
+					<div class="menu-wrapper">
+						<h1 class="title"><a href="http://alisonleemckay.com">Alison McKay</a></h1>
+						<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" class="main-nav">
+							<ul>
+								<li><a href="http://work.alisonleemckay.com">see my work</a></li>
+								<li><a href="mailto:mckay.ali@gmail.com" target="_blank">contact me</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="menu baby-header">
+					<div class="menu-wrapper">
+						<h1 class="title"><a href="http://alisonleemckay.com">Alison McKay</a></h1>
+						<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" class="main-nav">
+							<ul>
+								<li><a href="http://work.alisonleemckay.com">see my work</a></li>
+								<li><a href="mailto:mckay.ali@gmail.com" target="_blank">contact me</a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
 

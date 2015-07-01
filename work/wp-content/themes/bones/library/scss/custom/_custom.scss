@@ -1,6 +1,6 @@
 /*----STICKY HEADER----*/
 // Header, general styles
-header {
+.menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,117 +8,122 @@ header {
     width: 100%;
     overflow: hidden;
     -webkit-transition: height 0.3s;
-       -moz-transition: height 0.3s;
-    	 -o-transition: height 0.3s;
-    		transition: height 0.3s;
-	ul {
+    transition: height 0.3s;
+
+  ul {
 		margin:0;
 		padding:0;
 		text-align:center;
-	    -webkit-transition: all 0.3s;
-	       -moz-transition: all 0.3s;
-	    	 -o-transition: all 0.3s;
-	    		transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+	  transition: all 0.3s;
 	}
+
 	ul li {
 		display:inline-block;
 		padding:0 15px;
 		font-size: 24px;
 		font-family: 'Arvo', serif;
 		text-transform:lowercase;
-		font-weight: 400;		
-	    -webkit-transition: all 0.3s;
-	       -moz-transition: all 0.3s;
-	    	 -o-transition: all 0.3s;
-	    		transition: all 0.3s;
+		font-weight: 400;
+    -webkit-transition: all 0.3s;
+	  transition: all 0.3s;
 	}
 }
+
 // Header when sticky
-header.smaller {
-    background-color:$grey-op;
-    height: 75px;
-    .menu-wrapper {
+.baby-header {
+  display: none;
+  background-color:$grey-op;
+  height: 75px;
+
+  .menu-wrapper {
 		margin:0 auto;
 		position: relative;
 		width: 620px;
-    }
-    h1 {
-    	float:left;
-    	padding:15px 0;
-    	font-size:1.8em;
-    	text-align:left;
-    }
-    .main-nav {
-    	float:left;
-    }
-    ul {
-    	position:relative;
-    	margin:0;
-    	padding:25px 0 25px 15px;
-    	height:22px;
-    	li {
-    		float: left;
-    		font-size:1.2em;    		
-    	}
-    }
+  }
+
+  h1 {
+  	float:left;
+  	padding:15px 0;
+  	font-size:1.8em;
+  	text-align:left;
+  }
+
+  .main-nav {
+  	float:left;
+  }
+
+  ul {
+  	position:relative;
+  	margin:0;
+  	padding:25px 0 25px 15px;
+  	height:22px;
+
+    li {
+  		float: left;
+  		font-size:1.2em;
+  	}
+  }
 }
+
 
 // Content below header
 #inner-content {
 	padding-top: 265px;
-    -webkit-transition: all 0.3s;
-       -moz-transition: all 0.3s;
-    	 -o-transition: all 0.3s;
-    		transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
+
 
 // Content below header when sticky
 .small-header#inner-content {
 	padding-top:200px;
 }
 
+
 // Project overview page styles
 .project-overview {
 	h2.page-title {
 		margin-right:15px;
 	}
+
 	a:hover {
 		text-shadow:none;
 	}
+
 	ul {
 		li {
 			padding-bottom: 15px;
-			a {
+
+      a {
 				display: block;
 				position:relative;
 				overflow: hidden;
 				height: 186px;
-				background-size: cover;	
+				background-size: cover;
 				background-position: center center;
 				border:3px solid $gray;
+			  -webkit-transition: all 0.2s ease;
+			  transition: all 0.2s ease;
 
-			    -webkit-transition: all 0.2s ease;
-			       -moz-transition: all 0.2s ease;
-			    	 -o-transition: all 0.2s ease;
-			    		transition: all 0.2s ease;
-				
 				h3 {
 					position:absolute;
 					bottom:0;
-				    left: -100%;
+				  left: -100%;
 					margin:0;
 					width:100%;
 					background-color:$gray;
 					color:#fff;
 					font-family:$header-serif;
-				    -webkit-transition: all 0.5s ease;
-				       -moz-transition: all 0.5s ease;
-				    	 -o-transition: all 0.5s ease;
-				    		transition: all 0.5s ease;
+				  -webkit-transition: all 0.5s ease;
+				  transition: all 0.5s ease;
 				}
-				&:hover {
+
+				&:hover,
+        &:focus {
 					border:6px solid $gray;
-					h3 {
+
+          h3 {
 						left: 0;
 					}
 				}
@@ -127,74 +132,82 @@ header.smaller {
 	}
 }
 
+
 // Project detail page styles
 .project-detail {
 	margin:0 auto;
 	max-width:670px;
-	h2 {
+
+  h2 {
 		margin-bottom:25px;
 	}
+
 	h5 a {
-	    display: inline-block;
+    display: inline-block;
 		float:left;
 		border:3px solid $gray;
-	    background: transparent;
-	    box-shadow: inset 0 0 0 0 $gray;
+	  background: transparent;
+	  box-shadow: inset 0 0 0 0 $gray;
 		padding:8px 10px;
-	    color: $gray;
+	  color: $gray;
 		text-transform:uppercase;
 		letter-spacing:1px;
 		font-size:16px;
-	    text-align: center;
-		
+	  text-align: center;
 		-webkit-transition: all ease 0.5s;
-		   -moz-transition: all ease 0.5s;
-			 -o-transition: all ease 0.5s;
-				transition: all ease 0.5s;
-		
-		&:hover, &:active, &:focus {
-		    box-shadow: inset 250px 0 0 0 $gray;
+		transition: all ease 0.5s;
+
+		&:hover,
+    &:active,
+    &:focus {
+		  box-shadow: inset 250px 0 0 0 $gray;
 			text-shadow:none;
 			color:#fff;
 		}
 	}
+
 	h5:first-child a {
 		margin-right:15px;
 	}
+
 	.footer-cta {
 		margin:0 auto;
 		max-width:318px;
 	}
 }
 
+
 /*----FOOTER----*/
 .contact {
 	position:relative;
-	padding:40px 0 50px 0; 
-	ul {
+	padding:40px 0 50px 0;
+
+  ul {
 		margin: 0 auto;
 		width: 182px;
 		padding: 0;
 	}
+
 	ul li {
 		display:inline-block;
 		margin:0 5px 0 5px;
 		color: #569071;
 	}
+
 	img {
 		-webkit-transition: all .5s ease;
-		   -moz-transition: all .5s ease;
-			 -o-transition: all .5s ease;
-				transition: all .5s ease;
+		transition: all .5s ease;
 	}
-	img:hover {
-		filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.90" /><feFuncG type="linear" slope="0.90" /><feFuncB type="linear" slope="0.90" /></feComponentTransfer></filter></svg>#filter');
+
+	img:hover,
+  img:focus {
 		-webkit-filter: brightness(90%);
-		        filter: brightness(90%);
+		filter: brightness(90%);
 	}
+
 	.email {
 		margin:15px auto;
-		width:186px;	
-		text-align: center;	
+		width:186px;
+		text-align: center;
 	}
 }

@@ -66,8 +66,6 @@ body {
 
 a {
   -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
   transition: all 1s ease;
   text-decoration: none;
   color: #D88D80; }
@@ -132,44 +130,38 @@ h6 {
   max-width: 1070px; }
 
 /*----STICKY HEADER----*/
-header {
+.menu {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9;
   width: 100%;
   -webkit-transition: height 0.3s ease;
-  -moz-transition: height 0.3s ease;
-  -o-transition: height 0.3s ease;
   transition: height 0.3s ease;
   overflow: hidden; }
-  header h1 {
+  .menu h1 {
     margin: 0 auto;
     padding: 100px 0 30px;
     text-align: center;
     -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-  header h1.title a {
+  .menu h1.title a {
     border: 3px solid #fff;
     padding: 0 10px 3px 15px;
     color: #fff;
     font-weight: 900; }
-    header h1.title a:hover {
+    .menu h1.title a:hover {
       color: #fff;
       text-shadow: none; }
-    header h1.title a:visited:link, header h1.title a:hover, header h1.title a:link, header h1.title a:active, header h1.title a:focus {
+    .menu h1.title a:visited:link, .menu h1.title a:hover, .menu h1.title a:link, .menu h1.title a:active, .menu h1.title a:focus {
       color: #fff; }
-  header ul {
+  .menu ul {
     margin: 0;
     padding: 0;
     text-align: center;
     -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-  header ul li {
+  .menu ul li {
     display: inline-block;
     padding: 0 15px;
     text-transform: lowercase;
@@ -177,44 +169,34 @@ header {
     font-family: 'Arvo', serif;
     font-weight: 400;
     -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
 
-.transitioning {
-  opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-
-.smaller {
+.baby-header {
+  display: none;
   height: 75px;
   background-color: rgba(204, 204, 204, 0.8); }
-  .smaller .menu-wrapper {
+  .baby-header .menu-wrapper {
     margin: 0 auto;
     width: 620px;
     position: relative; }
-  .smaller h1 {
+  .baby-header h1 {
     float: left;
     padding: 15px 0;
     font-size: 1.8em;
     text-align: left; }
-  .smaller ul {
+  .baby-header ul {
     float: left;
     position: relative;
     margin: 0;
     height: 22px;
     padding: 25px 0 25px 15px; }
-    .smaller ul li {
+    .baby-header ul li {
       float: left;
       font-size: 1.2em; }
 
 .about {
   padding: 265px 250px 50px;
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
 .small-header.about {
@@ -255,12 +237,9 @@ p.date {
     color: #569071; }
   .contact img {
     -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
   .contact img:hover {
     -webkit-filter: brightness(90%);
-    -moz-filter: brightness(90%);
     filter: brightness(90%); }
   .contact .email {
     margin: 15px auto;
@@ -276,12 +255,12 @@ p.date {
     padding-left: 15%;
     padding-right: 15%; } }
 @media all and (max-width: 650px) {
-  header.smaller .menu-wrapper {
+  .baby-header .menu-wrapper {
     width: 100%;
     max-width: 542px; }
-  header.smaller h1 {
+  .baby-header h1 {
     font-size: 1.5em; }
-  header.smaller ul li {
+  .baby-header ul li {
     font-size: 1em; } }
 @media all and (max-width: 600px) {
   body {
@@ -290,31 +269,31 @@ p.date {
   h1 {
     font-size: 38px; }
 
-  header.smaller .menu-wrapper {
+  .baby-header .menu-wrapper {
     max-width: 500px; }
-  header.smaller h1 {
+  .baby-header h1 {
     font-size: 1.2em;
     margin-top: 7px; }
-  header.smaller ul li {
+  .baby-header ul li {
     font-size: .9em; } }
 @media all and (max-width: 550px) {
-  header.smaller {
+  .baby-header {
     background-color: rgba(153, 153, 153, 0.9);
     padding: 0 0 10px;
     height: 85px; }
-    header.smaller h1 {
+    .baby-header h1 {
       float: none;
       text-align: center; }
-    header.smaller a:hover {
+    .baby-header a:hover {
       text-shadow: 0px 0px 2px #999; }
-    header.smaller .main-nav {
+    .baby-header .main-nav {
       float: none; }
-    header.smaller ul {
+    .baby-header ul {
       float: none;
       padding: 0; }
-      header.smaller ul li {
+      .baby-header ul li {
         float: none; }
-        header.smaller ul li a {
+        .baby-header ul li a {
           color: #fff; }
 
   .about {

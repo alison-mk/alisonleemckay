@@ -1,28 +1,24 @@
-// toggle transition on scroll
-function init() {
-    window.addEventListener('scroll', function(e){
-        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 40,
-            header = document.querySelector("header");
-        if (distanceY > shrinkOn) {
-            
-            // header transition
-            $('header').addClass('smaller');
-            
-            // body transition
-            $('.about').addClass('small-header');
-        
-        } else {
-            if ($('header').hasClass('smaller')) {
-            	
-                // header transition
-                $('header').removeClass('smaller');
-            	
-                // body transition
-                $('.about').removeClass('small-header');
-            }
-        }
-    });    
-}
+$(document).ready(scroller());
 
-window.onload = init();
+// Switch menus on scroll
+function scroller() {
+    window.addEventListener('scroll', function(e){
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+        var shrinkOne = 10;
+        var shrinkTwo = 120;
+
+        if (distanceY > shrinkOne) {
+           $(".main-header").fadeOut();
+           $(".about").addClass(".small-header");
+        } else {
+           $(".main-header").fadeIn();
+           $(".about").removeClass(".small-header");
+        }
+
+        if (distanceY > shrinkTwo) {
+           $(".baby-header").fadeIn();
+        } else {
+           $(".baby-header").fadeOut();
+        }
+    });
+}

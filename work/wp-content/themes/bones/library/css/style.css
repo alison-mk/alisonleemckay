@@ -1707,7 +1707,7 @@ CUSTOM STYLESHEETS
 All media types, loading after all Bones styles.
 *********************/
 /*----STICKY HEADER----*/
-header {
+.menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -1715,18 +1715,14 @@ header {
   width: 100%;
   overflow: hidden;
   -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  -o-transition: height 0.3s;
   transition: height 0.3s; }
-  header ul {
+  .menu ul {
     margin: 0;
     padding: 0;
     text-align: center;
     -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s; }
-  header ul li {
+  .menu ul li {
     display: inline-block;
     padding: 0 15px;
     font-size: 24px;
@@ -1734,38 +1730,35 @@ header {
     text-transform: lowercase;
     font-weight: 400;
     -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s; }
 
-header.smaller {
+.baby-header {
+  display: none;
   background-color: rgba(204, 204, 204, 0.8);
   height: 75px; }
-  header.smaller .menu-wrapper {
+  .baby-header .menu-wrapper {
     margin: 0 auto;
     position: relative;
     width: 620px; }
-  header.smaller h1 {
+  .baby-header h1 {
     float: left;
     padding: 15px 0;
     font-size: 1.8em;
     text-align: left; }
-  header.smaller .main-nav {
+  .baby-header .main-nav {
     float: left; }
-  header.smaller ul {
+  .baby-header ul {
     position: relative;
     margin: 0;
     padding: 25px 0 25px 15px;
     height: 22px; }
-    header.smaller ul li {
+    .baby-header ul li {
       float: left;
       font-size: 1.2em; }
 
 #inner-content {
   padding-top: 265px;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s; }
 
 .small-header#inner-content {
@@ -1786,8 +1779,6 @@ header.smaller {
     background-position: center center;
     border: 3px solid #888;
     -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
     transition: all 0.2s ease; }
     .project-overview ul li a h3 {
       position: absolute;
@@ -1799,12 +1790,10 @@ header.smaller {
       color: #fff;
       font-family: "Playfair Display", Times, serif;
       -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
       transition: all 0.5s ease; }
-    .project-overview ul li a:hover {
+    .project-overview ul li a:hover, .project-overview ul li a:focus {
       border: 6px solid #888; }
-      .project-overview ul li a:hover h3 {
+      .project-overview ul li a:hover h3, .project-overview ul li a:focus h3 {
         left: 0; }
 
 .project-detail {
@@ -1825,8 +1814,6 @@ header.smaller {
     font-size: 16px;
     text-align: center;
     -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-    -o-transition: all ease 0.5s;
     transition: all ease 0.5s; }
     .project-detail h5 a:hover, .project-detail h5 a:active, .project-detail h5 a:focus {
       box-shadow: inset 250px 0 0 0 #888;
@@ -1852,11 +1839,9 @@ header.smaller {
     color: #569071; }
   .contact img {
     -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
     transition: all .5s ease; }
-  .contact img:hover {
-    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.90" /><feFuncG type="linear" slope="0.90" /><feFuncB type="linear" slope="0.90" /></feComponentTransfer></filter></svg>#filter');
+  .contact img:hover,
+  .contact img:focus {
     -webkit-filter: brightness(90%);
     filter: brightness(90%); }
   .contact .email {
@@ -1868,12 +1853,12 @@ header.smaller {
   header ul li {
     font-size: 21px; }
 
-  header.smaller .menu-wrapper {
+  .baby-header .menu-wrapper {
     width: 100%;
     max-width: 542px; }
-  header.smaller h1 {
+  .baby-header h1 {
     font-size: 1.5em; }
-  header.smaller ul li {
+  .baby-header ul li {
     font-size: 16px;
     font-size: 16px; } }
 @media all and (max-width: 599px) {
@@ -1883,30 +1868,30 @@ header.smaller {
   header h1 {
     font-size: 38px; }
 
-  header.smaller .menu-wrapper {
+  .baby-header .menu-wrapper {
     max-width: 500px; }
-  header.smaller h1 {
+  .baby-header h1 {
     font-size: 1.2em;
     margin-top: 7px; }
-  header.smaller ul li {
+  .baby-header ul li {
     font-size: 14px;
     height: 14px; } }
 @media all and (max-width: 550px) {
-  header.smaller {
+  .baby-header {
     background-color: rgba(153, 153, 153, 0.9);
     height: 85px;
     padding: 0 0 10px; }
-    header.smaller h1 {
+    .baby-header h1 {
       float: none;
       text-align: center;
       margin-top: 0; }
-    header.smaller .main-nav {
+    .baby-header .main-nav {
       float: none; }
-    header.smaller ul {
+    .baby-header ul {
       padding: 0; }
-      header.smaller ul li {
+      .baby-header ul li {
         float: none; }
-        header.smaller ul li a {
+        .baby-header ul li a {
           color: #fff; }
 
   #inner-content {
