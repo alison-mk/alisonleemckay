@@ -28,25 +28,26 @@
 		<small class="credit">A site by <a href="http://alisonleemckay.com" target="_blank" title="Learn about Alison's non-donut work">Alison McKay</a> and <a href="http://juliecochran.com" target="_blank" title="See Julie's portfolio">Julie Cochran</a>.</small>
 		<script src="script.js"></script>
 		<script>
-		/*
-		* CountUp script by Praveen Lobo 
-		* (http://PraveenLobo.com/techblog/javascript-countup-timer/)
-		*/
+			/*
+			* CountUp script by Praveen Lobo
+			* (http://PraveenLobo.com/techblog/javascript-countup-timer/)
+			*/
 
-		//Donut counter
-		function start() {
-			new CountUp('<?php echo date_format($newTimeZone, 'F d, Y H:i:s') ?>', 'counter');
-		}
-		window.onload = start;
-		
-		//Google Analytics
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			//Donut counter
+			function start() {
+				// new CountUp('<?php echo date_format($newTimeZone, 'F d, Y H:i:s') ?>', 'counter');
+				new CountUp('July 05, 2015 16:43:22', 'counter');
+			}
+			window.onload = start;
 
-		ga('create', 'UA-59777245-2', 'auto');
-		ga('send', 'pageview');
+			//Google Analytics
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-59777245-2', 'auto');
+			ga('send', 'pageview');
 		</script>
 	</body>
 </html>

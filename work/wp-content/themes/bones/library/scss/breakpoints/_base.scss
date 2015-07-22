@@ -10,13 +10,29 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $serif;
-	font-size: 100%;
+	font-family: $sans-serif;
+	font-size: 13px;
 	line-height: 1.5;
 	color: $text-color;
-	background-color: #ccc;
-  	//-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
+	background-color: $sky;
+  -moz-osx-font-smoothing: grayscale;
+	-webkit-transition: all 4s ease;
+	transition: all 4s ease;
+
+	&.sky,
+	&.sky .baby-header {
+		background-color: $sky;
+	}
+
+	&.blush,
+	&.blush .baby-header {
+		background-color: $blush;
+	}
+
+	&.mint,
+	&.mint .baby-header {
+		background-color: $mint;
+	}
 }
 
 /*********************
@@ -44,13 +60,13 @@ a, a:visited {
 	/* on hover */
 	&:hover, &:focus {
 		color: $link-color;
-		text-shadow: 0px 0px 2px $pink;
+		text-shadow: 0px 0px 2px $navy;
 	}
 
 	/* on click */
 	&:active {
 		color: $link-color;
-		text-shadow: 0px 0px 2px $pink;
+		text-shadow: 0px 0px 2px $navy;
 	}
 
 	/* mobile tap color */
@@ -91,32 +107,32 @@ h2, .h2 {
 	margin-bottom: 0.375em;
 	text-transform:uppercase;
 	font-weight: 900;
-	color:$gray;
-	border-bottom:3px solid $gray;
+	color:#fff;
+	border-bottom:3px solid #fff;
 }
 
 h3, .h3 {
 	font-size: 1.125em;
-	font-family: $serif;
+	font-family: $sans-serif;
 	font-weight:400;
-	color:$green;
+	color:$navy;
 }
 
 h4, .h4 {
 	font-size: 1.1em;
-	font-family: $serif;
+	font-family: $sans-serif;
 	font-weight:400;
-	color:$green;
+	color:$navy;
 }
 
 h5, .h5 {
 	font-size: 0.846em;
 	line-height: 2.09em;
 	font-weight:900;
-	color:$gray;
+	color:$navy;
 }
 h6, .h6 {
-	font-family: $serif;
+	font-family: $sans-serif;
 	font-weight:400;
 	color:#fff;
 
@@ -130,13 +146,11 @@ header {
 	h1 {
 		text-align: center;
 		margin: 0 auto;
-		padding: 100px 0 30px;	
-		font-size: 50px;	
-	    
-	    -webkit-transition: all 0.3s ease;
-	       -moz-transition: all 0.3s ease;
-	    	 -o-transition: all 0.3s ease;
-	    		transition: all 0.3s ease;
+		padding: 100px 0 30px;
+		font-size: 50px;
+		-webkit-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+
 		a {
 			color: #fff;
 			font-weight: 900;
@@ -150,6 +164,7 @@ header {
 		}
 	}
 }
+
 #logo {
 	margin: 0.75em 0;
 	a {
@@ -168,7 +183,7 @@ NAVIGATION STYLES
 
 		a {
 			display: block;
-			color: $pink;
+			color: $navy;
 			text-decoration: none;
 			padding: 0.75em;
 		}

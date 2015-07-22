@@ -15,8 +15,8 @@ IMPORTING PARTIALS
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url("http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
 article,
 aside,
 details,
@@ -428,7 +428,7 @@ span.amp {
   font-style: italic; }
 
 /******************************************************************
-Site Name: Alison McKay, Front End Developer 
+Site Name: Alison McKay, Front End Developer
 Author: Alison McKay
 
 Stylesheet: Variables
@@ -440,7 +440,7 @@ No one likes a mess.
 
 ******************************************************************/
 /******************************************************************
-Site Name: Alison McKay, Front End Developer 
+Site Name: Alison McKay, Front End Developer
 Author: Alison McKay
 
 Stylesheet: Typography
@@ -780,7 +780,7 @@ BUTTON DEFAULTS
 .blue-btn, .comment-reply-link, #submit {
   display: inline-block;
   position: relative;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   text-decoration: none;
   color: #fff;
   font-size: 0.9em;
@@ -850,7 +850,7 @@ textarea,
   border: 0;
   width: 100%;
   max-width: 400px;
-  font-family: "Arvo", Cambria, Times New Roman, Times, serif;
+  font-family: Cambria, Times New Roman, Times, serif;
   background-color: #888;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
@@ -1100,12 +1100,20 @@ Stylesheet: Base Mobile Stylesheet
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Arvo", Cambria, Times New Roman, Times, serif;
-  font-size: 100%;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 13px;
   line-height: 1.5;
   color: #334D70;
-  background-color: #ccc;
-  -moz-osx-font-smoothing: grayscale; }
+  background-color: rgba(123, 198, 220, 0.8);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: all 4s ease;
+  transition: all 4s ease; }
+  body.sky, body.sky .baby-header {
+    background-color: rgba(123, 198, 220, 0.8); }
+  body.blush, body.blush .baby-header {
+    background-color: rgba(237, 186, 191, 0.8); }
+  body.mint, body.mint .baby-header {
+    background-color: rgba(173, 212, 162, 0.8); }
 
 /*********************
 LAYOUT & GRID STYLES
@@ -1123,17 +1131,17 @@ a {
   -o-transition: all 1s ease; }
 
 a, a:visited {
-  color: #D88D80;
+  color: #334D70;
   text-decoration: none;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #D88D80;
-    text-shadow: 0px 0px 2px #D88D80; }
+    color: #334D70;
+    text-shadow: 0px 0px 2px #334D70; }
   a:active, a:visited:active {
-    color: #D88D80;
-    text-shadow: 0px 0px 2px #D88D80; }
+    color: #334D70;
+    text-shadow: 0px 0px 2px #334D70; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -1165,29 +1173,29 @@ h2, .h2 {
   margin-bottom: 0.375em;
   text-transform: uppercase;
   font-weight: 900;
-  color: #888;
-  border-bottom: 3px solid #888; }
+  color: #fff;
+  border-bottom: 3px solid #fff; }
 
 h3, .h3 {
   font-size: 1.125em;
-  font-family: "Arvo", Cambria, Times New Roman, Times, serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  color: #7D8C5A; }
+  color: #334D70; }
 
 h4, .h4 {
   font-size: 1.1em;
-  font-family: "Arvo", Cambria, Times New Roman, Times, serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  color: #7D8C5A; }
+  color: #334D70; }
 
 h5, .h5 {
   font-size: 0.846em;
   line-height: 2.09em;
   font-weight: 900;
-  color: #888; }
+  color: #334D70; }
 
 h6, .h6 {
-  font-family: "Arvo", Cambria, Times New Roman, Times, serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #fff; }
 
@@ -1200,8 +1208,6 @@ header h1 {
   padding: 100px 0 30px;
   font-size: 50px;
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   header h1 a {
     color: #fff;
@@ -1226,7 +1232,7 @@ NAVIGATION STYLES
   /* end .menu li */ }
   .nav li a {
     display: block;
-    color: #D88D80;
+    color: #334D70;
     text-decoration: none;
     padding: 0.75em; }
 
@@ -1252,7 +1258,7 @@ POSTS & CONTENT STYLES
 /* end .hentry */
 /* post meta */
 .byline {
-  color: #7D8C5A;
+  color: #7dd667;
   font-style: italic;
   font-size: small; }
 
@@ -1725,8 +1731,8 @@ All media types, loading after all Bones styles.
   .menu ul li {
     display: inline-block;
     padding: 0 15px;
-    font-size: 24px;
-    font-family: 'Arvo', serif;
+    font-size: 1.3em;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     text-transform: lowercase;
     font-weight: 400;
     -webkit-transition: all 0.3s;
@@ -1734,12 +1740,14 @@ All media types, loading after all Bones styles.
 
 .baby-header {
   display: none;
-  background-color: rgba(204, 204, 204, 0.8);
-  height: 75px; }
+  height: 67px;
+  background-color: rgba(123, 198, 220, 0.8);
+  -webkit-transition: background-color 3s ease;
+  transition: background-color 3s ease; }
   .baby-header .menu-wrapper {
     margin: 0 auto;
     position: relative;
-    width: 620px; }
+    width: 444px; }
   .baby-header h1 {
     float: left;
     padding: 15px 0;
@@ -1750,7 +1758,7 @@ All media types, loading after all Bones styles.
   .baby-header ul {
     position: relative;
     margin: 0;
-    padding: 25px 0 25px 15px;
+    padding: 22px 0 22px 15px;
     height: 22px; }
     .baby-header ul li {
       float: left;
@@ -1777,7 +1785,7 @@ All media types, loading after all Bones styles.
     height: 186px;
     background-size: cover;
     background-position: center center;
-    border: 3px solid #888;
+    border: 3px solid #fff;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease; }
     .project-overview ul li a h3 {
@@ -1786,13 +1794,15 @@ All media types, loading after all Bones styles.
       left: -100%;
       margin: 0;
       width: 100%;
-      background-color: #888;
-      color: #fff;
+      background-color: #fff;
+      color: #888;
       font-family: "Playfair Display", Times, serif;
       -webkit-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
+      transition: all 0.5s ease;
+      font-weight: 600;
+      font-size: 16px; }
     .project-overview ul li a:hover, .project-overview ul li a:focus {
-      border: 6px solid #888; }
+      border: 6px solid #fff; }
       .project-overview ul li a:hover h3, .project-overview ul li a:focus h3 {
         left: 0; }
 
@@ -1804,11 +1814,11 @@ All media types, loading after all Bones styles.
   .project-detail h5 a {
     display: inline-block;
     float: left;
-    border: 3px solid #888;
+    border: 3px solid #fff;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #888;
+    box-shadow: inset 0 0 0 0 #fff;
     padding: 8px 10px;
-    color: #888;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 16px;
@@ -1816,9 +1826,9 @@ All media types, loading after all Bones styles.
     -webkit-transition: all ease 0.5s;
     transition: all ease 0.5s; }
     .project-detail h5 a:hover, .project-detail h5 a:active, .project-detail h5 a:focus {
-      box-shadow: inset 250px 0 0 0 #888;
+      box-shadow: inset 250px 0 0 0 #fff;
       text-shadow: none;
-      color: #fff; }
+      color: #888; }
   .project-detail h5:first-child a {
     margin-right: 15px; }
   .project-detail .footer-cta {

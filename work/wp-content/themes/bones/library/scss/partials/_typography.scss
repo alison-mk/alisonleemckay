@@ -1,5 +1,5 @@
 /******************************************************************
-Site Name: Alison McKay, Front End Developer 
+Site Name: Alison McKay, Front End Developer
 Author: Alison McKay
 
 Stylesheet: Typography
@@ -12,12 +12,12 @@ https://github.com/devinhunt/typebase.css
 I've edited it a bit, but it's a nice starting point.
 */
 
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url('http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
 
 // font stacks
-$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif:             "Arvo", Cambria, Times New Roman, Times, serif;
+$sans-serif:        "Open Sans", Helvetica, Arial, sans-serif;
+$serif:             Cambria, Times New Roman, Times, serif;
 $header-serif:      "Playfair Display", Times, serif;
 
 

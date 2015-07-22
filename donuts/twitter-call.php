@@ -7,6 +7,8 @@
 
 //ini_set('display_errors', 1);
 
+date_default_timezone_set('America/Los_Angeles');
+
 require_once('TwitterAPIExchange.php');
 require_once('tokens.php');
 
@@ -27,7 +29,7 @@ $count = 0;
 foreach($string as $item) {
 	if($count < 1){
 		// Get time of most recent tweet with donut hashtag
-		$time = $item[0][created_at];	
+		$time = $item[0][created_at];
 
 		// Set up Twitter time for reformatting for CountUp script
 		$newTimeObject = new DateTime($time);
@@ -38,7 +40,7 @@ foreach($string as $item) {
 		// Set new time to correct time zone
 		$newTimeZone = date_create($newTimeFormat, timezone_open('Europe/London'));
 		date_timezone_set($newTimeZone, timezone_open('America/Los_Angeles'));
-		
+
 		$count++;
 	}
 }

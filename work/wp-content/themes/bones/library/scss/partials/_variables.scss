@@ -1,5 +1,5 @@
 /******************************************************************
-Site Name: Alison McKay, Front End Developer 
+Site Name: Alison McKay, Front End Developer
 Author: Alison McKay
 
 Stylesheet: Variables
@@ -13,11 +13,9 @@ No one likes a mess.
 
 $navy:#334D70;
 $gray:#888;
-$white-op:rgba(255,255,255,.4);
-$grey-op:rgba(204,204,204,.8);
-$green-op:rgba(125,140,90,.7);
-$pink:#D88D80;
-$green: #7D8C5A;
+$sky: rgba(123,198,220,.8);
+$blush: rgba(237,186,191,.8);
+$mint: rgba(173,212,162,.8);
 
 $alert-yellow:      #ebe16f;
 $alert-red:         #fbe3e4;
@@ -34,12 +32,12 @@ $meta-gray:         #9fa6b4;
 
 $tan:               #eceee5;
 
-//$green:             #7dd667;
+$green:             #7dd667;
 
 $bones-pink:        #f01d4f;
 $blue:              #2980b9;
 
-$link-color:        $pink;
+$link-color:        $navy;
 $link-hover:        darken($link-color, 9%);
 
 $border-color:      #ccc;

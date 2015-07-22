@@ -1,35 +1,55 @@
 @import url('http://fonts.googleapis.com/css?family=Playfair+Display: 400,700,900');
-@import url('http://fonts.googleapis.com/css?family=Arvo: 400,700');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
 
-$green: #7D8C5A;
+$header-font: 'Playfair Display', serif;
+$body-font: 'Open Sans', Arial, sans-serif;
+
 $navy: #334D70;
-$gray: #888;
-$grey-op: rgba(204,204,204,.8);
-$pink: #D88D80;
+$sky: rgba(123,198,220,.8);
+$blush: rgba(237,186,191,.8);
+$mint: rgba(173,212,162,.8);
+
 
 /*----GENERAL SETTINGS----*/
 body {
-	background-color: #ccc;
+	background-color: $sky;
 	color: $navy;
-	font-family: 'Arvo', serif;
+	font-size: 13px;
+	font-family: $body-font;
+	-webkit-transition: all 4s ease;
+	transition: all 4s ease;
+
+	&.sky,
+	&.sky .baby-header {
+		background-color: $sky;
+	}
+
+	&.blush,
+	&.blush .baby-header {
+		background-color: $blush;
+	}
+
+	&.mint,
+	&.mint .baby-header {
+		background-color: $mint;
+	}
 }
 
 a {
 	-webkit-transition: all 1s ease;
 	transition: all 1s ease;
 	text-decoration: none;
-	color: $pink;
+	color: $navy;
 }
 
 a:hover {
-	text-shadow: 0px 0px 2px $pink;
+	text-shadow: 0px 0px 2px $navy;
 }
 
 p,
 ul li,
 ol li  {
 	line-height: 22px;
-	font-size: .9em;
 }
 
 h1 {
@@ -37,47 +57,47 @@ h1 {
 	text-transform: uppercase;
 	font-size: 50px;
 	letter-spacing: 5px;
-	font-family: 'Playfair Display', serif;
+	font-family: $header-font;
 	font-weight: 400;
 }
 
 h2 {
 	margin: 25px 0 10px 0;
-	border-bottom: 3px solid $gray;
-	color: $gray;
+	border-bottom: 3px solid #fff;
+	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.5em;
-	font-family: 'Playfair Display', serif;
+	font-family: $header-font;
 	font-weight: 900;
 }
 
 h3 {
 	margin: 25px 0 0 0;
-	color: $green;
+	color: $navy;
 	font-size: 1.3em;
-	font-family: 'Arvo', serif;
+	font-family: $body-font;
 	font-weight: 400;
 }
 
 h4 {
 	margin: 0px 0 10px 0;
-	color: $green;
+	color: $navy;
 	font-size: 1em;
-	font-family: 'Arvo', serif;
+	font-family: $body-font;
 	font-weight: 400;
 }
 
 h5 {
-	color: $gray;
+	color: #fff;
 	font-size: 0.9em;
-	font-family: 'Playfair Display', serif;
+	font-family: $header-font;
 	font-weight: 900;
 }
 
 h6 {
 	color: #fff;
 	font-size: 0.8em;
-	font-family: 'Arvo', serif;
+	font-family: $body-font;
 	font-weight: 400;
 }
 
@@ -142,10 +162,7 @@ h6 {
 	ul li {
 		display: inline-block;
 		padding: 0 15px;
-		text-transform: lowercase;
-		font-size: 1.5em;
-		font-family: 'Arvo', serif;
-		font-weight: 400;
+		font-size: 1.3em;
 		-webkit-transition: all 0.3s ease;
 		transition: all 0.3s ease;
 	}
@@ -155,12 +172,14 @@ h6 {
 // Header when sticky
 .baby-header {
 	display: none;
-  height: 75px;
-  background-color: $grey-op;
+  height: 67px;
+  background-color: $sky;
+	-webkit-transition: background-color 3s ease;
+	transition: background-color 3s ease;
 
   .menu-wrapper {
     margin: 0 auto;
-		width: 620px;
+		width: 444px;
 		position: relative;
   }
 
@@ -176,7 +195,7 @@ h6 {
   	position: relative;
   	margin: 0;
   	height: 22px;
-  	padding: 25px 0 25px 15px;
+  	padding: 22px 0 22px 15px;
 
   	li {
   		float: left;
@@ -204,22 +223,20 @@ h4.about-title {
 	color: #fff;
 	text-align: center;
 	font-size: 20px;
-	font-family: 'Arvo', serif;
-	font-weight: 400;
 }
 
 h3 a {
 	@extend h3;
-	font-size: 1em;
+	font-size: .9em;
 
 	&:hover {
-		text-shadow: 0px 0px 2px $green;
+		text-shadow: 0px 0px 2px $navy;
 	}
 }
 
 p.date {
 	margin: 0;
-	font-size: .8em;
+	font-size: .9em;
 }
 
 .education {
