@@ -1,28 +1,6 @@
-@media all and (max-width: 1080px) {
-	.about {
-		padding-left: 200px;
-		padding-right: 200px;
-	}
-}
-
-@media all and (max-width: 880px) {
-	.about {
-		padding-left: 15%;
-		padding-right: 15%;
-	}
-}
 
 @media all and (max-width: 650px) {
 	.baby-header {
-		.menu-wrapper {
-			width: 100%;
-			max-width: 542px;
-		}
-
-	  h1 {
-	  	font-size: 1.5em;
-	  }
-
 	  ul {
 	  	li {
 	  		font-size: 1em;
@@ -36,32 +14,29 @@
 		font-size: 14px;
 	}
 
-	h1 {
-		font-size: 38px;
-	}
+  .about {
+    padding-right: 25px;
+    padding-left: 25px;
 
-	.baby-header {
-		.menu-wrapper {
-			max-width: 500px;
-		}
-
-    h1 {
-    	font-size: 1.2em;
-    	margin-top: 7px;
+    .about-img {
+        float: none;
+        max-width: none;
     }
-
-    ul {
-    	li {
-    		font-size: .9em;
-    	}
-    }
-	}
+  }
 }
+
 @media all and (max-width: 550px) {
-	.baby-header {
-		background-color: rgba(153,153,153,.9);
+	.main-header h1 {
+    font-size: 40px;
+  }
+
+  .baby-header {
 		padding: 0 0 10px;
 		height: 85px;
+
+    .menu-wrapper {
+      width: 100%;
+    }
 
     h1 {
     	float: none;
@@ -82,25 +57,25 @@
 
     	li {
     		float: none;
-
-    		a {
-    			color: #fff;
-    		}
     	}
     }
 	}
 
 	.about {
 		padding-top: 250px;
+
+    .about-title {
+      font-size: 16px;
+    }
 	}
 }
 
 @media all and (max-width: 450px) {
-	h1 {
+	.main-header h1 {
 		font-size: 28px;
 	}
 
-	header ul li {
+	.menu ul li {
 		font-size: 1em;
 	}
 
@@ -110,12 +85,16 @@
 }
 
 @media all and (max-width: 350px) {
-	h1 {
+	.main-header h1 {
 		font-size: 18px;
 	}
 
 	.about {
 		padding-top: 200px;
+
+    .about-img {
+      height: 260px;
+    }
 	}
 }
 

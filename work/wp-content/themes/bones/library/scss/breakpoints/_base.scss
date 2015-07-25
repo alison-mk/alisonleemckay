@@ -19,18 +19,15 @@ body {
 	-webkit-transition: all 4s ease;
 	transition: all 4s ease;
 
-	&.sky,
-	&.sky .baby-header {
+	&.sky {
 		background-color: $sky;
 	}
 
-	&.blush,
-	&.blush .baby-header {
+	&.blush {
 		background-color: $blush;
 	}
 
-	&.mint,
-	&.mint .baby-header {
+	&.mint {
 		background-color: $mint;
 	}
 }

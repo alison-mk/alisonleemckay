@@ -8,11 +8,11 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   -webkit-transition: all 4s ease;
   transition: all 4s ease; }
-  body.sky, body.sky .baby-header {
+  body.sky {
     background-color: rgba(123, 198, 220, 0.8); }
-  body.blush, body.blush .baby-header {
+  body.blush {
     background-color: rgba(237, 186, 191, 0.8); }
-  body.mint, body.mint .baby-header {
+  body.mint {
     background-color: rgba(173, 212, 162, 0.8); }
 
 a {
@@ -121,9 +121,7 @@ h6 {
 .baby-header {
   display: none;
   height: 67px;
-  background-color: rgba(123, 198, 220, 0.8);
-  -webkit-transition: background-color 3s ease;
-  transition: background-color 3s ease; }
+  background-color: rgba(123, 198, 220, 0.8); }
   .baby-header .menu-wrapper {
     margin: 0 auto;
     width: 444px;
@@ -144,9 +142,11 @@ h6 {
       font-size: 1.2em; }
 
 .about {
-  padding: 265px 250px 50px;
+  margin: 0 auto;
+  padding-top: 265px;
   -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  max-width: 570px; }
 
 .small-header.about {
   padding-top: 200px; }
@@ -157,6 +157,19 @@ h4.about-title {
   color: #fff;
   text-align: center;
   font-size: 20px; }
+
+.about-img {
+  border: 3px solid #fff;
+  background: url("/graphics/about-alison.jpg") no-repeat center center;
+  background-size: cover;
+  float: left;
+  margin: 0 20px 20px 0;
+  width: 100%;
+  height: 310px;
+  max-width: 310px; }
+
+p.clear {
+  clear: both; }
 
 h3 a {
   font-size: .9em; }
@@ -173,61 +186,74 @@ p.date {
 /*----FOOTER----*/
 .contact {
   position: relative;
-  padding: 0 0 50px 0; }
+  padding: 50px 0; }
   .contact ul {
     margin: 0 auto;
-    width: 182px;
+    width: 192px;
     padding: 0; }
   .contact ul li {
     display: inline-block;
     margin: 0 5px 0 5px;
     color: #569071; }
-  .contact img {
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
-  .contact img:hover {
-    -webkit-filter: brightness(90%);
-    filter: brightness(90%); }
+    .contact ul li a {
+      display: block;
+      height: 35px;
+      width: 35px;
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg); }
+      .contact ul li a:hover, .contact ul li a:focus {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg); }
+  .contact .facebook a {
+    background: url("/graphics/line-icon-facebook.png") center center no-repeat;
+    background-size: contain; }
+  .contact .linkedin a {
+    background: url("/graphics/line-icon-linkedin.png") center center no-repeat;
+    background-size: contain; }
+  .contact .instagram a {
+    background: url("/graphics/line-icon-instagram.png") center center no-repeat;
+    background-size: contain; }
+  .contact .google a {
+    background: url("/graphics/line-icon-googleplus.png") center center no-repeat;
+    background-size: contain; }
   .contact .email {
     margin: 15px auto;
     width: 186px;
     text-align: center; }
+    .contact .email li a {
+      width: auto;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; }
+      .contact .email li a:hover, .contact .email li a:focus {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none; }
 
-@media all and (max-width: 1080px) {
-  .about {
-    padding-left: 200px;
-    padding-right: 200px; } }
-@media all and (max-width: 880px) {
-  .about {
-    padding-left: 15%;
-    padding-right: 15%; } }
 @media all and (max-width: 650px) {
-  .baby-header .menu-wrapper {
-    width: 100%;
-    max-width: 542px; }
-  .baby-header h1 {
-    font-size: 1.5em; }
   .baby-header ul li {
     font-size: 1em; } }
 @media all and (max-width: 600px) {
   body {
     font-size: 14px; }
 
-  h1 {
-    font-size: 38px; }
-
-  .baby-header .menu-wrapper {
-    max-width: 500px; }
-  .baby-header h1 {
-    font-size: 1.2em;
-    margin-top: 7px; }
-  .baby-header ul li {
-    font-size: .9em; } }
+  .about {
+    padding-right: 25px;
+    padding-left: 25px; }
+    .about .about-img {
+      float: none;
+      max-width: none; } }
 @media all and (max-width: 550px) {
+  .main-header h1 {
+    font-size: 40px; }
+
   .baby-header {
-    background-color: rgba(153, 153, 153, 0.9);
     padding: 0 0 10px;
     height: 85px; }
+    .baby-header .menu-wrapper {
+      width: 100%; }
     .baby-header h1 {
       float: none;
       text-align: center; }
@@ -240,25 +266,27 @@ p.date {
       padding: 0; }
       .baby-header ul li {
         float: none; }
-        .baby-header ul li a {
-          color: #fff; }
 
   .about {
-    padding-top: 250px; } }
+    padding-top: 250px; }
+    .about .about-title {
+      font-size: 16px; } }
 @media all and (max-width: 450px) {
-  h1 {
+  .main-header h1 {
     font-size: 28px; }
 
-  header ul li {
+  .menu ul li {
     font-size: 1em; }
 
   .about {
     padding-top: 230px; } }
 @media all and (max-width: 350px) {
-  h1 {
+  .main-header h1 {
     font-size: 18px; }
 
   .about {
-    padding-top: 200px; } }
+    padding-top: 200px; }
+    .about .about-img {
+      height: 260px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,7 +9,7 @@ function stickyHeader() {
     window.addEventListener('scroll', function(e){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop;
         var shrinkOne = 10;
-        var shrinkTwo = 120;
+        var shrinkTwo = 11;
 
         if (distanceY > shrinkOne) {
            $(".main-header").fadeOut();

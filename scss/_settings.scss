@@ -19,18 +19,15 @@ body {
 	-webkit-transition: all 4s ease;
 	transition: all 4s ease;
 
-	&.sky,
-	&.sky .baby-header {
+	&.sky {
 		background-color: $sky;
 	}
 
-	&.blush,
-	&.blush .baby-header {
+	&.blush {
 		background-color: $blush;
 	}
 
-	&.mint,
-	&.mint .baby-header {
+	&.mint {
 		background-color: $mint;
 	}
 }
@@ -174,8 +171,8 @@ h6 {
 	display: none;
   height: 67px;
   background-color: $sky;
-	-webkit-transition: background-color 3s ease;
-	transition: background-color 3s ease;
+	// -webkit-transition: background-color 3s ease;
+	// transition: background-color 3s ease;
 
   .menu-wrapper {
     margin: 0 auto;
@@ -206,9 +203,11 @@ h6 {
 
 // Content below header
 .about {
-	padding: 265px 250px 50px;
+  margin: 0 auto;
+	padding-top: 265px;
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+  max-width: 570px;
 }
 
 // Content below header when sticky
@@ -223,6 +222,21 @@ h4.about-title {
 	color: #fff;
 	text-align: center;
 	font-size: 20px;
+}
+
+.about-img {
+	border: 3px solid #fff;
+	background: url('/graphics/about-alison.jpg') no-repeat center center;
+	background-size: cover;
+	float: left;
+	margin: 0 20px 20px 0;
+	width: 100%;
+	height: 310px;
+	max-width: 310px;
+}
+
+p.clear {
+	clear: both;
 }
 
 h3 a {
@@ -247,11 +261,11 @@ p.date {
 /*----FOOTER----*/
 .contact {
 	position: relative;
-	padding: 0 0 50px 0;
+	padding: 50px 0;
 
 	ul {
 		margin: 0 auto;
-		width: 182px;
+		width: 192px;
 		padding: 0;
 	}
 
@@ -259,21 +273,69 @@ p.date {
 		display: inline-block;
 		margin: 0 5px 0 5px;
 		color: #569071;
+
+		a {
+			display: block;
+			height: 35px;
+			width: 35px;
+			-webkit-transform: rotate(0deg);
+			    -ms-transform: rotate(0deg);
+			        transform: rotate(0deg);
+
+			&:hover,
+			&:focus {
+				-webkit-transform: rotate(360deg);
+				    -ms-transform: rotate(360deg);
+				        transform: rotate(360deg);
+			}
+		}
 	}
 
-	img {
-		-webkit-transition: all 0.5s ease;
-		transition: all 0.5s ease;
+	.facebook {
+		a {
+			background: url('/graphics/line-icon-facebook.png') center center no-repeat;
+			background-size: contain;
+		}
 	}
 
-	img:hover {
-		-webkit-filter: brightness(90%);
-		filter: brightness(90%);
+	.linkedin {
+		a {
+			background: url('/graphics/line-icon-linkedin.png') center center no-repeat;
+			background-size: contain;
+		}
+	}
+
+	.instagram {
+		a {
+			background: url('/graphics/line-icon-instagram.png') center center no-repeat;
+			background-size: contain;
+		}
+	}
+
+	.google {
+		a {
+			background: url('/graphics/line-icon-googleplus.png') center center no-repeat;
+			background-size: contain;
+		}
 	}
 
 	.email {
 		margin: 15px auto;
 		width: 186px;
 		text-align: center;
+
+		li a {
+			width: auto;
+			-webkit-transform: none;
+			    -ms-transform: none;
+			        transform: none;
+
+		  &:hover,
+		  &:focus {
+				-webkit-transform: none;
+				    -ms-transform: none;
+				        transform: none;
+		  }
+		}
 	}
 }

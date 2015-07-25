@@ -1108,11 +1108,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-transition: all 4s ease;
   transition: all 4s ease; }
-  body.sky, body.sky .baby-header {
+  body.sky {
     background-color: rgba(123, 198, 220, 0.8); }
-  body.blush, body.blush .baby-header {
+  body.blush {
     background-color: rgba(237, 186, 191, 0.8); }
-  body.mint, body.mint .baby-header {
+  body.mint {
     background-color: rgba(173, 212, 162, 0.8); }
 
 /*********************
@@ -1841,23 +1841,48 @@ All media types, loading after all Bones styles.
   padding: 40px 0 50px 0; }
   .contact ul {
     margin: 0 auto;
-    width: 182px;
+    width: 192px;
     padding: 0; }
   .contact ul li {
     display: inline-block;
     margin: 0 5px 0 5px;
     color: #569071; }
-  .contact img {
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease; }
-  .contact img:hover,
-  .contact img:focus {
-    -webkit-filter: brightness(90%);
-    filter: brightness(90%); }
+    .contact ul li a {
+      display: block;
+      height: 35px;
+      width: 35px;
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg); }
+      .contact ul li a:hover, .contact ul li a:focus {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg); }
+  .contact .facebook a {
+    background: url("../images/line-icon-facebook.png") center center no-repeat;
+    background-size: contain; }
+  .contact .linkedin a {
+    background: url("../images/line-icon-linkedin.png") center center no-repeat;
+    background-size: contain; }
+  .contact .instagram a {
+    background: url("../images/line-icon-instagram.png") center center no-repeat;
+    background-size: contain; }
+  .contact .google a {
+    background: url("../images/line-icon-googleplus.png") center center no-repeat;
+    background-size: contain; }
   .contact .email {
     margin: 15px auto;
     width: 186px;
     text-align: center; }
+    .contact .email li a {
+      width: auto;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; }
+      .contact .email li a:hover, .contact .email li a:focus {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none; }
 
 @media all and (max-width: 650px) {
   header ul li {
@@ -1888,7 +1913,6 @@ All media types, loading after all Bones styles.
     height: 14px; } }
 @media all and (max-width: 550px) {
   .baby-header {
-    background-color: rgba(153, 153, 153, 0.9);
     height: 85px;
     padding: 0 0 10px; }
     .baby-header h1 {
