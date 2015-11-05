@@ -2,9 +2,9 @@
  * Bones Scripts File
  * Author: Alison McKay
  *
- * This file should contain any js scripts you want to add to the site.
- * Instead of calling it in the header or throwing it inside wp_head()
- * this file will be called automatically in the footer so as not to
+ * This file contains all js scripts on the site.
+ *
+ * The file is called automatically in the footer so as not to
  * slow the page load.
  *
 */
@@ -20,21 +20,16 @@ $(function() {
 function stickyHeader() {
     window.addEventListener('scroll', function(e){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-        var shrinkOne = 10;
-        var shrinkTwo = 11;
+        var shrink = 10;
 
-        if (distanceY > shrinkOne) {
-           $(".main-header").fadeOut();
-           $(".about").addClass("small-header");
+        if (distanceY > shrink) {
+           $(".main-header").fadeOut(200);
+           $("#inner-content").addClass("small-header");
+           $(".baby-header").fadeIn(200);
         } else {
-           $(".main-header").fadeIn();
-           $(".about").removeClass("small-header");
-        }
-
-        if (distanceY > shrinkTwo) {
-           $(".baby-header").fadeIn();
-        } else {
-           $(".baby-header").fadeOut();
+           $(".main-header").fadeIn(200);
+           $("#inner-content").removeClass("small-header");
+           $(".baby-header").fadeOut(200);
         }
     });
 }

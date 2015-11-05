@@ -8,21 +8,16 @@ $(function() {
 function stickyHeader() {
     window.addEventListener('scroll', function(e){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop;
-        var shrinkOne = 10;
-        var shrinkTwo = 11;
+        var shrink = 10;
 
-        if (distanceY > shrinkOne) {
-           $(".main-header").fadeOut();
+        if (distanceY > shrink) {
+           $(".main-header").fadeOut(200);
            $(".about").addClass("small-header");
+           $(".baby-header").fadeIn(200);
         } else {
-           $(".main-header").fadeIn();
+           $(".main-header").fadeIn(200);
            $(".about").removeClass("small-header");
-        }
-
-        if (distanceY > shrinkTwo) {
-           $(".baby-header").fadeIn();
-        } else {
-           $(".baby-header").fadeOut();
+           $(".baby-header").fadeOut(200);
         }
     });
 }

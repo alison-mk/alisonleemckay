@@ -1258,9 +1258,8 @@ POSTS & CONTENT STYLES
 /* end .hentry */
 /* post meta */
 .byline {
-  color: #7dd667;
-  font-style: italic;
-  font-size: small; }
+  color: #888;
+  font-size: 11px; }
 
 /* entry content */
 .entry-content p {
@@ -1730,10 +1729,11 @@ All media types, loading after all Bones styles.
     transition: all 0.3s; }
   .menu ul li {
     display: inline-block;
-    padding: 0 15px;
-    font-size: 1.3em;
+    padding: 0 25px;
+    font-size: 1.1em;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     text-transform: lowercase;
+    letter-spacing: 2px;
     font-weight: 400;
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
@@ -1747,7 +1747,7 @@ All media types, loading after all Bones styles.
   .baby-header .menu-wrapper {
     margin: 0 auto;
     position: relative;
-    width: 444px; }
+    width: 525px; }
   .baby-header h1 {
     float: left;
     padding: 15px 0;
@@ -1762,12 +1762,12 @@ All media types, loading after all Bones styles.
     height: 22px; }
     .baby-header ul li {
       float: left;
-      font-size: 1.2em; }
+      padding: 0 15px; }
 
 #inner-content {
   padding-top: 265px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
 
 .small-header#inner-content {
   padding-top: 200px; }
@@ -1786,8 +1786,8 @@ All media types, loading after all Bones styles.
     background-size: cover;
     background-position: center center;
     border: 3px solid #fff;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease; }
     .project-overview ul li a h3 {
       position: absolute;
       bottom: 0;
@@ -1834,6 +1834,12 @@ All media types, loading after all Bones styles.
   .project-detail .footer-cta {
     margin: 0 auto;
     max-width: 318px; }
+
+/*----BLOG----*/
+.article-header .entry-title a {
+  color: #fff; }
+  .article-header .entry-title a:hover, .article-header .entry-title a:focus {
+    text-shadow: 0px 0px 2px #fff; }
 
 /*----FOOTER----*/
 .contact {
@@ -1885,48 +1891,30 @@ All media types, loading after all Bones styles.
         transform: none; }
 
 @media all and (max-width: 650px) {
-  header ul li {
-    font-size: 21px; }
-
-  .baby-header .menu-wrapper {
-    width: 100%;
-    max-width: 542px; }
-  .baby-header h1 {
-    font-size: 1.5em; }
-  .baby-header ul li {
-    font-size: 16px;
-    font-size: 16px; } }
-@media all and (max-width: 599px) {
   body {
     font-size: 14px; }
 
   header h1 {
-    font-size: 38px; }
+    font-size: 40px; }
 
-  .baby-header .menu-wrapper {
-    max-width: 500px; }
-  .baby-header h1 {
-    font-size: 1.2em;
-    margin-top: 7px; }
-  .baby-header ul li {
-    font-size: 14px;
-    height: 14px; } }
-@media all and (max-width: 550px) {
   .baby-header {
-    height: 85px;
-    padding: 0 0 10px; }
+    padding: 0 0 10px;
+    height: auto; }
+    .baby-header .menu-wrapper {
+      width: 100%; }
     .baby-header h1 {
       float: none;
-      text-align: center;
-      margin-top: 0; }
+      text-align: center; }
+    .baby-header a:hover {
+      text-shadow: 0px 0px 2px #999; }
     .baby-header .main-nav {
       float: none; }
     .baby-header ul {
+      float: none;
       padding: 0; }
       .baby-header ul li {
-        float: none; }
-        .baby-header ul li a {
-          color: #fff; }
+        float: none;
+        font-size: 1em; }
 
   #inner-content {
     padding-top: 250px; } }
