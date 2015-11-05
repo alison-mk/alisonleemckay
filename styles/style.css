@@ -113,8 +113,9 @@ h6 {
     transition: all 0.3s ease; }
   .menu ul li {
     display: inline-block;
-    padding: 0 15px;
-    font-size: 1.3em;
+    padding: 0 25px;
+    font-size: 1.1em;
+    letter-spacing: 2px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
 
@@ -124,7 +125,7 @@ h6 {
   background-color: rgba(123, 198, 220, 0.8); }
   .baby-header .menu-wrapper {
     margin: 0 auto;
-    width: 444px;
+    width: 525px;
     position: relative; }
   .baby-header h1 {
     float: left;
@@ -139,13 +140,13 @@ h6 {
     padding: 22px 0 22px 15px; }
     .baby-header ul li {
       float: left;
-      font-size: 1.2em; }
+      padding: 0 15px; }
 
 .about {
   margin: 0 auto;
   padding-top: 265px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   max-width: 570px; }
 
 .small-header.about {
@@ -233,19 +234,9 @@ p.date {
         transform: none; }
 
 @media all and (max-width: 650px) {
-  .baby-header ul li {
-    font-size: 1em; } }
-@media all and (max-width: 600px) {
   body {
     font-size: 14px; }
 
-  .about {
-    padding-right: 25px;
-    padding-left: 25px; }
-    .about .about-img {
-      float: none;
-      max-width: none; } }
-@media all and (max-width: 550px) {
   .main-header h1 {
     font-size: 40px; }
 
@@ -265,12 +256,18 @@ p.date {
       float: none;
       padding: 0; }
       .baby-header ul li {
-        float: none; }
+        float: none;
+        font-size: 1em; }
 
   .about {
-    padding-top: 250px; }
+    padding-top: 250px;
+    padding-right: 25px;
+    padding-left: 25px; }
     .about .about-title {
-      font-size: 16px; } }
+      font-size: 16px; }
+    .about .about-img {
+      float: none;
+      max-width: none; } }
 @media all and (max-width: 450px) {
   .main-header h1 {
     font-size: 28px; }

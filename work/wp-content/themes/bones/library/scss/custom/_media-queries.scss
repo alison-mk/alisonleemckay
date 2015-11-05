@@ -1,86 +1,44 @@
+
 @media all and (max-width: 650px) {
-	header ul li {
-		font-size: 21px;
-	}
+  body {
+    font-size: 14px;
+  }
 
-	.baby-header {
+  header h1 {
+      font-size: 40px;
+  }
 
-		.menu-wrapper {
-			width: 100%;
-			max-width:542px;
-		}
+  .baby-header {
+    padding: 0 0 10px;
+    height: auto;
+
+    .menu-wrapper {
+        width: 100%;
+    }
 
     h1 {
-    	font-size:1.5em;
+      float: none;
+      text-align: center;
     }
 
-    ul {
-
-    	li {
-    		font-size: 16px;
-    		font-size: 16px;
-    	}
-    }
-	}
-}
-
-@media all and (max-width: 599px) {
-	body {
-		font-size:14px;
-	}
-
-	header h1 {
-		font-size:38px;
-	}
-
-	.baby-header {
-
-		.menu-wrapper {
-			max-width:500px;
-		}
-
-    h1 {
-    	font-size:1.2em;
-    	margin-top: 7px;
-    }
-
-    ul {
-
-    	li {
-    		font-size: 14px;
-    		height:14px;
-    	}
-    }
-	}
-}
-
-@media all and (max-width: 550px) {
-	.baby-header {
-		height:85px;
-		padding: 0 0 10px;
-
-    h1 {
-    	float:none;
-    	text-align: center;
-    	margin-top:0;
+    a:hover {
+      text-shadow: 0px 0px 2px #999;
     }
 
     .main-nav {
-    	float:none;
+      float: none;
     }
 
     ul {
-    	padding:0;
+      float: none;
+      padding: 0;
 
-    	li {
-    		float:none;
-
-    		a {
-    			color:#fff;
-    		}
-    	}
-	  }
-	}
+      li {
+        float: none;
+        font-size: 1em;
+      }
+    }
+  }
 
 	#inner-content {
 		padding-top:250px;

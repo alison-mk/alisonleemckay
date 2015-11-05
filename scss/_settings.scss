@@ -158,8 +158,9 @@ h6 {
 
 	ul li {
 		display: inline-block;
-		padding: 0 15px;
-		font-size: 1.3em;
+		padding: 0 25px;
+		font-size: 1.1em;
+		letter-spacing: 2px;
 		-webkit-transition: all 0.3s ease;
 		transition: all 0.3s ease;
 	}
@@ -171,12 +172,10 @@ h6 {
 	display: none;
   height: 67px;
   background-color: $sky;
-	// -webkit-transition: background-color 3s ease;
-	// transition: background-color 3s ease;
 
   .menu-wrapper {
     margin: 0 auto;
-		width: 444px;
+		width: 525px;
 		position: relative;
   }
 
@@ -196,7 +195,7 @@ h6 {
 
   	li {
   		float: left;
-  		font-size: 1.2em;
+  		padding: 0 15px;
   	}
   }
 }
@@ -205,8 +204,8 @@ h6 {
 .about {
   margin: 0 auto;
 	padding-top: 265px;
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
   max-width: 570px;
 }
 

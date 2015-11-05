@@ -47,8 +47,9 @@
 						<h1 class="title"><a href="http://alisonleemckay.com">Alison McKay</a></h1>
 						<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" class="main-nav">
 							<ul>
-								<li><a href="http://work.alisonleemckay.com">see my work</a></li>
-								<li><a href="mailto:mckay.ali@gmail.com" target="_blank">contact me</a></li>
+								<li><a href="http://work.alisonleemckay.com" title="See my work">work</a></li>
+								<li><a href="http://work.alisonleemckay.com/blog" title="See my blog">blog</a></li>
+								<li><a href="mailto:mckay.ali@gmail.com" target="_blank" title="Email me">contact</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -58,8 +59,9 @@
 						<h1 class="title"><a href="http://alisonleemckay.com">Alison McKay</a></h1>
 						<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" class="main-nav">
 							<ul>
-								<li><a href="http://work.alisonleemckay.com">work</a></li>
-								<li><a href="mailto:mckay.ali@gmail.com" target="_blank">contact</a></li>
+								<li><a href="http://work.alisonleemckay.com" title="See my work">work</a></li>
+								<li><a href="http://work.alisonleemckay.com/blog" title="See my blog">blog</a></li>
+								<li><a href="mailto:mckay.ali@gmail.com" target="_blank" title="Email me">contact</a></li>
 							</ul>
 						</nav>
 					</div>
