@@ -1,5 +1,5 @@
 @import url('http://fonts.googleapis.com/css?family=Playfair+Display: 400,700,900');
-@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans: 400,700,800,900');
 
 $header-font: 'Playfair Display', serif;
 $body-font: 'Open Sans', Arial, sans-serif;
@@ -85,10 +85,10 @@ h4 {
 }
 
 h5 {
-	color: #fff;
+	color: $navy;
 	font-size: 0.9em;
-	font-family: $header-font;
-	font-weight: 900;
+	font-family: $body-font;
+	font-weight: 400;
 }
 
 h6 {
@@ -96,6 +96,10 @@ h6 {
 	font-size: 0.8em;
 	font-family: $body-font;
 	font-weight: 400;
+}
+
+strong {
+	font-weight: 700;
 }
 
 .center {
@@ -223,24 +227,38 @@ h4.about-title {
 	font-size: 20px;
 }
 
+h5 {
+	font-size: 16px;
+}
+
 .about-img {
 	border: 3px solid #fff;
 	background: url('/graphics/about-alison.jpg') no-repeat center center;
 	background-size: cover;
 	float: left;
-	margin: 0 20px 20px 0;
+	margin: 5px 20px 20px 0;
 	width: 100%;
 	height: 310px;
 	max-width: 310px;
+}
+
+.intro-two {
+	clear: both;
 }
 
 p.clear {
 	clear: both;
 }
 
+p em {
+	font-style: normal;
+	text-shadow: 0px 0px 1px $navy;
+}
+
 h3 a {
-	@extend h3;
 	font-size: .9em;
+	color: $navy;
+	border-bottom: 0;
 
 	&:hover {
 		text-shadow: 0px 0px 2px $navy;
