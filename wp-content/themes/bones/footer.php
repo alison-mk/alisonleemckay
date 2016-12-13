@@ -1,7 +1,7 @@
 			<footer class="footer contact" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 				<ul>
-					<li class="facebook"><a href="http://www.facebook.com/mckay.ali" target="_blank" title="Facebook"></a></li>
+					<li class="facebook"><a href="http://www.facebook.com/amckayay" target="_blank" title="Facebook"></a></li>
 					<li class="linkedin"><a href="http://www.linkedin.com/pub/alison-mckay/35/240/6b7/" target="_blank" title="LinkedIn"></a></li>
 					<li class="instagram"><a href="http://instagram.com/amckayay" target="_blank" title="Instagram"></a></li>
 					<li class="google"><a href="http://plus.google.com/115922726853084998223/about" target="_blank" title="Google+"></a></li>
