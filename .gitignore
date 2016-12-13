@@ -6,3 +6,5 @@ _private
 .DS_Store
 /about/.sass-cache
 error_log
+/election
+/obituary
