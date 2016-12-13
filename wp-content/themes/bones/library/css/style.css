@@ -1995,8 +1995,24 @@ All media types, loading after all Bones styles.
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
-@media all and (min-width: 1150px) {
-  .pulse, .dancing-donuts > div {
+@keyframes jiggle1 {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-3deg); }
+  100% {
+    transform: rotate(5deg); } }
+@keyframes jiggle2 {
+  0%,100% {
+    transform: rotate(5deg); }
+  50% {
+    transform: rotate(-5deg); } }
+@media all and (min-width: 1240px) {
+  .jiggle, .dancing-donuts > div {
+    animation: jiggle1 .3s linear, jiggle2 .4s linear infinite;
+    animation-delay: 0s, .3s; }
+
+  .pulse, .dancing-donuts .top-right, .dancing-donuts .bottom-left {
     -webkit-animation-name: pulse;
     animation-name: pulse;
     -webkit-animation-duration: 1s;
@@ -2007,21 +2023,38 @@ All media types, loading after all Bones styles.
     animation-iteration-count: infinite; }
 
   .dancing-donuts {
+    position: relative;
     opacity: 0;
     -webkit-transition: all 4s ease;
-    transition: all 4s ease; }
+    transition: all 4s ease;
+    z-index: 99; }
     .dancing-donuts > div {
       position: fixed;
-      background: url("../images/donut-40px.png") no-repeat;
-      height: 40px;
-      width: 40px;
-      z-index: 99; }
+      background: url("../images/donut-75px.png") no-repeat;
+      height: 75px;
+      width: 75px;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease; }
+      .dancing-donuts > div:hover, .dancing-donuts > div:focus {
+        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.12" /><feFuncG type="linear" slope="1.12" /><feFuncB type="linear" slope="1.12" /></feComponentTransfer></filter></svg>#filter');
+        -webkit-filter: brightness(112%);
+        filter: brightness(112%); }
+      .dancing-donuts > div a {
+        display: block;
+        width: 100%;
+        height: 100%; }
     .dancing-donuts .top-left {
       top: 10px;
       left: 10px; }
     .dancing-donuts .top-right {
       top: 10px;
       right: 10px; }
+    .dancing-donuts .middle-left {
+      left: 10px;
+      top: 40%; }
+    .dancing-donuts .middle-right {
+      right: 10px;
+      top: 40%; }
     .dancing-donuts .bottom-left {
       bottom: 10px;
       left: 10px; }

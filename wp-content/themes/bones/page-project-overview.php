@@ -57,10 +57,12 @@
 			<?php endif; ?>
 
 			<div class="dancing-donuts">
-				<div class="top-left"></div>
-				<div class="top-right"></div>
-				<div class="bottom-left"></div>
-				<div class="bottom-right"></div>
+				<div class="top-left"><a href="http://ell.h-cdn.co/assets/16/41/1476455039-yawn.gif" target="_blank"></a></div>
+				<div class="top-right"><a href="http://ell.h-cdn.co/assets/16/41/1476455039-yawn.gif" target="_blank"></a></div>
+				<div class="middle-left"><a href="http://ell.h-cdn.co/assets/16/41/1476455039-yawn.gif" target="_blank"></a></div>
+				<div class="middle-right"><a href="http://ell.h-cdn.co/assets/16/41/1476455039-yawn.gif" target="_blank"></a></div>
+				<div class="bottom-left"><a href="http://ell.h-cdn.co/assets/16/41/1476455039-yawn.gif" target="_blank"></a></div>
+				<div class="bottom-right"><a href="http://ell.h-cdn.co/assets/16/41/1476455039-yawn.gif" target="_blank"></a></div>
 			</div>
 		</main>
 	</div>
