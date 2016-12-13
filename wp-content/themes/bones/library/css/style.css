@@ -1979,5 +1979,57 @@ All media types, loading after all Bones styles.
       margin: 0; }
     .footer-cta h5 a {
       float: none; } }
+/*
+ * Easter egg!
+ *
+ * Creating a donut border that appears when "donut" is typed
+ *
+ */
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+@media all and (min-width: 1150px) {
+  .pulse, .dancing-donuts > div {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+
+  .dancing-donuts {
+    opacity: 0;
+    -webkit-transition: all 4s ease;
+    transition: all 4s ease; }
+    .dancing-donuts > div {
+      position: fixed;
+      background: url("../images/donut-40px.png") no-repeat;
+      height: 40px;
+      width: 40px;
+      z-index: 99; }
+    .dancing-donuts .top-left {
+      top: 10px;
+      left: 10px; }
+    .dancing-donuts .top-right {
+      top: 10px;
+      right: 10px; }
+    .dancing-donuts .bottom-left {
+      bottom: 10px;
+      left: 10px; }
+    .dancing-donuts .bottom-right {
+      bottom: 10px;
+      right: 10px; }
+
+  body.donut .dancing-donuts {
+    opacity: 1; } }
 
 /*# sourceMappingURL=style.css.map */

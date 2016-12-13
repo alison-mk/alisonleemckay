@@ -56,6 +56,12 @@
 
 			<?php endif; ?>
 
+			<div class="dancing-donuts">
+				<div class="top-left"></div>
+				<div class="top-right"></div>
+				<div class="bottom-left"></div>
+				<div class="bottom-right"></div>
+			</div>
 		</main>
 	</div>
 
