@@ -1,6 +1,8 @@
 _private
-/work/wp-snapshots/
-/work/wp-content/themes/bones/library/scss/.sass-cache/
+/wp-snapshots/
+/wp-content/themes/bones/library/scss/.sass-cache/
 .sass-cache/
 /donuts/tokens.php
 .DS_Store
+/about/.sass-cache
+error_log

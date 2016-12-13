@@ -1,0 +1,320 @@
+@import url("http://fonts.googleapis.com/css?family=Playfair+Display: 400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900,100italic,400italic");
+/*----GENERAL SETTINGS----*/
+body {
+  background-color: #A8EBFF;
+  color: #334D70;
+  font-size: 13px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  -webkit-transition: all 4s ease;
+  transition: all 4s ease; }
+  body.color1 {
+    background-color: #A8EBFF; }
+    body.color1 .baby-header {
+      background-color: #A8EBFF; }
+    body.color1 a {
+      color: #269196; }
+      body.color1 a:hover, body.color1 a:focus {
+        text-shadow: 0px 0px 2px #269196; }
+  body.color2 {
+    background-color: #FFE2E5; }
+    body.color2 .baby-header {
+      background-color: #FFE2E5; }
+    body.color2 a {
+      color: #D66457; }
+      body.color2 a:hover, body.color2 a:focus {
+        text-shadow: 0px 0px 2px #D66457; }
+  body.color3 {
+    background-color: #BAEDC6; }
+    body.color3 .baby-header {
+      background-color: #BAEDC6; }
+    body.color3 a {
+      color: #418651; }
+      body.color3 a:hover, body.color3 a:focus {
+        text-shadow: 0px 0px 2px #418651; }
+
+a {
+  -webkit-transition: all 1s ease, color 4s ease;
+  transition: all 1s ease, color 4s ease;
+  text-decoration: none;
+  color: #269196; }
+
+a:hover,
+a:focus {
+  text-shadow: 0px 0px 2px #269196; }
+
+p,
+ul li,
+ol li {
+  line-height: 22px; }
+
+h1 {
+  color: #334D70;
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 4px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400; }
+
+h2 {
+  margin: 25px 0 10px 0;
+  border-bottom: 2px solid #334D70;
+  color: #334D70;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: 1px; }
+
+h3 {
+  margin: 25px 0 0 0;
+  color: #334D70;
+  font-size: 1.3em;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400; }
+
+h4 {
+  margin: 0px 0 10px 0;
+  color: #334D70;
+  font-size: 1em;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400; }
+
+h5 {
+  color: #334D70;
+  font-size: 0.9em;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400; }
+
+h6 {
+  color: #fff;
+  font-size: 0.8em;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400; }
+
+strong {
+  font-weight: 400; }
+
+.center {
+  text-align: center; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1070px; }
+
+/*----STICKY HEADER----*/
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  -webkit-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+  overflow: hidden; }
+  .menu h1 {
+    margin: 0 auto;
+    padding: 100px 0 30px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .menu h1.title a {
+    border: 3px solid #334D70;
+    padding: 0 10px 3px 15px;
+    color: #334D70;
+    font-weight: 700; }
+    .menu h1.title a:hover, .menu h1.title a:focus {
+      color: #334D70;
+      text-shadow: none; }
+    .menu h1.title a:visited:link, .menu h1.title a:hover, .menu h1.title a:link, .menu h1.title a:active, .menu h1.title a:focus {
+      color: #334D70; }
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .menu ul li {
+    display: inline-block;
+    padding: 0 25px;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+.baby-header {
+  display: none;
+  height: 67px;
+  background-color: #A8EBFF;
+  -webkit-transition: all 4s ease;
+  transition: all 4s ease; }
+  .baby-header .menu-wrapper {
+    margin: 0 auto;
+    width: 525px;
+    position: relative; }
+  .baby-header h1 {
+    float: left;
+    padding: 15px 0;
+    font-size: 1.8em;
+    text-align: left;
+    letter-spacing: 2px; }
+  .baby-header ul {
+    float: left;
+    position: relative;
+    margin: 0;
+    height: 22px;
+    padding: 22px 0 22px 15px; }
+    .baby-header ul li {
+      float: left;
+      padding: 0 15px; }
+
+.about {
+  margin: 0 auto;
+  padding-top: 265px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  max-width: 570px; }
+
+.small-header.about {
+  padding-top: 200px; }
+
+/*----HOME PAGE STYLES----*/
+h4.about-title {
+  margin-bottom: 50px;
+  color: #334D70;
+  text-align: center;
+  font-size: 20px; }
+
+h5 {
+  font-size: 16px; }
+
+.about-img {
+  border: 3px solid #334D70;
+  background: url("../graphics/about-alison.jpg") no-repeat center center;
+  background-size: cover;
+  float: left;
+  margin: 5px 20px 20px 0;
+  width: 100%;
+  height: 310px;
+  max-width: 310px; }
+
+.intro-two {
+  clear: both; }
+
+p.clear {
+  clear: both; }
+
+h3 a {
+  border-bottom: 0; }
+
+p.date {
+  margin: 0;
+  font-size: .9em; }
+
+.education {
+  position: relative; }
+
+/*----FOOTER----*/
+.contact {
+  position: relative;
+  padding: 50px 0; }
+  .contact ul {
+    margin: 0 auto;
+    width: 192px;
+    padding: 0; }
+  .contact ul li {
+    display: inline-block;
+    margin: 0 5px 0 5px;
+    color: #569071; }
+    .contact ul li a {
+      display: block;
+      height: 35px;
+      width: 35px;
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg); }
+      .contact ul li a:hover, .contact ul li a:focus {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg); }
+  .contact .facebook a {
+    background: url("../graphics/line-icon-facebook.png") center center no-repeat;
+    background-size: contain; }
+  .contact .linkedin a {
+    background: url("../graphics/line-icon-linkedin.png") center center no-repeat;
+    background-size: contain; }
+  .contact .instagram a {
+    background: url("../graphics/line-icon-instagram.png") center center no-repeat;
+    background-size: contain; }
+  .contact .google a {
+    background: url("../graphics/line-icon-googleplus.png") center center no-repeat;
+    background-size: contain; }
+  .contact .email {
+    margin: 15px auto;
+    width: 186px;
+    text-align: center; }
+    .contact .email li a {
+      width: auto;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; }
+      .contact .email li a:hover, .contact .email li a:focus {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none; }
+
+@media all and (max-width: 650px) {
+  body {
+    font-size: 14px; }
+
+  .main-header h1 {
+    font-size: 40px; }
+
+  .baby-header {
+    padding: 0 0 10px;
+    height: 85px; }
+    .baby-header .menu-wrapper {
+      width: 100%; }
+    .baby-header h1 {
+      float: none;
+      text-align: center; }
+    .baby-header a:hover {
+      text-shadow: 0px 0px 2px #999; }
+    .baby-header .main-nav {
+      float: none; }
+    .baby-header ul {
+      float: none;
+      padding: 0; }
+      .baby-header ul li {
+        float: none;
+        font-size: 1em; }
+
+  .about {
+    padding-top: 250px;
+    padding-right: 25px;
+    padding-left: 25px; }
+    .about .about-title {
+      font-size: 16px; }
+    .about .about-img {
+      float: none;
+      max-width: none; } }
+@media all and (max-width: 450px) {
+  .main-header h1 {
+    font-size: 28px; }
+
+  .menu ul li {
+    font-size: 1em; }
+
+  .about {
+    padding-top: 230px; } }
+@media all and (max-width: 350px) {
+  .main-header h1 {
+    font-size: 18px; }
+
+  .about {
+    padding-top: 200px; }
+    .about .about-img {
+      height: 260px; } }
+
+/*# sourceMappingURL=style.css.map */

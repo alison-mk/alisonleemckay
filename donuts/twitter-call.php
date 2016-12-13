@@ -5,7 +5,7 @@
 * - Ian Anderson Gray: http://iag.me/socialmedia/build-your-first-twitter-app-using-php-in-8-easy-steps/
 **/
 
-//ini_set('display_errors', 1);
+// ini_set('display_errors', 1);
 
 date_default_timezone_set('America/Los_Angeles');
 

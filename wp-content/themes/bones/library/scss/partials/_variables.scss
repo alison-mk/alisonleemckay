@@ -1,0 +1,51 @@
+/******************************************************************
+Site Name: Alison McKay, Front End Developer
+Author: Alison McKay
+
+Stylesheet: Variables
+
+Here is where we declare all our variables like colors, fonts,
+base values, and defaults. We want to make sure this file ONLY
+contains variables that way our files don't get all messy.
+No one likes a mess.
+
+******************************************************************/
+
+$color1: #A8EBFF;
+$color2: #FFE2E5;
+$color3: #BAEDC6;
+
+$navy: #334D70;
+$link-color: #269196;
+
+$color1-link: #269196;
+$color2-link: #D66457;
+$color3-link: #418651;
+
+$gray: #888;
+
+$alert-yellow:      #ebe16f;
+$alert-red:         #fbe3e4;
+$alert-green:       #e6efc2;
+$alert-blue:        #d5edf8;
+
+$black:             #323944;
+$white:             #fff;
+
+$light-gray:        #f8f9fa;
+//$gray:              #eaedf2;
+$text-color:        $navy;
+$meta-gray:         #9fa6b4;
+
+$tan:               #eceee5;
+
+$green:             #7dd667;
+
+$bones-pink:        #f01d4f;
+$blue:              #2980b9;
+
+// $link-color:        $navy;
+$link-hover:        darken($link-color, 9%);
+
+$border-color:      #ccc;
+$disabled-gray:     #cfcfcf;
