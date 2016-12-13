@@ -1,12 +1,12 @@
 /*! Made with Bones: http://themble.com/bones :) */
 /******************************************************************
-Site Name: Alison McKay's Portfolio
+Site Name: Alison McKay, Front End Developer
 Author: Alison McKay
 
 Stylesheet: Main Stylesheet
 ******************************************************************/
 /*********************
-IMPORTING PARTIALS 
+IMPORTING PARTIALS
 *********************/
 /* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
 /* ==========================================================================
@@ -471,8 +471,8 @@ p {
   font-feature-settings: "liga", "dlig"; }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: Alison McKay, Front End Developer
+Author: Alison McKay
 
 Stylesheet: Sass Functions
 ******************************************************************/
@@ -483,8 +483,8 @@ COLOR FUNCTIONS
 RESPONSIVE HELPER FUNCTION
 *********************/
 /******************************************************************
-Site Name:
-Author:
+Site Name: Alison McKay, Front End Developer
+Author: Alison McKay
 
 Stylesheet: Mixins Stylesheet
 
@@ -525,7 +525,7 @@ BOX SIZING
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
 /******************************************************************
-Site Name: Alison McKay's Portfolio
+Site Name: Alison McKay, Front End Developer
 Author: Alison McKay
 
 Stylesheet: Grid Stylesheet
@@ -768,8 +768,8 @@ Mobile Grid Styles
 IMPORTING MODULES
 *********************/
 /******************************************************************
-Site Name:
-Author:
+Site Name: Alison McKay, Front End Developer
+Author: Alison McKay
 
 Stylesheet: Button Styles
 ******************************************************************/
@@ -811,8 +811,8 @@ and it will create a button dependant on those variables.
     background-color: #2472a4; }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: Alison McKay, Front End Developer
+Author: Alison McKay
 
 Stylesheet: Form Styles
 ******************************************************************/
@@ -1090,7 +1090,7 @@ select {
 BASE (MOBILE) SIZE
 *********************/
 /******************************************************************
-Site Name: Alison McKay's Portfolio
+Site Name: Alison McKay, Front End Developer
 Author: Alison McKay
 
 Stylesheet: Base Mobile Stylesheet
@@ -1552,7 +1552,7 @@ LARGER MOBILE DEVICES
 *********************/
 @media only screen and (min-width: 481px) {
   /******************************************************************
-  Site Name: Alison McKay's Portfolio
+  Site Name: Alison McKay, Front End Developer
   Author: Alison McKay
   
   Stylesheet: 481px and Up Stylesheet
@@ -1585,7 +1585,7 @@ TABLET & SMALLER LAPTOPS
 *********************/
 @media only screen and (min-width: 768px) {
   /******************************************************************
-  Site Name: Alison McKay's Portfolio
+  Site Name: Alison McKay, Front End Developer
   Author: Alison McKay
   
   Stylesheet: Tablet & Small Desktop Stylesheet
@@ -1634,7 +1634,7 @@ DESKTOP
 *********************/
 @media only screen and (min-width: 1030px) {
   /******************************************************************
-  Site Name: Alison McKay's Portfolio
+  Site Name: Alison McKay, Front End Developer
   Author: Alison McKay
   
   Stylesheet: Desktop Stylsheet
@@ -1647,7 +1647,7 @@ This is for the larger monitors and possibly full screen viewers.
 *********************/
 @media only screen and (min-width: 1240px) {
   /******************************************************************
-  Site Name: Alison McKay's Portfolio
+  Site Name: Alison McKay, Front End Developer
   Author: Alison McKay
   
   Stylesheet: Super Large Monitor Stylesheet
@@ -1657,8 +1657,8 @@ PRINT STYLESHEET
 *********************/
 @media print {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: Alison McKay, Front End Developer
+  Author: Alison McKay
   
   Stylesheet: Print Stylesheet
   ******************************************************************/
@@ -1716,7 +1716,7 @@ CUSTOM STYLESHEETS
 All media types, loading after all Bones styles.
 *********************/
 /*----STICKY HEADER----*/
-.menu {
+.menu, .main-header, .baby-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -1725,13 +1725,13 @@ All media types, loading after all Bones styles.
   overflow: hidden;
   -webkit-transition: height 0.3s;
   transition: height 0.3s; }
-  .menu ul {
+  .menu ul, .main-header ul, .baby-header ul {
     margin: 0;
     padding: 0;
     text-align: center;
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
-  .menu ul li {
+  .menu ul li, .main-header ul li, .baby-header ul li {
     display: inline-block;
     padding: 0 25px;
     font-size: 1.1em;
@@ -1769,14 +1769,13 @@ All media types, loading after all Bones styles.
       padding: 0 15px; }
 
 #content {
-  margin: 8px; }
-
-#inner-content {
+  margin-top: 8px;
+  padding: 8px;
   padding-top: 265px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
 
-.small-header#inner-content {
+.small-header#content {
   padding-top: 200px; }
 
 .project-overview h4.about-title {

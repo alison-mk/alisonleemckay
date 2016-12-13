@@ -31,8 +31,13 @@
 	}
 }
 
+.main-header {
+  @extend .menu;
+}
+
 // Header when sticky
 .baby-header {
+  @extend .menu;
   display: none;
   height: 67px;
   background-color: $color1;
@@ -73,10 +78,8 @@
 
 // Content below header
 #content {
-  margin: 8px;
-}
-
-#inner-content {
+  margin-top: 8px;
+  padding: 8px;
 	padding-top: 265px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -84,7 +87,7 @@
 
 
 // Content below header when sticky
-.small-header#inner-content {
+.small-header#content {
 	padding-top:200px;
 }
 

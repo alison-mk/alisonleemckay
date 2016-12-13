@@ -24,11 +24,11 @@ function stickyHeader() {
 
         if (distanceY > shrink) {
            $(".main-header").fadeOut(200);
-           $("#inner-content").addClass("small-header");
+           $("#content").addClass("small-header");
            $(".baby-header").fadeIn(200);
         } else {
            $(".main-header").fadeIn(200);
-           $("#inner-content").removeClass("small-header");
+           $("#content").removeClass("small-header");
            $(".baby-header").fadeOut(200);
         }
     });

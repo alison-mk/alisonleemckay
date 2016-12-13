@@ -37,31 +37,30 @@
 
 	</head>
 
-	<body <?php body_class(); ?> >
-		<div id="container">
-			<header class="header" role="banner">
-				<div class="menu main-header">
-					<div class="menu-wrapper">
-						<h1 class="title"><a href="/">Alison McKay</a></h1>
-						<nav role="navigation" class="main-nav">
-							<ul>
-								<li><a href="/" title="See my work">work</a></li>
-								<li><a href="/about" title="About me">about</a></li>
-								<li><a href="mailto:mckay.ali@gmail.com" target="_blank" title="Email me">contact</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-				<div class="menu baby-header">
-					<div class="menu-wrapper">
-						<h1 class="title"><a href="/">Alison McKay</a></h1>
-						<nav role="navigation" class="main-nav">
-							<ul>
-								<li><a href="/" title="See my work">work</a></li>
-								<li><a href="/about" title="About me">about</a></li>
-								<li><a href="mailto:mckay.ali@gmail.com" target="_blank" title="Email me">contact</a></li>
-							</ul>
-						</nav>
-					</div>
+	<body <?php body_class('cf'); ?> >
+		<header role="banner">
+			<div class="main-header">
+				<div class="menu-wrapper">
+					<h1 class="title"><a href="/">Alison McKay</a></h1>
+					<nav role="navigation" class="main-nav">
+						<ul>
+							<li><a href="/" title="See my work">work</a></li>
+							<li><a href="/about" title="About me">about</a></li>
+							<li><a href="mailto:mckay.ali@gmail.com" target="_blank" title="Email me">contact</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
+			<div class="baby-header">
+				<div class="menu-wrapper">
+					<h1 class="title"><a href="/">Alison McKay</a></h1>
+					<nav role="navigation" class="main-nav">
+						<ul>
+							<li><a href="/" title="See my work">work</a></li>
+							<li><a href="/about" title="About me">about</a></li>
+							<li><a href="mailto:mckay.ali@gmail.com" target="_blank" title="Email me">contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
