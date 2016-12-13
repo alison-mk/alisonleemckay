@@ -1,5 +1,4 @@
-			<footer class="footer contact" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
-
+			<footer class="footer contact" role="contentinfo">
 				<ul>
 					<li class="facebook"><a href="http://www.facebook.com/amckayay" target="_blank" title="Facebook"></a></li>
 					<li class="linkedin"><a href="http://www.linkedin.com/pub/alison-mckay/35/240/6b7/" target="_blank" title="LinkedIn"></a></li>
@@ -9,9 +8,7 @@
 				<ul class="email">
 					<li><a href="mailto:mckay.ali@gmail.com" target="_blank" title="Email me">mckay.ali@gmail.com</a></li>
 				</ul>
-
 			</footer>
-
 		</div>
 
 		<?php // other js scripts are loaded in library/bones.php ?>
@@ -20,5 +17,4 @@
 		<script src="/wp-content/themes/bones/library/js/scripts.js" type="text/javascript"></script>
 
 	</body>
-
 </html>

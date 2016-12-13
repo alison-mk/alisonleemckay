@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 
 			<div id="content">
-
 				<div id="inner-content" class="wrap cf">
-
-					<main id="main" class="m-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+					<main id="main" class="m-all cf" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -44,9 +42,7 @@
 						<?php endif; ?>
 
 					</main>
-
 				</div>
-
 			</div>
 
 <?php get_footer(); ?>

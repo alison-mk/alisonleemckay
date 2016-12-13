@@ -24,7 +24,7 @@
 		<?php // or, set /favicon.ico for IE10 win ?>
 		<meta name="msapplication-TileColor" content="#f01d4f">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
-            <meta name="theme-color" content="#121212">
+    <meta name="theme-color" content="#121212">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
@@ -37,18 +37,16 @@
 
 	</head>
 
-	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
-
+	<body <?php body_class(); ?> >
 		<div id="container">
-
-			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<header class="header" role="banner">
 				<div class="menu main-header">
 					<div class="menu-wrapper">
-						<h1 class="title"><a href="http://alisonleemckay.com">Alison McKay</a></h1>
-						<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" class="main-nav">
+						<h1 class="title"><a href="/">Alison McKay</a></h1>
+						<nav role="navigation" class="main-nav">
 							<ul>
-								<li><a href="http://alisonleemckay.com" title="See my work">work</a></li>
-								<li><a href="http://alisonleemckay.com/about" title="About me">about</a></li>
+								<li><a href="/" title="See my work">work</a></li>
+								<li><a href="/about" title="About me">about</a></li>
 								<li><a href="mailto:mckay.ali@gmail.com" target="_blank" title="Email me">contact</a></li>
 							</ul>
 						</nav>
@@ -56,15 +54,14 @@
 				</div>
 				<div class="menu baby-header">
 					<div class="menu-wrapper">
-						<h1 class="title"><a href="http://alisonleemckay.com">Alison McKay</a></h1>
-						<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" class="main-nav">
+						<h1 class="title"><a href="/">Alison McKay</a></h1>
+						<nav role="navigation" class="main-nav">
 							<ul>
-								<li><a href="http://alisonleemckay.com" title="See my work">work</a></li>
-								<li><a href="http://alisonleemckay.com/about" title="About me">about</a></li>
+								<li><a href="/" title="See my work">work</a></li>
+								<li><a href="/about" title="About me">about</a></li>
 								<li><a href="mailto:mckay.ali@gmail.com" target="_blank" title="Email me">contact</a></li>
 							</ul>
 						</nav>
 					</div>
 				</div>
 			</div>
-

@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Alison McKay, Front End Developer
+Author: Alison McKay
 
 Stylesheet: Form Styles
 ******************************************************************/
@@ -48,7 +48,7 @@ textarea,
   &:focus,
   &:active {
     background-color: lighten($gray, 4%);
-    outline: none; 
+    outline: none;
   } // end hover or focus
 
   // error notification
