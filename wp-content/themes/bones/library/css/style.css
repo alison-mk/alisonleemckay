@@ -1174,13 +1174,14 @@ h1, .h1 {
   letter-spacing: 4px; }
 
 h2, .h2 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   line-height: 1.4em;
   margin-bottom: 0.375em;
   text-transform: uppercase;
   font-weight: 900;
   color: #334D70;
-  border-bottom: 3px solid #334D70; }
+  border-bottom: 3px solid #334D70;
+  letter-spacing: 1px; }
 
 h3, .h3 {
   font-size: 1.125em;
@@ -1786,6 +1787,7 @@ All media types, loading after all Bones styles.
   font-size: 20px;
   line-height: 24px; }
 .project-overview h2.page-title {
+  margin-top: 0;
   margin-right: 15px; }
 .project-overview a:hover {
   text-shadow: none; }
@@ -1815,7 +1817,8 @@ All media types, loading after all Bones styles.
       transition: all 0.5s ease;
       font-weight: 600;
       font-size: 18px;
-      padding: 5px 0 0; }
+      padding: 5px 0 0;
+      letter-spacing: .04em; }
     .project-overview ul li a p {
       position: absolute;
       bottom: 0;
@@ -1987,13 +1990,17 @@ All media types, loading after all Bones styles.
  */
 @keyframes pulse {
   from {
-    -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); }
   50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05); }
+    transform: scale3d(1.02, 1.02, 1.02); }
   to {
-    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+@keyframes pulse2 {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1); }
+  to {
     transform: scale3d(1, 1, 1); } }
 @keyframes jiggle1 {
   0% {
@@ -2007,62 +2014,144 @@ All media types, loading after all Bones styles.
     transform: rotate(5deg); }
   50% {
     transform: rotate(-5deg); } }
-@media all and (min-width: 1240px) {
-  .jiggle, .dancing-donuts > div {
-    animation: jiggle1 .3s linear, jiggle2 .4s linear infinite;
-    animation-delay: 0s, .3s; }
+@keyframes jiggle3 {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-2deg); }
+  100% {
+    transform: rotate(6deg); } }
+@keyframes jiggle4 {
+  0%,100% {
+    transform: rotate(8deg); }
+  50% {
+    transform: rotate(-8deg); } }
+.jiggle, .dancing-donuts .donut {
+  animation: jiggle1 .3s linear, jiggle2 .4s linear infinite;
+  animation-delay: 0s, .3s; }
 
-  .pulse, .dancing-donuts .top-right, .dancing-donuts .bottom-left {
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite; }
+.jiggle2, .dancing-donuts .top-left .donut {
+  animation: jiggle3 .2s linear, jiggle4 .3s linear infinite;
+  animation-delay: 0s, .5s; }
 
-  .dancing-donuts {
-    position: relative;
-    opacity: 0;
-    -webkit-transition: all 4s ease;
-    transition: all 4s ease;
-    z-index: 99; }
-    .dancing-donuts > div {
-      position: fixed;
-      background: url("../images/donut-75px.png") no-repeat;
-      height: 75px;
-      width: 75px;
-      -webkit-transition: all 1s ease;
-      transition: all 1s ease; }
-      .dancing-donuts > div:hover, .dancing-donuts > div:focus {
-        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.12" /><feFuncG type="linear" slope="1.12" /><feFuncB type="linear" slope="1.12" /></feComponentTransfer></filter></svg>#filter');
-        -webkit-filter: brightness(112%);
-        filter: brightness(112%); }
-      .dancing-donuts > div a {
-        display: block;
-        width: 100%;
-        height: 100%; }
-    .dancing-donuts .top-left {
-      top: 10px;
-      left: 10px; }
-    .dancing-donuts .top-right {
-      top: 10px;
-      right: 10px; }
-    .dancing-donuts .middle-left {
-      left: 10px;
-      top: 40%; }
-    .dancing-donuts .middle-right {
-      right: 10px;
-      top: 40%; }
-    .dancing-donuts .bottom-left {
-      bottom: 10px;
-      left: 10px; }
-    .dancing-donuts .bottom-right {
-      bottom: 10px;
-      right: 10px; }
+.jiggle3, .dancing-donuts .bottom-right .donut {
+  animation: jiggle1 .3s linear, jiggle4 .4s linear infinite;
+  animation-delay: 0s, .1s; }
 
-  body.donut .dancing-donuts {
-    opacity: 1; } }
+.jiggle4, .dancing-donuts .middle-right .donut {
+  animation: jiggle3 .3s linear, jiggle2 .5s linear infinite;
+  animation-delay: 0s, .5s; }
+
+.pulse, .dancing-donuts .top-right .donut {
+  animation-name: pulse;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite; }
+
+.pulse2, .dancing-donuts .bottom-left .donut {
+  animation-name: pulse2;
+  animation-duration: .7s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite; }
+
+.dancing-donuts {
+  position: relative;
+  opacity: 0;
+  transition: all .5s linear;
+  z-index: 99; }
+  .dancing-donuts .donut {
+    position: fixed;
+    background: url("../images/mini-donut-1-blue-icing-green-sprinkles.png") no-repeat;
+    background-size: 75px;
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    transition: filter .3s ease-out, box-shadow 1s linear, width .5s ease, height .5s ease; }
+    .dancing-donuts .donut a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+  .dancing-donuts iframe {
+    position: fixed;
+    width: 0;
+    height: 0;
+    transition: border .1s ease-in, width 1s ease, height .5s ease; }
+  .dancing-donuts .top-left .donut {
+    background: url("../images/mini-donut-1-blue-icing-white-sprinkles.png") no-repeat;
+    background-size: 75px;
+    top: 10px;
+    left: 10px; }
+  .dancing-donuts .top-left iframe {
+    top: 10px;
+    left: 100px; }
+  .dancing-donuts .top-left:hover iframe, .dancing-donuts .top-left:focus iframe {
+    width: 500px;
+    height: 225px; }
+  .dancing-donuts .top-right .donut {
+    background: url("../images/mini-donut-3-pink-icing-white-sprinkles.png") no-repeat;
+    background-size: 75px;
+    top: 10px;
+    right: 10px; }
+  .dancing-donuts .top-right iframe {
+    top: 10px;
+    right: 100px; }
+  .dancing-donuts .top-right:hover iframe, .dancing-donuts .top-right:focus iframe {
+    width: 499px;
+    height: 281px; }
+  .dancing-donuts .middle-left .donut {
+    background: url("../images/mini-donut-5-green-frosting-white-sprinkles.png") no-repeat;
+    background-size: 75px;
+    left: 10px;
+    top: 44%; }
+  .dancing-donuts .middle-left iframe {
+    top: 35%;
+    left: 100px; }
+  .dancing-donuts .middle-left:hover iframe, .dancing-donuts .middle-left:focus iframe {
+    width: 470px;
+    height: 264px; }
+  .dancing-donuts .middle-right .donut {
+    background: url("../images/mini-donut-1-blue-icing-green-sprinkles.png") no-repeat;
+    background-size: 75px;
+    right: 10px;
+    top: 44%; }
+  .dancing-donuts .middle-right iframe {
+    top: 30%;
+    right: 100px; }
+  .dancing-donuts .middle-right:hover iframe, .dancing-donuts .middle-right:focus iframe {
+    width: 540px;
+    height: 360px; }
+  .dancing-donuts .bottom-left .donut {
+    background: url("../images/mini-donut-7-pink-icing-blue-sprinkles.png") no-repeat;
+    background-size: 75px;
+    bottom: 10px;
+    left: 10px; }
+  .dancing-donuts .bottom-left iframe {
+    bottom: 10px;
+    left: 100px; }
+  .dancing-donuts .bottom-left:hover iframe, .dancing-donuts .bottom-left:focus iframe {
+    width: 250px;
+    height: 250px; }
+  .dancing-donuts .bottom-right .donut {
+    background: url("../images/mini-donut-7-green-icing-pink-sprinkles.png") no-repeat;
+    background-size: 75px;
+    bottom: 10px;
+    right: 10px; }
+  .dancing-donuts .bottom-right iframe {
+    bottom: 10px;
+    right: 100px; }
+  .dancing-donuts .bottom-right:hover iframe, .dancing-donuts .bottom-right:focus iframe {
+    width: 500px;
+    height: 375px; }
+
+body.donut .dancing-donuts {
+  opacity: 1; }
+  body.donut .dancing-donuts .donut {
+    height: 75px;
+    width: 75px;
+    box-shadow: 0 0 50px #fff; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .dancing-donuts iframe {
+    box-shadow: 0 0 10px #334D70; } }
 
 /*# sourceMappingURL=style.css.map */
