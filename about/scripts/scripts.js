@@ -1,8 +1,8 @@
+// Activate basic site functions
 $(function() {
     stickyHeader();
     changeBg();
 });
-
 
 // Switch menus on scroll
 function stickyHeader() {
@@ -21,7 +21,6 @@ function stickyHeader() {
         }
     });
 }
-
 
 // Change background color
 function changeBg() {
