@@ -2141,7 +2141,7 @@ All media types, loading after all Bones styles.
     right: 100px; }
   .dancing-donuts .bottom-right:hover iframe, .dancing-donuts .bottom-right:focus iframe {
     width: 500px;
-    height: 375px; }
+    height: 280px; }
 
 body.donut .dancing-donuts {
   opacity: 1; }

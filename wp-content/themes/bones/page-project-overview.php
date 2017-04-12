@@ -79,7 +79,7 @@
 				</div>
 				<div class="bottom-right">
 					<div class="donut"></div>
-					<iframe src="//img.pandawhale.com/post-31325-buffy-the-vampire-slayer-twirl-NaMn.gif" frameborder="0" scrolling="no" async></iframe>
+					<iframe src="//383861208.r.worldcdn.net/wp-content/uploads/2015/04/Buffy-Stake-gif.gif" frameborder="0" scrolling="no" async></iframe>
 				</div>
 			</div>
 		</main>

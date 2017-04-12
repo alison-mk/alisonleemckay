@@ -10,7 +10,7 @@ h1 {
   padding: 25px 0 0;
   color: #bbb;
   text-align: center;
-  font-size: 1.7em;  
+  font-size: 1.7em;
   font-family: 'Trade Winds', sans-serif;
 }
 #counter {
@@ -28,7 +28,7 @@ h1 {
   }
 }
 
-// DONUT    
+// DONUT
 .donut {
     position: relative;
     top: 15%;
@@ -45,23 +45,23 @@ h1 {
     }
 }
 
-.sprite { 
-  background: url('/graphics/donut-sprite.png') no-repeat top left; 
-  width: 150px; 
+.sprite {
+  background: url('../graphics/donut-sprite.png') no-repeat top left;
+  width: 150px;
   height: 148px;
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.12" /><feFuncG type="linear" slope="1.12" /><feFuncB type="linear" slope="1.12" /></feComponentTransfer></filter></svg>#filter');
   -webkit-filter: brightness(112%);
           filter: brightness(112%);
-} 
+}
 
-.sprite.sprite-1 { background-position: 0px 0px; } 
-.sprite.sprite-2 { background-position: 0px -158px; } 
-.sprite.sprite-3 { background-position: 0px -316px; } 
-.sprite.sprite-4 { background-position: 0px -474px; } 
-.sprite.sprite-5 { background-position: 0px -632px; } 
-.sprite.sprite-6 { background-position: 0px -790px; } 
-.sprite.sprite-7 { background-position: 0px -948px; } 
-.sprite.sprite-8 { background-position: 0px -1106px; } 
+.sprite.sprite-1 { background-position: 0px 0px; }
+.sprite.sprite-2 { background-position: 0px -158px; }
+.sprite.sprite-3 { background-position: 0px -316px; }
+.sprite.sprite-4 { background-position: 0px -474px; }
+.sprite.sprite-5 { background-position: 0px -632px; }
+.sprite.sprite-6 { background-position: 0px -790px; }
+.sprite.sprite-7 { background-position: 0px -948px; }
+.sprite.sprite-8 { background-position: 0px -1106px; }
 
 // CREDIT IN BOTTOM RIGHT CORNER
 small.credit {

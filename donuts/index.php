@@ -3,10 +3,10 @@
 	<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<link href="/styles/style.css" rel="stylesheet">
+		<link href="styles/style.css" rel="stylesheet">
 		<title>Time Since Donut</title>
 		<?php require_once('twitter-call.php'); ?>
 	</head>

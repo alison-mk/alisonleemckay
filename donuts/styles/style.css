@@ -39,7 +39,7 @@ h1 {
   .container {
     margin: 0 5%; } }
 .sprite {
-  background: url("/graphics/donut-sprite.png") no-repeat top left;
+  background: url("../graphics/donut-sprite.png") no-repeat top left;
   width: 150px;
   height: 148px;
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.12" /><feFuncG type="linear" slope="1.12" /><feFuncB type="linear" slope="1.12" /></feComponentTransfer></filter></svg>#filter');
