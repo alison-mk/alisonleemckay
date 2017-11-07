@@ -36,6 +36,7 @@
 			//Donut counter
 			function start() {
 				new CountUp('<?php echo date_format($newTimeZone, 'F d, Y H:i:s') ?>', 'counter');
+				// new CountUp('April 12, 2017 10:32:04', 'counter');
 			}
 			window.onload = start;
 

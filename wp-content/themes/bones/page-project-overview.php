@@ -67,7 +67,7 @@
 				</div>
 				<div class="middle-left">
 					<div class="donut"></div>
-					<iframe src="//67.media.tumblr.com/39094fccf0a42c32ddd8e2420dca66c5/tumblr_mzzcgbB2By1qc5i9so1_500.gif" frameBorder="0" scrolling="no" async></iframe>
+					<iframe src="//68.media.tumblr.com/39094fccf0a42c32ddd8e2420dca66c5/tumblr_mzzcgbB2By1qc5i9so1_500.gif" frameBorder="0" scrolling="no" async></iframe>
 				</div>
 				<div class="middle-right">
 					<div class="donut"></div>
@@ -79,7 +79,7 @@
 				</div>
 				<div class="bottom-right">
 					<div class="donut"></div>
-					<iframe src="//383861208.r.worldcdn.net/wp-content/uploads/2015/04/Buffy-Stake-gif.gif" frameborder="0" scrolling="no" async></iframe>
+					<iframe src="//www.hodderscape.co.uk/wp-content/uploads/2015/04/Buffy-Stake-gif.gif" frameborder="0" scrolling="no" async></iframe>
 				</div>
 			</div>
 		</main>

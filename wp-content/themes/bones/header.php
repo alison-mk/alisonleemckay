@@ -46,7 +46,7 @@
 						<ul>
 							<li><a href="/" title="See my work">work</a></li>
 							<li><a href="/about" title="About me">about</a></li>
-							<li><a href="mailto:mckay.ali@gmail.com" target="_blank" title="Email me">contact</a></li>
+							<li><a href="mailto:alisonleemckay@gmail.com" target="_blank" title="Email me">contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -58,7 +58,7 @@
 						<ul>
 							<li><a href="/" title="See my work">work</a></li>
 							<li><a href="/about" title="About me">about</a></li>
-							<li><a href="mailto:mckay.ali@gmail.com" target="_blank" title="Email me">contact</a></li>
+							<li><a href="mailto:alisonleemckay@gmail.com" target="_blank" title="Email me">contact</a></li>
 						</ul>
 					</nav>
 				</div>

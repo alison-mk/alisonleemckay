@@ -221,8 +221,8 @@ p.date {
   padding: 50px 0; }
   .contact ul {
     margin: 0 auto;
-    width: 192px;
-    padding: 0; }
+    padding: 0;
+    text-align: center; }
   .contact ul li {
     display: inline-block;
     margin: 0 5px 0 5px;
