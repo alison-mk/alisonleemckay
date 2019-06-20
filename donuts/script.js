@@ -55,8 +55,8 @@ CountUp.prototype.updateCounter=function(){
     this.calculate();
     this.formatTime();
     this.countainer.innerHTML =
-    	//"<strong>" + this.years + "</strong> <small>" + (this.years == 1? "year" : "years") + "</small>" +
-        //" <strong>" + this.months + "</strong> <small>" + (this.months == 1? "month" : "months") + "</small>" +
+    	"<strong>" + this.years + "</strong> <small>" + (this.years == 1? "year" : "years") + "</small>" +
+        " <strong>" + this.months + "</strong> <small>" + (this.months == 1? "month" : "months") + "</small>" +
         " <strong>" + this.days + "</strong> <small>" + (this.days == 1? "day" : "days") + "</small>" +
         " <strong>" + this.hours + "</strong> <small>" + (this.hours == 1? "hour" : "hours") + "</small>" +
         " <strong>" + this.minutes + "</strong> <small>" + (this.minutes == 1? "minute" : "minutes") + "</small>" +

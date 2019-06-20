@@ -15,7 +15,7 @@ h1 {
 #counter {
   display: block;
   margin: 0 auto;
-  max-width: 405px;
+  max-width: 575px;
   color: #bbb;
   font-size: 1.5em;
   font-family: 'Ubuntu Mono', sans-serif;

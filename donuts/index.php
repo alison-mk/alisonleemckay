@@ -6,7 +6,7 @@
 		<link href='//fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
 		<link href='//fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<link href="styles/style.css" rel="stylesheet">
+		<link href="styles/style.css?ver=1.2" rel="stylesheet">
 		<title>Time Since Donut</title>
 		<?php require_once('twitter-call.php'); ?>
 	</head>
@@ -26,7 +26,7 @@
 			<div id="counter"></div>
 		</div>
 		<small class="credit">A site by <a href="http://alisonleemckay.com" target="_blank" title="Learn about Alison's non-donut work">Alison McKay</a> and <a href="http://juliecochran.com" target="_blank" title="See Julie's portfolio">Julie Cochran</a>.</small>
-		<script src="script.js"></script>
+		<script src="script.js?ver=1.2"></script>
 		<script>
 			/*
 			* CountUp script by Praveen Lobo
@@ -35,8 +35,8 @@
 
 			//Donut counter
 			function start() {
-				new CountUp('<?php echo date_format($newTimeZone, 'F d, Y H:i:s') ?>', 'counter');
-				// new CountUp('April 12, 2017 10:32:04', 'counter');
+				// new CountUp('<?php echo date_format($newTimeZone, 'F d, Y H:i:s') ?>', 'counter');
+				new CountUp('August 10, 2017 10:32:04', 'counter');
 			}
 			window.onload = start;
 
