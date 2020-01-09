@@ -1,74 +1,94 @@
 body {
   background-color: #fffffe;
-  -webkit-text-stroke: 0.25px; }
+  -webkit-text-stroke: 0.25px;
+}
 
 .container {
-  min-height: 300px; }
+  min-height: 300px;
+}
 
 h1 {
   padding: 25px 0 0;
   color: #bbb;
   text-align: center;
   font-size: 1.7em;
-  font-family: 'Trade Winds', sans-serif; }
+  font-family: "Trade Winds", sans-serif;
+}
 
 #counter {
   display: block;
   margin: 0 auto;
-  max-width: 575px;
+  text-align: center;
+  padding: 0 10px;
   color: #bbb;
   font-size: 1.5em;
-  font-family: 'Ubuntu Mono', sans-serif;
-  white-space: nowrap; }
-  @media all and (max-width: 450px) {
-    #counter {
-      white-space: normal;
-      text-align: center; } }
+  font-family: "Ubuntu Mono", sans-serif;
+  white-space: nowrap;
+}
+@media all and (max-width: 650px) {
+  #counter {
+    white-space: normal;
+    text-align: center;
+  }
+}
 
 .donut {
   position: relative;
   top: 15%;
   margin: 10% auto 0;
   width: 150px;
-  height: 150px; }
+  height: 150px;
+}
 
 @media all and (max-width: 650px) {
   .donut {
-    margin-top: 7%; }
+    margin-top: 7%;
+  }
 
   .container {
-    margin: 0 5%; } }
+    margin: 0 5%;
+  }
+}
 .sprite {
   background: url("../graphics/donut-sprite.png") no-repeat top left;
   width: 150px;
   height: 148px;
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.12" /><feFuncG type="linear" slope="1.12" /><feFuncB type="linear" slope="1.12" /></feComponentTransfer></filter></svg>#filter');
   -webkit-filter: brightness(112%);
-  filter: brightness(112%); }
+  filter: brightness(112%);
+}
 
 .sprite.sprite-1 {
-  background-position: 0px 0px; }
+  background-position: 0px 0px;
+}
 
 .sprite.sprite-2 {
-  background-position: 0px -158px; }
+  background-position: 0px -158px;
+}
 
 .sprite.sprite-3 {
-  background-position: 0px -316px; }
+  background-position: 0px -316px;
+}
 
 .sprite.sprite-4 {
-  background-position: 0px -474px; }
+  background-position: 0px -474px;
+}
 
 .sprite.sprite-5 {
-  background-position: 0px -632px; }
+  background-position: 0px -632px;
+}
 
 .sprite.sprite-6 {
-  background-position: 0px -790px; }
+  background-position: 0px -790px;
+}
 
 .sprite.sprite-7 {
-  background-position: 0px -948px; }
+  background-position: 0px -948px;
+}
 
 .sprite.sprite-8 {
-  background-position: 0px -1106px; }
+  background-position: 0px -1106px;
+}
 
 small.credit {
   position: fixed;
@@ -77,7 +97,8 @@ small.credit {
   color: #bbb;
   text-align: center;
   font-family: sans-serif;
-  font-size: 12px; }
+  font-size: 12px;
+}
 
 small.credit a {
   -webkit-transition: all 0.4s ease;
@@ -85,10 +106,12 @@ small.credit a {
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
   color: #888;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 small.credit a:hover {
-  text-shadow: 0px 0px 2px #888; }
+  text-shadow: 0px 0px 2px #888;
+}
 
 .donut {
   -webkit-transition: -webkit-transform 1s ease-in-out;
@@ -97,12 +120,14 @@ small.credit a:hover {
   transition: transform 1s ease-in-out;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
-  transform: rotate(0deg); }
+  transform: rotate(0deg);
+}
 
 .donut:hover {
   -webkit-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
-  transform: rotate(360deg); }
+  transform: rotate(360deg);
+}
 
 .donut .sprite {
   -webkit-animation-name: donut-fade;
@@ -115,82 +140,115 @@ small.credit a:hover {
   animation-duration: 19s;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
-  position: absolute; }
+  position: absolute;
+}
 
 @-webkit-keyframes donut-fade {
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
   17% {
-    opacity: 1; }
+    opacity: 1;
+  }
   25% {
-    opacity: 0; }
+    opacity: 0;
+  }
   92% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
 @-moz-keyframes donut-fade {
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
   17% {
-    opacity: 1; }
+    opacity: 1;
+  }
   25% {
-    opacity: 0; }
+    opacity: 0;
+  }
   92% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
 @-o-keyframes donut-fade {
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
   17% {
-    opacity: 1; }
+    opacity: 1;
+  }
   25% {
-    opacity: 0; }
+    opacity: 0;
+  }
   92% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
 @keyframes donut-fade {
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
   17% {
-    opacity: 1; }
+    opacity: 1;
+  }
   25% {
-    opacity: 0; }
+    opacity: 0;
+  }
   92% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
 .donut .sprite-8 {
   -webkit-animation-delay: 14s;
-  animation-delay: 14s; }
+  animation-delay: 14s;
+}
 
 .donut .sprite-7 {
   -webkit-animation-delay: 12s;
-  animation-delay: 12s; }
+  animation-delay: 12s;
+}
 
 .donut .sprite-6 {
   -webkit-animation-delay: 10s;
-  animation-delay: 10s; }
+  animation-delay: 10s;
+}
 
 .donut .sprite-5 {
   -webkit-animation-delay: 8s;
-  animation-delay: 8s; }
+  animation-delay: 8s;
+}
 
 .donut .sprite-4 {
   -webkit-animation-delay: 6s;
-  animation-delay: 6s; }
+  animation-delay: 6s;
+}
 
 .donut .sprite-3 {
   -webkit-animation-delay: 4s;
-  animation-delay: 4s; }
+  animation-delay: 4s;
+}
 
 .donut .sprite-2 {
   -webkit-animation-delay: 2s;
-  animation-delay: 2s; }
+  animation-delay: 2s;
+}
 
 .donut .sprite-1 {
   -webkit-animation-delay: 0s;
-  animation-delay: 0s; }
+  animation-delay: 0s;
+}
 
 /*# sourceMappingURL=style.css.map */

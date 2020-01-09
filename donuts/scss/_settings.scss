@@ -16,13 +16,15 @@ h1 {
 #counter {
   display: block;
   margin: 0 auto;
-  max-width: 405px;
+  // max-width: 405px;
+  text-align: center;
+  padding: 0 10px;
   color: #bbb;
   font-size: 1.5em;
   font-family: 'Ubuntu Mono', sans-serif;
   white-space: nowrap;
 
-  @media all and (max-width: 450px) {
+  @media all and (max-width: 650px) {
     white-space: normal;
     text-align: center;
   }

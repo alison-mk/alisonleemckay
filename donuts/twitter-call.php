@@ -5,7 +5,7 @@
 * - Ian Anderson Gray: http://iag.me/socialmedia/build-your-first-twitter-app-using-php-in-8-easy-steps/
 **/
 
-// ini_set('display_errors', 1);
+ini_set('display_errors', 1);
 
 date_default_timezone_set('America/Los_Angeles');
 
@@ -15,7 +15,7 @@ require_once('tokens.php');
 /** Perform a GET request **/
 $url = 'https://api.twitter.com/1.1/search/tweets.json';
 $requestMethod = 'GET';
-$getfield = '?q=from%3Aamckayay%20%23donutsforever';
+$getfield = '?q=from%3Aalisonleemckay%20%23donutsforever';
 $twitter = new TwitterAPIExchange($settings);
 
 /** Decode the JSON feed **/
@@ -38,7 +38,7 @@ foreach($string as $item) {
 		$newTimeFormat = $newTimeObject->format('F d, Y H:i:s');
 
 		// Set new time to correct time zone
-		$newTimeZone = date_create($newTimeFormat, timezone_open('Europe/London'));
+		$newTimeZone = date_create($newTimeFormat, timezone_open('Europe/London'));	
 		date_timezone_set($newTimeZone, timezone_open('America/Los_Angeles'));
 
 		$count++;
